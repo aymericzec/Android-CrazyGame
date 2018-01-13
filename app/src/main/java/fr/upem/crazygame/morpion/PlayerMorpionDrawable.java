@@ -14,18 +14,27 @@ import android.graphics.drawable.Drawable;
 public class PlayerMorpionDrawable extends Drawable {
 
     private final Paint paint;
-    private final float widthBox;
-    private final float heightBox;
+    private final float widthBox; // Width of a box
+    private final float heightBox; // Height of a box
+    private final float startXBoard; // x coordinate of the start board
+    private final float startYBoard; // y coordinate of the start board
+    private final float stopXBoard; // x coordinate of the stop board
+    private final float stopYBoard; // y coordinate of the stop board
+    private final float eventX; // x clic of the user
+    private final float eventY; // y clic of the user
     private Players player;
 
-    public PlayerMorpionDrawable(float widthBox, float heightBox) {
+    public PlayerMorpionDrawable(float widthBox, float heightBox, float startXBoard, float startYBoard, float stopXBoard, float stopYBoard, float eventX, float eventY, Players player) {
         this.widthBox = widthBox;
         this.heightBox = heightBox;
-        this.paint = new Paint();
-    }
-
-    public void setPlayer(Players player) {
+        this.startXBoard = startXBoard;
+        this.startYBoard = startYBoard;
+        this.stopXBoard = startXBoard;
+        this.stopYBoard = startYBoard;
+        this.eventX = eventX;
+        this.eventY = eventY;
         this.player = player;
+        this.paint = new Paint();
     }
 
     @Override

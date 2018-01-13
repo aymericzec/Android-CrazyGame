@@ -7,7 +7,7 @@
     tools:context="fr.upem.crazygame.morpion.MorpionActivity">
 
     <fr.upem.crazygame.morpion.GameMorpionView
-        android:id="@+id/morpionBoard"
+        android:id="@+id/morpionView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="30dp"
