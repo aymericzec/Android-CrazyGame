@@ -7,3 +7,15 @@
 /build
 /captures
 .externalNativeBuild
+<<<<<<< HEAD
+=======
+
+# Google Services (e.g. APIs or Firebase)
+google-services.json
+
+# Freeline
+freeline.py
+freeline/
+freeline_project_description.json
+.idea/misc.xml
+>>>>>>> d5b60368d32f756960ee2130063099a3d1d934ef
