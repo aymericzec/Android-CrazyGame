@@ -16,8 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="fr.upem.crazygame.morpion.MorpionActivity">
-        </activity>
+        <activity android:name=".morpion.MorpionActivity"></activity>
+        <activity android:name=".words.WordsActivity"></activity>
     </application>
 
 </manifest>
