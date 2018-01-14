@@ -55,7 +55,7 @@ public class LoadAssetsWords {
      * Load all the files that are presents in the directory words of assets
      *
      * @param context
-     * @param language String that contains the language of the phone/tablet
+     * @param language String that contains the language of the device
      * @return a List with all the files that have been loaded
      */
     public static List<String> loadFiles(Context context, String language) {

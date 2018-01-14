@@ -3,6 +3,8 @@ package fr.upem.crazygame;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import java.util.Locale;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
