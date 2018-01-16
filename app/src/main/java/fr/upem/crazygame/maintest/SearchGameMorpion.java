@@ -1,11 +1,13 @@
 package fr.upem.crazygame.maintest;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.StrictMode;
 import android.support.annotation.Nullable;
 import android.util.Log;
+import android.view.View;
 
 import java.io.IOException;
 import java.net.InetAddress;
@@ -28,7 +30,7 @@ public class SearchGameMorpion extends Activity {
         SocketChannel sc = null;
 
 
-        try {
+        /*try {
             sc = SocketChannel.open();
             InetSocketAddress serverAddress =  new InetSocketAddress("192.168.1.13",8086);
             final SocketChannel s = sc;
@@ -51,7 +53,12 @@ public class SearchGameMorpion extends Activity {
         } catch (IOException e) {
             e.printStackTrace();
             Log.d("Test", e.getMessage());
-        }
+        }*/
+    }
+
+    public void changeActivity (View view) {
+        Intent intent = new Intent();
+        startActivity(intent);
     }
 }
 

@@ -23,12 +23,14 @@ public class MorpionActivity extends AppCompatActivity {
     private TextView playerRight;
     private TextView messageBottom;
 
+    private Players currentPlayer = null;
+
     private boolean isTurn = false; //It's the turn of current player
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_morpion);
+        setContentView(R.layout.activity_morpion_p);
         getInformation();
     }
 
@@ -38,18 +40,18 @@ public class MorpionActivity extends AppCompatActivity {
     public void getInformation() {
         Intent intent = getIntent();
         Players begin = (Players) intent.getSerializableExtra("playerBegin");
-        Players current = (Players) intent.getSerializableExtra("playerCurrent");
+        currentPlayer = (Players) intent.getSerializableExtra("playerCurrent");
 
         //Init UI
         initButton();
 
-        playerLeft = findViewById(R.id.joueur1);
-        playerRight = findViewById(R.id.joueur2);
-        messageBottom = findViewById(R.id.turn);
+        playerLeft = findViewById(R.id.player1);
+        playerRight = findViewById(R.id.player2);
+        messageBottom = findViewById(R.id.round);
 
-        isTurn = begin.equals(current);
+        isTurn = begin.equals(currentPlayer);
 
-        handlerMorpion = new HandlerMorpion (sc, this, new Morpion(begin, current));
+        handlerMorpion = new HandlerMorpion (sc, this, new Morpion(begin, currentPlayer));
     }
 
     /**
@@ -108,10 +110,6 @@ public class MorpionActivity extends AppCompatActivity {
         return cases;
     }
 
-    public Players getPlayer() {
-        return player;
-    }
-
     public SocketChannel getSc() {
         return sc;
     }
@@ -126,5 +124,9 @@ public class MorpionActivity extends AppCompatActivity {
 
     public TextView getMessageBottom() {
         return messageBottom;
+    }
+
+    public Players getCurrentPlayer() {
+        return currentPlayer;
     }
 }

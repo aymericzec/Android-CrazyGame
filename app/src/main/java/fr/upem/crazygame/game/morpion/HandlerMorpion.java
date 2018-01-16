@@ -36,7 +36,7 @@ public class HandlerMorpion extends Handler {
      * @return true if the cell is free false else
      */
     public boolean playAround (int x, int y) {
-        boolean clickOk = this.morpion.playAround(morpionActivity.getPlayer(), x, y);
+        boolean clickOk = this.morpion.playAround(morpionActivity.getCurrentPlayer(), x, y);
 
         if (clickOk) {
             this.post(new Runnable() {
@@ -55,7 +55,7 @@ public class HandlerMorpion extends Handler {
     }
 
     public void playOtherPlayer (int x, int y) {
-        morpion.playAround(((this.morpionActivity.getPlayer() == Players.PLAYER1) ? Players.PLAYER2 : Players.PLAYER1),x, y);
+        morpion.playAround(((this.morpionActivity.getCurrentPlayer() == Players.PLAYER1) ? Players.PLAYER2 : Players.PLAYER1),x, y);
 
         //Other player have play
         this.post(new Runnable() {
