@@ -28,7 +28,7 @@ public class MorpionActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_morpion_p);
         //showpopupwin();
-        //launchMorpion();
+        launchMorpion();
     }
 
     public boolean winGame() {
@@ -62,13 +62,14 @@ public class MorpionActivity extends Activity {
     // Appeler quand on clique sur la page
     // Pas encore terminer
     public void showpopupwin(View view){
+
         LayoutInflater inflater = (LayoutInflater) MorpionActivity.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View layout = inflater.inflate(R.layout.popupwin,
                 (ViewGroup) findViewById(R.id.popup_1));
 
         Log.d("DEBUG", layout.toString());
-        PopupWindow pw = new PopupWindow( layout, 3*(view.getWidth()/4), view.getHeight()/2, true);
+        PopupWindow pw = new PopupWindow( layout, view.getWidth(), view.getHeight(), true);
         pw.showAtLocation(layout, Gravity.CENTER, 0, 0);
 
     }

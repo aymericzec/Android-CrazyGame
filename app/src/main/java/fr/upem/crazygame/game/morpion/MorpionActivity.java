@@ -5,8 +5,6 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 
 import fr.upem.crazygame.R;
-import fr.upem.crazygame.morpion.GameMorpionView;
-import fr.upem.crazygame.morpion.PlayerMorpionView;
 import fr.upem.crazygame.morpion.Players;
 
 public class MorpionActivity extends AppCompatActivity {
@@ -29,10 +27,7 @@ public class MorpionActivity extends AppCompatActivity {
     public void getInformation() {
 
         Players p = getStartPlayer();
-
         morpionGame = new Morpion(p);
-
-
     }
 
     /**
