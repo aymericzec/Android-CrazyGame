@@ -20,4 +20,12 @@ public class Cell {
     public Players getPlayer() {
         return player;
     }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
 }

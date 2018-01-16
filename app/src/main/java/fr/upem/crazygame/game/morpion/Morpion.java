@@ -8,10 +8,12 @@ import fr.upem.crazygame.morpion.Players;
 
 public class Morpion {
     private Players current;
+    private Players begin;
     private Cell [][] gameBoard = new Cell[3][3];
 
-    public Morpion (Players current) {
+    public Morpion (Players current, Players begin) {
         this.current = current;
+        this.begin = begin;
     }
 
     /**
@@ -29,7 +31,7 @@ public class Morpion {
      * @param y the column
      * @return true if the cell is not already use, false else
      */
-    private boolean playAround (int x, int y, Players play) {
+    public boolean playAround (Players play, int x, int y) {
         if (x < 0 || x > 2 || y < 0 || y > 2) {
             throw new IllegalArgumentException("x and y must be between 0 and 2" + x + " " + y);
         }

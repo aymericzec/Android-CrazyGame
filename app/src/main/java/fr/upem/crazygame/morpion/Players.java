@@ -1,6 +1,8 @@
 package fr.upem.crazygame.morpion;
 
-public enum Players {
+import java.io.Serializable;
+
+public enum Players implements Serializable {
     PLAYER1, PLAYER2
 }
 
