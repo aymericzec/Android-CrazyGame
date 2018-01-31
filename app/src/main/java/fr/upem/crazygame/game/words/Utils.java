@@ -1,4 +1,4 @@
-package fr.upem.crazygame;
+package fr.upem.crazygame.game.words;
 
 
 import java.util.Locale;

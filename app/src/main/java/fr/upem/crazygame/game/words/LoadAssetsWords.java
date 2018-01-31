@@ -1,4 +1,4 @@
-package fr.upem.crazygame.words;
+package fr.upem.crazygame.game.words;
 
 
 import android.content.Context;

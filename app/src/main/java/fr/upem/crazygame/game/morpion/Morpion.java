@@ -1,6 +1,6 @@
 package fr.upem.crazygame.game.morpion;
 
-import fr.upem.crazygame.morpion.Players;
+import fr.upem.crazygame.game.Players;
 
 /**
  * Created by myfou on 14/01/2018.

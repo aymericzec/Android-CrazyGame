@@ -1,15 +1,15 @@
-package fr.upem.crazygame;
+package fr.upem.crazygame.game.words;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import java.util.Locale;
+import fr.upem.crazygame.R;
 
-public class MainActivity extends AppCompatActivity {
+public class WordsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_words);
     }
 }

@@ -1,15 +1,11 @@
 package fr.upem.crazygame.game.morpion;
 
-import android.os.AsyncTask;
 import android.os.Handler;
-import android.widget.Button;
-import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 import java.nio.channels.SocketChannel;
 
-import fr.upem.crazygame.morpion.Players;
+import fr.upem.crazygame.game.Players;
+
 
 /**
  * Created by myfou on 15/01/2018.

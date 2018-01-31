@@ -10,9 +10,9 @@ import android.widget.TextView;
 import java.nio.channels.SocketChannel;
 
 import fr.upem.crazygame.R;
-import fr.upem.crazygame.morpion.Players;
+import fr.upem.crazygame.game.Players;
 
-public class MorpionActivity extends AppCompatActivity {
+ public class MorpionActivity extends AppCompatActivity {
     private final static int NUMBER_CELL = 3;
 
     private HandlerMorpion handlerMorpion;
