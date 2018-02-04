@@ -3,6 +3,7 @@ package fr.upem.crazygame.searchgameactivity;
 import android.os.StrictMode;
 
 import java.io.IOException;
+import java.io.Serializable;
 import java.net.InetSocketAddress;
 import java.nio.channels.SocketChannel;
 
@@ -13,12 +14,14 @@ import java.nio.channels.SocketChannel;
 /**
  * This class connect a socket to server
  */
-public class SearchGameSocketManager {
+public class SearchGameSocketManager implements Serializable {
     private final SocketChannel sc;
+    private final SearchGameActivity searchGameActivity;
     private boolean isConnected = false;
 
-    private SearchGameSocketManager (SocketChannel sc) {
+    private SearchGameSocketManager (SocketChannel sc, SearchGameActivity searchGameActivity) {
         this.sc = sc;
+        this.searchGameActivity = searchGameActivity;
     }
 
     public void connectSocket (String hostname, int port) {
@@ -43,12 +46,12 @@ public class SearchGameSocketManager {
 
     public static SearchGameSocketManager createSearchGameSocketManager (SearchGameActivity searchGameActivity) throws IOException {
         SocketChannel sc = SocketChannel.open();
-        return new SearchGameSocketManager(sc);
+        return new SearchGameSocketManager(sc, searchGameActivity);
     }
 
     public SearchGameManager isConnected() {
         if (isConnected) {
-            return new SearchGameManager(this.sc);
+            return new SearchGameManager(this.sc, this.searchGameActivity);
         }
 
         return null;

@@ -1,8 +1,10 @@
 package fr.upem.crazygame.searchgameactivity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -30,7 +32,7 @@ public class SearchGameActivity extends Activity {
 
         try {
             searchGameSocketManager = SearchGameSocketManager.createSearchGameSocketManager(this);
-            searchGameSocketManager.connectSocket("192.168.1.13", 8086);
+            searchGameSocketManager.connectSocket("192.168.1.15", 8086);
 
             listView = findViewById(R.id.list_games);
             Log.d("test", listView + "");
@@ -72,6 +74,17 @@ public class SearchGameActivity extends Activity {
             Log.d("Connecté", nameGame + " est lancé");
         }
     }
+
+    public void launchGameActivity (Intent intent) {
+        Log.d("Socket envoye ", SocketHandler.getSocket() + "");
+        startActivityForResult(intent, 1);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+    }
+
 
 }
 

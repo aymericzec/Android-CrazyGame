@@ -1,10 +1,16 @@
 package fr.upem.crazygame.game.morpion;
 
+import android.content.Context;
 import android.os.AsyncTask;
+import android.util.Log;
+import android.widget.Toast;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
+
+import fr.upem.crazygame.bytebuffer_manager.ByteBufferManager;
+import fr.upem.crazygame.game.Players;
 
 /**
  * Created by myfou on 16/01/2018.
@@ -14,9 +20,12 @@ public class AsyncTaskWaitOtherPlayer extends AsyncTask<Void,Void, Cell>{
 
     private final SocketChannel sc;
     private final HandlerMorpion handlerMorpion;
-    public AsyncTaskWaitOtherPlayer(SocketChannel sc, HandlerMorpion handlerMorpion) {
+    private final MorpionActivity morpionActivity;
+
+    public AsyncTaskWaitOtherPlayer(SocketChannel sc, HandlerMorpion handlerMorpion, MorpionActivity morpionActivity) {
         this.sc = sc;
         this.handlerMorpion = handlerMorpion;
+        this.morpionActivity = morpionActivity;
     }
 
 
@@ -24,9 +33,23 @@ public class AsyncTaskWaitOtherPlayer extends AsyncTask<Void,Void, Cell>{
     protected Cell doInBackground(Void... voids) {
         ByteBuffer bb = ByteBuffer.allocate(1024);
 
+        int idRequest;
+        int i = 0;
+        int j = 0;
+
         //Wait the response of other player
         try {
-            sc.read(bb);
+            bb.limit(Integer.BYTES * 3);
+            Log.d("ReadFully", "tranquille");
+            if (ByteBufferManager.readFully(sc, bb)) {
+                bb.flip();
+                idRequest = bb.getInt();
+                i = bb.getInt();
+                j = bb.getInt();
+
+                return new Cell(Players.PLAYER2, i, j);
+            }
+
         } catch (IOException e) {
             //Loose connexion with the other client
             e.printStackTrace();
@@ -39,9 +62,30 @@ public class AsyncTaskWaitOtherPlayer extends AsyncTask<Void,Void, Cell>{
     protected void onPostExecute(Cell cell) {
         super.onPostExecute(cell);
 
-        int x = cell.getX();
-        int y = cell.getY();
+        Log.d("Fin de la tâche", cell.getX() + " " + cell.getY());
+        if (cell != null) {
+            int x = cell.getX();
+            int y = cell.getY();
 
-        handlerMorpion.playOtherPlayer(x, y);
+            handlerMorpion.playOtherPlayer(x, y);
+            morpionActivity.putClickAdvsersary(x, y);
+
+            if (!handlerMorpion.isFinish()) {
+                morpionActivity.isYourTurn();
+
+            } else {
+                Context context = morpionActivity.getApplicationContext();
+                CharSequence text = "Vous avez perdu";
+                int duration = Toast.LENGTH_LONG;
+
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
+            }
+
+
+        } else {
+            handlerMorpion.looseConnexion();
+        }
+
     }
 }

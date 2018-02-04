@@ -1,5 +1,7 @@
 package fr.upem.crazygame.game.morpion;
 
+import android.util.Log;
+
 import fr.upem.crazygame.game.Players;
 
 /**
@@ -53,6 +55,7 @@ public class Morpion {
         for (int i = 0; i < gameBoard.length; i++) {
             if (gameBoard[i][0] != null && gameBoard[i][1] != null && gameBoard[i][2] != null) {
                 if (gameBoard[i][0].getPlayer().equals(gameBoard[i][1].getPlayer()) && gameBoard[i][0].getPlayer().equals(gameBoard[i][2].getPlayer())) {
+                    Log.d("Perdu 1", i + "");
                     return gameBoard[i][0].getPlayer();
                 }
             }
@@ -62,6 +65,7 @@ public class Morpion {
         for (int i = 0; i < gameBoard.length; i++) {
             if (gameBoard[0][i] != null && gameBoard[1][i] != null && gameBoard[2][i] != null) {
                 if (gameBoard[0][i].getPlayer().equals(gameBoard[1][i].getPlayer()) && gameBoard[0][i].getPlayer().equals(gameBoard[2][i].getPlayer())) {
+                    Log.d("Perdu 2", i + "");
                     return gameBoard[0][i].getPlayer();
                 }
             }
@@ -70,7 +74,9 @@ public class Morpion {
         //Check diagonal
         for (int i = 0; i < gameBoard.length; i++) {
             if (gameBoard[0][0] != null && gameBoard[1][1] != null && gameBoard[2][2] != null) {
+                Log.d("Test diagonale", gameBoard[0][0].getPlayer() + " " + gameBoard[1][1].getPlayer() + " " + gameBoard[2][2].getPlayer());
                 if (gameBoard[0][0].getPlayer().equals(gameBoard[1][1].getPlayer()) && gameBoard[0][0].getPlayer().equals(gameBoard[2][2].getPlayer())) {
+                    Log.d("Perdu 3", i + "");
                     return gameBoard[0][0].getPlayer();
                 }
             }
@@ -79,11 +85,13 @@ public class Morpion {
         for (int i = 0; i < gameBoard.length; i++) {
             if (gameBoard[0][2] != null && gameBoard[1][1] != null && gameBoard[2][0] != null) {
                 if (gameBoard[0][2].getPlayer().equals(gameBoard[1][1].getPlayer()) && gameBoard[0][2].getPlayer().equals(gameBoard[2][0].getPlayer())) {
+                    Log.d("Perdu 4", i + "");
                     return gameBoard[0][2].getPlayer();
                 }
             }
         }
 
+        Log.d("Null", "Pas perdu");
         return null;
     }
 

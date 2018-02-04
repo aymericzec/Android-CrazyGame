@@ -2,6 +2,8 @@ package fr.upem.crazygame.game.morpion;
 
 import android.os.Handler;
 
+import java.io.IOException;
+import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
 
 import fr.upem.crazygame.game.Players;
@@ -16,6 +18,8 @@ public class HandlerMorpion extends Handler {
     private final SocketChannel sc;
     private final Morpion morpion;
     private final MorpionActivity morpionActivity;
+    ByteBuffer in = ByteBuffer.allocate(2048);
+    ByteBuffer out = ByteBuffer.allocate(2048);
 
 
 
@@ -32,35 +36,39 @@ public class HandlerMorpion extends Handler {
      * @return true if the cell is free false else
      */
     public boolean playAround (int x, int y) {
-        boolean clickOk = this.morpion.playAround(morpionActivity.getCurrentPlayer(), x, y);
-
-        if (clickOk) {
-            this.post(new Runnable() {
-                @Override
-                public void run() {
-
-                }
-            });
-        }
-
-        return clickOk;
+        return this.morpion.playAround(morpionActivity.getCurrentPlayer(), x, y);
     }
 
     public void waitOther () {
-        AsyncTaskWaitOtherPlayer asyncTaskWaitOtherPlayer = new AsyncTaskWaitOtherPlayer(sc, this);
+        AsyncTaskWaitOtherPlayer asyncTaskWaitOtherPlayer = new AsyncTaskWaitOtherPlayer(sc, this, morpionActivity);
+        asyncTaskWaitOtherPlayer.execute();
     }
 
     public void playOtherPlayer (int x, int y) {
         morpion.playAround(((this.morpionActivity.getCurrentPlayer() == Players.PLAYER1) ? Players.PLAYER2 : Players.PLAYER1),x, y);
-
-        //Other player have play
-        this.post(new Runnable() {
-            @Override
-            public void run() {
-
-            }
-        });
     }
 
+    public boolean isFinish () {
+        return morpion.winner() != null;
+    }
 
+    /**
+     * Put in the out buffer the data and send to the server
+     * @param i
+     * @param j
+     * @throws IOException if write loose
+     */
+    public void sendCell(int i, int j) throws IOException {
+        out.clear();
+        out.putInt(1);
+        out.putInt(i);
+        out.putInt(j);
+        out.flip();
+
+        sc.write(out);
+    }
+
+    public void looseConnexion() {
+
+    }
 }

@@ -4,13 +4,235 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="fr.upem.crazygame.morpion.MorpionActivity">
+    android:background="@drawable/repeat_bacground"
+    android:gravity="center_horizontal"
+    android:hapticFeedbackEnabled="false"
+    android:orientation="vertical"
+    tools:context="fr.upem.crazygame.game.morpion.MorpionActivity">
 
-    <fr.upem.crazygame.morpion.GameMorpionView
-        android:id="@+id/morpionView"
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/textView7"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:fontFamily="@font/adventure"
+        android:gravity="bottom|center_horizontal"
+        android:text="Le morpion !"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:fontFamily="@font/adventure" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:baselineAligned="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/player1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/engcomica"
+                android:includeFontPadding="true"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="15dp"
+                android:text="Joueur 1"
+                android:textColor="#DF0101"
+                android:textSize="30sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/score1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/comic_book"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="30 pt"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/player2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/engcomica"
+                android:includeFontPadding="true"
+                android:gravity="end"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="15dp"
+                android:text="Joueur 2"
+                android:textColor="#DF0101"
+                android:textSize="30sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/score2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/comic_book"
+                android:gravity="end"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:text="150 pt"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
         android:layout_marginLeft="0dp"
-        android:layout_marginTop="0dp" />
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="6"
+        android:paddingBottom="50dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="50dp"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:weightSum="5"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/button0"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:onClick="clickCell"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:id="@+id/button1"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/holo_green_light"
+                android:onClick="clickCell"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:id="@+id/button2"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:onClick="clickCell"
+                android:textColor="@android:color/black"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:weightSum="5"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button3"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/holo_green_light"
+                android:onClick="clickCell"
+                android:textColor="@android:color/black"/>
+
+            <Button
+                android:id="@+id/button4"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:onClick="clickCell"
+                android:textColor="@android:color/black"/>
+
+            <Button
+                android:id="@+id/button5"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/holo_green_light"
+                android:onClick="clickCell"
+                android:textColor="@android:color/black"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:weightSum="5"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button6"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:onClick="clickCell"
+                android:textColor="@android:color/black"/>
+
+            <Button
+                android:id="@+id/button7"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/holo_green_light"
+                android:onClick="clickCell"
+                android:textColor="@android:color/black"/>
+
+            <Button
+                android:id="@+id/button8"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:onClick="clickCell"
+                android:textColor="@android:color/black"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/round"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/comic_book"
+        android:gravity="center"
+        android:text="Joueur 2 à vous de jouer !"
+        android:textColor="@android:color/black" />
 
 </LinearLayout>
