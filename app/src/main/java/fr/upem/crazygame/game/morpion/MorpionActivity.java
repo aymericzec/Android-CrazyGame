@@ -52,6 +52,7 @@ import fr.upem.crazygame.searchgameactivity.SocketHandler;
         } else {
             isBegin = false;
             currentPlayer = Players.PLAYER2;
+
         }
         sc = SocketHandler.getSocket();
 
@@ -62,8 +63,8 @@ import fr.upem.crazygame.searchgameactivity.SocketHandler;
             handlerMorpion = new HandlerMorpion (sc, this, new Morpion(Players.PLAYER1, currentPlayer));
         } else {
             handlerMorpion = new HandlerMorpion (sc, this, new Morpion(Players.PLAYER2, currentPlayer));
+            handlerMorpion.waitOther();
         }
-
 
         Log.d("Test ", begin + " " + SocketHandler.getSocket());
     }
@@ -71,7 +72,7 @@ import fr.upem.crazygame.searchgameactivity.SocketHandler;
      @Override
      protected void onResume() {
          super.onResume();
-         handlerMorpion.waitOther();
+
      }
 
      /**
@@ -101,7 +102,7 @@ import fr.upem.crazygame.searchgameactivity.SocketHandler;
     public void clickCell (View view) {
         Log.d("Click boutton", "ok");
 
-        if (handlerMorpion.isFinish()) {
+        if (handlerMorpion.isWinner() || handlerMorpion.isEgality()) {
             Intent activity = new Intent(new Intent(this, SearchGameActivity.class));
             setResult(RESULT_OK, activity);
             finish();
@@ -134,14 +135,23 @@ import fr.upem.crazygame.searchgameactivity.SocketHandler;
                                 //turn become true when receive data
 
                                 //if the player win with this game
-                                if (handlerMorpion.isFinish()) {
+                                if (handlerMorpion.isWinner()) {
                                     Context context = getApplicationContext();
                                     CharSequence text = "Vous avez gagné";
                                     int duration = Toast.LENGTH_LONG;
 
                                     Toast toast = Toast.makeText(context, text, duration);
                                     toast.show();
-                                } else {
+                                } else if (handlerMorpion.isEgality()) {
+                                    Context context = getApplicationContext();
+                                    CharSequence text = "Egalité";
+                                    int duration = Toast.LENGTH_LONG;
+
+                                    Toast toast = Toast.makeText(context, text, duration);
+                                    toast.show();
+                                }
+
+                                else {
                                     this.handlerMorpion.waitOther();
                                 }
 

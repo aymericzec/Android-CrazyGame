@@ -67,15 +67,21 @@ public class AsyncTaskWaitOtherPlayer extends AsyncTask<Void,Void, Cell>{
             int x = cell.getX();
             int y = cell.getY();
 
-            handlerMorpion.playOtherPlayer(x, y);
+              handlerMorpion.playOtherPlayer(x, y);
             morpionActivity.putClickAdvsersary(x, y);
 
-            if (!handlerMorpion.isFinish()) {
+            if (!(handlerMorpion.isWinner() || handlerMorpion.isEgality())) {
                 morpionActivity.isYourTurn();
 
             } else {
                 Context context = morpionActivity.getApplicationContext();
-                CharSequence text = "Vous avez perdu";
+                CharSequence text;
+                if (handlerMorpion.isWinner()) {
+                   text = "Vous avez perdu";
+                } else {
+                    text = "Egalité";
+                }
+
                 int duration = Toast.LENGTH_LONG;
 
                 Toast toast = Toast.makeText(context, text, duration);

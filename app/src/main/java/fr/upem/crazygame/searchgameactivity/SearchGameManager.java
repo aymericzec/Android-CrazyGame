@@ -46,6 +46,7 @@ public class SearchGameManager {
         new Thread(new Runnable() {
             @Override
             public void run() {
+                Log.d("toto", "Recherche d'une partie");
                 //Read the response of server
                 try {
                     SearchGameManager.this.out.clear();

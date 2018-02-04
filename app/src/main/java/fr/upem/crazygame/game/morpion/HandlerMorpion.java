@@ -48,8 +48,12 @@ public class HandlerMorpion extends Handler {
         morpion.playAround(((this.morpionActivity.getCurrentPlayer() == Players.PLAYER1) ? Players.PLAYER2 : Players.PLAYER1),x, y);
     }
 
-    public boolean isFinish () {
+    public boolean isWinner () {
         return morpion.winner() != null;
+    }
+
+    public boolean isEgality () {
+        return morpion.isFinish();
     }
 
     /**
@@ -60,7 +64,15 @@ public class HandlerMorpion extends Handler {
      */
     public void sendCell(int i, int j) throws IOException {
         out.clear();
-        out.putInt(1);
+
+        if (morpion.isFinish()) {
+            out.putInt(2);
+        }
+         else {
+            out.putInt(1);
+        }
+
+
         out.putInt(i);
         out.putInt(j);
         out.flip();

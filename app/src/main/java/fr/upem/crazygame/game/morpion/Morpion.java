@@ -35,7 +35,7 @@ public class Morpion {
      */
     public boolean playAround (Players play, int x, int y) {
         if (x < 0 || x > 2 || y < 0 || y > 2) {
-            throw new IllegalArgumentException("x and y must be between 0 and 2" + x + " " + y);
+            throw new IllegalArgumentException("x and y must be between 0 and 2: " + x + " " + y);
         }
 
         if (gameBoard[x][y] != null) {
