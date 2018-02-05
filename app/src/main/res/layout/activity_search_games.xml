@@ -10,10 +10,12 @@
         android:layout_height="wrap_content"
         android:layout_weight="0"
         android:background="@android:color/white"
+        android:fontFamily="assets/font/ka.ttf"
         android:gravity="center"
         android:minHeight="70dp"
         android:text="Crazy Games !"
-        android:textColor="@android:color/background_dark" />
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/textView3"
