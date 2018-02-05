@@ -20,9 +20,20 @@ import fr.upem.crazygame.R;
  * Created by myfou on 15/01/2018.
  */
 
-public class SearchGameActivity extends Activity {
+public class SearchGameActivity extends ListActivity {
     private SearchGameSocketManager searchGameSocketManager;
     private ListView listView;
+
+    String[] games ={
+            "Morpion",
+            "LuckyEgg"
+    };
+
+    Integer[] img = {
+            R.drawable.sad1,
+            R.drawable.sad2
+    };
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -33,16 +44,16 @@ public class SearchGameActivity extends Activity {
             searchGameSocketManager = SearchGameSocketManager.createSearchGameSocketManager(this);
             //searchGameSocketManager.connectSocket("192.168.1.13", 8086);
             searchGameSocketManager.connectSocket("90.3.251.211", 1002);
+            searchGameSocketManager.connectSocket("192.168.1.13", 8086);
 
             listView = (ListView) findViewById(R.id.list_games);
+            listView = findViewById(android.R.id.list);
             Log.d("test", listView + "");
-            List<String> namesGame = new ArrayList<>();
-            namesGame.add("Morpion");
-            namesGame.add("LuckyEgg");
 
-            ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(SearchGameActivity.this, android.R.layout.simple_list_item_1, namesGame);
-            listView.setAdapter(arrayAdapter);
-
+            CustomListAdapter adapter = new
+                    CustomListAdapter(this, games, img);
+            listView=(ListView)findViewById(android.R.id.list);
+            listView.setAdapter(adapter);
             listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
