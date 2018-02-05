@@ -1,7 +1,6 @@
 package fr.upem.crazygame.searchgameactivity;
 
 import android.app.Activity;
-import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -47,7 +46,12 @@ public class SearchGameActivity extends ListActivity {
             searchGameSocketManager.connectSocket("90.3.251.211", 1002);
             searchGameSocketManager.connectSocket("192.168.1.13", 8086);
 
-            CustomListAdapter adapter = new CustomListAdapter(this, games, img);
+            listView = (ListView) findViewById(R.id.list_games);
+            listView = findViewById(android.R.id.list);
+            Log.d("test", listView + "");
+
+            CustomListAdapter adapter = new
+                    CustomListAdapter(this, games, img);
             listView=(ListView)findViewById(android.R.id.list);
             listView.setAdapter(adapter);
             listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -91,5 +95,7 @@ public class SearchGameActivity extends ListActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
     }
+
+
 }
 

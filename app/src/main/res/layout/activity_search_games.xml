@@ -10,12 +10,10 @@
         android:layout_height="wrap_content"
         android:layout_weight="0"
         android:background="@android:color/white"
-        android:fontFamily="@font/heroes_legend"
         android:gravity="center"
         android:minHeight="70dp"
         android:text="Crazy Games !"
-        android:textColor="@android:color/background_dark"
-        android:textSize="30sp" />
+        android:textColor="@android:color/background_dark" />
 
     <TextView
         android:id="@+id/textView3"
@@ -23,7 +21,6 @@
         android:layout_height="wrap_content"
         android:layout_weight="0"
         android:background="@android:color/white"
-        android:fontFamily="@font/comic_book"
         android:gravity="center_horizontal"
         android:minHeight="100dp"
         android:text="Selectionner le jeu auquel vous souhaitez jouer "
@@ -34,8 +31,5 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_weight="3"
-        android:background="@android:color/white"
-        android:divider="@color/primary_dark_material_dark"
-        android:dividerHeight="1dp"
-        android:listSelector="@color/accent_material_dark" />
+        android:background="@android:color/white" />
 </LinearLayout>
