@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -35,7 +34,7 @@ public class SearchGameActivity extends Activity {
             //searchGameSocketManager.connectSocket("192.168.1.13", 8086);
             searchGameSocketManager.connectSocket("90.3.251.211", 1002);
 
-            listView = findViewById(R.id.list_games);
+            listView = (ListView) findViewById(R.id.list_games);
             Log.d("test", listView + "");
             List<String> namesGame = new ArrayList<>();
             namesGame.add("Morpion");

@@ -1,11 +1,11 @@
 package fr.upem.crazygame.game.words;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
 
 import fr.upem.crazygame.R;
 
-public class WordsActivity extends AppCompatActivity {
+public class WordsActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

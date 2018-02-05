@@ -1,9 +1,9 @@
  package fr.upem.crazygame.game.morpion;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -18,7 +18,7 @@ import fr.upem.crazygame.game.Players;
 import fr.upem.crazygame.searchgameactivity.SearchGameActivity;
 import fr.upem.crazygame.searchgameactivity.SocketHandler;
 
- public class MorpionActivity extends AppCompatActivity {
+ public class MorpionActivity extends Activity {
     private final static int NUMBER_CELL = 3;
 
     private HandlerMorpion handlerMorpion;
@@ -86,9 +86,9 @@ import fr.upem.crazygame.searchgameactivity.SocketHandler;
         //Init UI
         initButton();
 
-        playerLeft = findViewById(R.id.player1);
+      /*  playerLeft = findViewById(R.id.player1);
         playerRight = findViewById(R.id.player2);
-        messageBottom = findViewById(R.id.round);
+        messageBottom = findViewById(R.id.round);*/
 
         isTurn = begin.equals(1);
 
@@ -191,17 +191,17 @@ import fr.upem.crazygame.searchgameactivity.SocketHandler;
      * Init the gameBoard
      */
     public void initButton () {
-        cases[0][0] = findViewById(R.id.button0);
-        cases[0][1] = findViewById(R.id.button1);
-        cases[0][2] = findViewById(R.id.button2);
+        cases[0][0] = (Button) findViewById(R.id.button0);
+        cases[0][1] = (Button) findViewById(R.id.button1);
+        cases[0][2] = (Button) findViewById(R.id.button2);
 
-        cases[1][0] = findViewById(R.id.button3);
-        cases[1][1] = findViewById(R.id.button4);
-        cases[1][2] = findViewById(R.id.button5);
+        cases[1][0] = (Button) findViewById(R.id.button3);
+        cases[1][1] = (Button) findViewById(R.id.button4);
+        cases[1][2] = (Button) findViewById(R.id.button5);
 
-        cases[2][0] = findViewById(R.id.button6);
-        cases[2][1] = findViewById(R.id.button7);
-        cases[2][2] = findViewById(R.id.button8);
+        cases[2][0] = (Button) findViewById(R.id.button6);
+        cases[2][1] = (Button) findViewById(R.id.button7);
+        cases[2][2] = (Button) findViewById(R.id.button8);
     }
 
     public Button[][] getCases() {

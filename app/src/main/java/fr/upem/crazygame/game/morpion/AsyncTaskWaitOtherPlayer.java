@@ -39,7 +39,8 @@ public class AsyncTaskWaitOtherPlayer extends AsyncTask<Void,Void, Cell>{
 
         //Wait the response of other player
         try {
-            bb.limit(Integer.BYTES * 3);
+            //bb.limit(Integer.BYTES * 3);
+            bb.limit(4 * 3);
             Log.d("ReadFully", "tranquille");
             if (ByteBufferManager.readFully(sc, bb)) {
                 bb.flip();

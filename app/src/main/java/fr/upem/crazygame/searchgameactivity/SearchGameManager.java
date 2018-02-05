@@ -50,7 +50,8 @@ public class SearchGameManager {
                 //Read the response of server
                 try {
                     SearchGameManager.this.out.clear();
-                    SearchGameManager.this.out.limit(Integer.BYTES*2);
+                    //SearchGameManager.this.out.limit(Integer.BYTES*2);
+                    SearchGameManager.this.out.limit(4*2);
                     if (ByteBufferManager.readFully(SearchGameManager.this.socketChannel, SearchGameManager.this.out)) {
                         SearchGameManager.this.out.flip();
                         int action = SearchGameManager.this.out.getInt(); //must be 1 to say, game found
@@ -66,7 +67,8 @@ public class SearchGameManager {
                             String name = CharsetServer.CHARSET_UTF_8.decode(SearchGameManager.this.out).toString();
 
                             SearchGameManager.this.out.compact();
-                            SearchGameManager.this.out.limit(Integer.BYTES);
+                            //SearchGameManager.this.out.limit(Integer.BYTES);
+                            SearchGameManager.this.out.limit(4);
                             if (ByteBufferManager.readFully(SearchGameManager.this.socketChannel, SearchGameManager.this.out)) {
                                 SearchGameManager.this.out.flip();
                                 final int whoBegin = SearchGameManager.this.out.getInt();
