@@ -1,0 +1,23 @@
+<resources>
+    <declare-styleable name="FontTextView">
+
+        <attr name="customFont" format="enum">
+            <enum name="OpenSans_Bold" value="0" />
+            <enum name="OpenSans_BoldItalic" value="1" />
+            <enum name="OpenSans_CondBold" value="2" />
+            <enum name="OpenSans_CondLight" value="3" />
+            <enum name="OpenSans_CondLightItalic" value="4" />
+            <enum name="OpenSans_ExtraBold" value="5" />
+            <enum name="OpenSans_ExtraBoldItalic" value="6" />
+            <enum name="OpenSans_Italic" value="7" />
+            <enum name="OpenSans_Light" value="8" />
+            <enum name="OpenSans_LightItalic" value="9" />
+            <enum name="OpenSans_Regular" value="10" />
+            <enum name="OpenSans_Semibold" value="11" />
+            <enum name="OpenSans_SemiboldItalic" value="12" />
+            <enum name="Audiowide_Regular" value="13" />
+
+        </attr>
+
+    </declare-styleable>
+</resources>
