@@ -6,9 +6,11 @@ import android.util.Log;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
+import java.util.Locale;
 
 import fr.upem.crazygame.bytebuffer_manager.ByteBufferManager;
 import fr.upem.crazygame.charset.CharsetServer;
+import fr.upem.crazygame.game.mixwords.MixWordActivity;
 import fr.upem.crazygame.game.morpion.MorpionActivity;
 
 /**
@@ -31,9 +33,10 @@ public class SearchGameManager {
         this.in.putInt(1);
         ByteBuffer tmp = CharsetServer.CHARSET_UTF_8.encode(nameGame);
         Log.d("Longuer de " + nameGame, tmp.position() + " " + tmp.limit());
-        this.in.putInt(tmp.limit());
-        this.in.put(tmp);
-
+        this.in.putInt(tmp.limit()); //lenght name game
+        this.in.put(tmp); //name game
+        this.in.putInt(2);
+        this.in.put(CharsetServer.CHARSET_UTF_8.encode(Locale.getDefault().getLanguage()));//fr en...
         this.in.flip();
 
         this.socketChannel.write(this.in);
@@ -66,21 +69,19 @@ public class SearchGameManager {
                             SearchGameManager.this.out.flip();
                             String name = CharsetServer.CHARSET_UTF_8.decode(SearchGameManager.this.out).toString();
 
-                            SearchGameManager.this.out.compact();
-                            //SearchGameManager.this.out.limit(Integer.BYTES);
-                            SearchGameManager.this.out.limit(4);
-                            if (ByteBufferManager.readFully(SearchGameManager.this.socketChannel, SearchGameManager.this.out)) {
-                                SearchGameManager.this.out.flip();
-                                final int whoBegin = SearchGameManager.this.out.getInt();
-                                Log.d("toto2", name + " " + whoBegin);
-                                SearchGameManager.this.out.compact();
-                                Log.d("Partie trouvé", "Partie trouvé");
-                                //Launch Activity
-                                Intent intent = new Intent(SearchGameManager.this.searchGameActivity, MorpionActivity.class);
-                                intent.putExtra("begin", whoBegin);
-                                SocketHandler.setSocket(socketChannel);
-                                SearchGameManager.this.searchGameActivity.launchGameActivity(intent);
+                            //Switch between name game
+                            switch (name) {
+                                case "Morpion":
+                                    launchMorpion();
+                                    break;
+                                case "MixWord":
+                                    launchMixWord();
+                                    break;
+                                default:
+                                    break;
                             }
+
+
 
                         }
                     }
@@ -89,6 +90,49 @@ public class SearchGameManager {
                 }
             }
         }).start();
+    }
+
+    private void launchMorpion () throws IOException {
+        SearchGameManager.this.out.compact();
+        //SearchGameManager.this.out.limit(Integer.BYTES);
+        SearchGameManager.this.out.limit(4);
+        if (ByteBufferManager.readFully(SearchGameManager.this.socketChannel, SearchGameManager.this.out)) {
+            SearchGameManager.this.out.flip();
+            final int whoBegin = SearchGameManager.this.out.getInt();
+            SearchGameManager.this.out.compact();
+            Log.d("Partie trouvé Morpion", "Partie trouvé");
+            //Launch Activity
+            Intent intent = new Intent(SearchGameManager.this.searchGameActivity, MorpionActivity.class);
+            intent.putExtra("begin", whoBegin);
+            SocketHandler.setSocket(socketChannel);
+            SearchGameManager.this.searchGameActivity.launchGameActivity(intent);
+        }
+    }
+
+    private void launchMixWord () throws IOException {
+        SearchGameManager.this.out.compact();
+        //SearchGameManager.this.out.limit(Integer.BYTES);
+        SearchGameManager.this.out.limit(4);
+        if (ByteBufferManager.readFully(SearchGameManager.this.socketChannel, SearchGameManager.this.out)) {
+            SearchGameManager.this.out.flip();
+            final int lengthWord = SearchGameManager.this.out.getInt();
+            SearchGameManager.this.out.compact();
+            SearchGameManager.this.out.limit(lengthWord);
+
+            if (ByteBufferManager.readFully(SearchGameManager.this.socketChannel, SearchGameManager.this.out)) {
+                Log.d("Partie trouvé MixWord", "Partie trouvé");
+                SearchGameManager.this.out.flip();
+                String word =   CharsetServer.CHARSET_UTF_8.decode(SearchGameManager.this.out).toString();
+                //Launch Activity
+                Intent intent = new Intent(SearchGameManager.this.searchGameActivity, MixWordActivity.class);
+                intent.putExtra("wordSearch", word);
+                SocketHandler.setSocket(socketChannel);
+                SearchGameManager.this.searchGameActivity.launchGameActivity(intent);
+            }
+
+
+
+        }
     }
 
 }
