@@ -14,7 +14,7 @@
         android:fontFamily="@font/nightmachine"
         android:gravity="center"
         android:minHeight="100dp"
-        android:text="Crazy Games !"
+        android:text="@string/app_name"
         android:textColor="#0489B1"
         android:textSize="40sp" />
 
@@ -27,7 +27,7 @@
         android:fontFamily="@font/comic_book"
         android:gravity="center_horizontal"
         android:minHeight="50dp"
-        android:text="Selectionner le jeu auquel vous souhaitez jouer "
+        android:text="@string/description"
         android:textColor="@color/material_blue_grey_900" />
 
     <ListView

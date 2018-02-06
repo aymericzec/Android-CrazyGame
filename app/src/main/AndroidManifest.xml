@@ -8,15 +8,20 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
-        <activity android:name=".searchgameactivity.SearchGameActivity">
+        <activity android:name=".game.morpion.MorpionActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity android:name=".game.morpion.MorpionActivity" />
         <activity android:name=".game.mixwords.MixWordActivity"></activity>
+=======
+
+       <!-- <activity android:name=".game.morpion.MorpionActivity"></activity> -->
+>>>>>>> c8c3e7c8e9990b9b1180ea4df6dc5fcbb65bcd84
     </application>
 
 </manifest>

@@ -3,6 +3,8 @@
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -20,7 +22,6 @@ import fr.upem.crazygame.searchgameactivity.SocketHandler;
 
  public class MorpionActivity extends Activity {
     private final static int NUMBER_CELL = 3;
-
     private HandlerMorpion handlerMorpion;
     private SocketChannel sc;
     private Button[][] cases = new Button[NUMBER_CELL][NUMBER_CELL];
@@ -39,61 +40,65 @@ import fr.upem.crazygame.searchgameactivity.SocketHandler;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_morpion);
+
         //getInformation();
-
-        Intent i = getIntent();
-
-        int begin = i.getIntExtra("begin", 0);
-
-        if (begin == 1) {
-            isTurn = true;
-            isBegin = true;
-            currentPlayer = Players.PLAYER1;
-        } else {
-            isBegin = false;
-            currentPlayer = Players.PLAYER2;
-
-        }
-        sc = SocketHandler.getSocket();
-
-
         initButton();
+        initGraphic();
 
-        if (begin == 1) {
-            handlerMorpion = new HandlerMorpion (sc, this, new Morpion(Players.PLAYER1, currentPlayer));
-        } else {
-            handlerMorpion = new HandlerMorpion (sc, this, new Morpion(Players.PLAYER2, currentPlayer));
-            handlerMorpion.waitOther();
-        }
-
-        Log.d("Test ", begin + " " + SocketHandler.getSocket());
+        //Log.d("Test ", begin + " " + SocketHandler.getSocket());
     }
 
      @Override
      protected void onResume() {
          super.onResume();
+     }
 
+     public void initGraphic() {
+         Typeface nightFont = Typeface.createFromAsset(getAssets(),"font/nightmachine.otf");
+         Typeface comicFont = Typeface.createFromAsset(getAssets(),"font/comic_book.otf");
+
+         TextView nameGame = (TextView) findViewById(R.id.nameGame);
+         nameGame.setTypeface(nightFont);
+
+         playerLeft = (TextView) findViewById(R.id.playerLeft);
+         playerLeft.setTypeface(comicFont);
+
+         playerRight = (TextView) findViewById(R.id.playerRight);
+         playerRight.setTypeface(comicFont);
+
+         messageBottom = (TextView) findViewById(R.id.messageBottom);
+         messageBottom.setTypeface(comicFont);
+
+         if (currentPlayer == Players.PLAYER1){
+             playerLeft.setText(R.string.player1);
+             playerRight.setText(R.string.player2);
+         }else {
+             playerRight.setText(R.string.player1);
+             playerLeft.setText(R.string.player2);
+         }
      }
 
      /**
      * Init and launch the game
      */
     public void getInformation() {
-        Intent intent = getIntent();
-        Players begin = (Players) intent.getSerializableExtra("playerBegin");
-        currentPlayer = (Players) intent.getSerializableExtra("playerCurrent");
+        Intent i = getIntent();
 
-        //Init UI
-        initButton();
-
-      /*  playerLeft = findViewById(R.id.player1);
-        playerRight = findViewById(R.id.player2);
-        messageBottom = findViewById(R.id.round);*/
-
-        isTurn = begin.equals(1);
-
-        handlerMorpion = new HandlerMorpion (sc, this, new Morpion(begin, currentPlayer));
+        sc = SocketHandler.getSocket();
+        int begin = i.getIntExtra("begin", 0);
+        if (begin == 1) {
+            isTurn = true;
+            isBegin = true;
+            currentPlayer = Players.PLAYER1;
+            handlerMorpion = new HandlerMorpion (sc, this, new Morpion(Players.PLAYER1, currentPlayer));
+        } else {
+            isBegin = false;
+            currentPlayer = Players.PLAYER2;
+            handlerMorpion = new HandlerMorpion (sc, this, new Morpion(Players.PLAYER2, currentPlayer));
+            handlerMorpion.waitOther();
+        }
     }
+
 
     /**
      * Return the player who must play choose by the server
@@ -109,6 +114,8 @@ import fr.upem.crazygame.searchgameactivity.SocketHandler;
         }
 
         if (isTurn) {
+            myTurnGraphic();
+
             Button b = (Button) view;
 
             Log.d("Click boutton ok", "ok");
@@ -170,10 +177,12 @@ import fr.upem.crazygame.searchgameactivity.SocketHandler;
                     }
                 }
             }
+        }else{
+            notMyTurnGraphic();
         }
     }
 
-     public void isYourTurn () {
+     public void setYourTurn () {
         isTurn = true;
     }
 
@@ -185,6 +194,18 @@ import fr.upem.crazygame.searchgameactivity.SocketHandler;
         }
 
     }
+
+    public void myTurnGraphic(){
+        playerLeft.setTextColor(Color.parseColor("#0489B1"));
+        playerRight.setTextColor(getResources().getColor(R.color.material_blue_grey_900));
+        messageBottom.setText(R.string.messageBottomPlay);
+    }
+
+     public void notMyTurnGraphic(){
+         playerRight.setTextColor(Color.parseColor("#0489B1"));
+         playerLeft.setTextColor(getResources().getColor(R.color.material_blue_grey_900));
+         messageBottom.setText(R.string.messageBottomWait);
+     }
 
 
     /**

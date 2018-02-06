@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CrazyGame</string>
+    <string name="description">What game do you want to play?</string>
+    <string name="morpion_name">Morpion</string>
+    <string name="player1">Player 1</string>
+    <string name="player2">Player 2</string>
+    <string name="messageBottomWait">Wait ....</string>
+    <string name="messageBottomPlay">It\'s your turn !</string>
+</resources>

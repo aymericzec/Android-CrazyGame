@@ -47,7 +47,6 @@ public class SearchGameActivity extends ListActivity {
 
         try {
             searchGameSocketManager = SearchGameSocketManager.createSearchGameSocketManager(this);
-            //searchGameSocketManager.connectSocket("192.168.1.13", 8086);
             searchGameSocketManager.connectSocket("90.3.251.211", 1002);
             //searchGameSocketManager.connectSocket("192.168.1.13", 8086);
 
