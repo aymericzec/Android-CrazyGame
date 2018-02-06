@@ -42,6 +42,7 @@ public class SearchGameActivity extends ListActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_games);
+        initGraphic();
 
         try {
             searchGameSocketManager = SearchGameSocketManager.createSearchGameSocketManager(this);
@@ -49,14 +50,8 @@ public class SearchGameActivity extends ListActivity {
             searchGameSocketManager.connectSocket("90.3.251.211", 1002);
             searchGameSocketManager.connectSocket("192.168.1.13", 8086);
 
-            //listView = (ListView) findViewById(R.id.list_games);
             listView = (ListView)findViewById(android.R.id.list);
             Log.d("test", listView + "");
-
-            TextView t2 = (TextView) findViewById(R.id.textView2);
-
-            Typeface type = Typeface.createFromAsset(getAssets(),"font/heroes_legend.ttf");
-            t2.setTypeface(type);
 
             CustomListAdapter adapter = new
                     CustomListAdapter(this, games, img);
@@ -72,6 +67,18 @@ public class SearchGameActivity extends ListActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public void initGraphic (){
+        Typeface comic_book = Typeface.createFromAsset(getAssets(),"font/comic_book.otf");
+        Typeface adventure = Typeface.createFromAsset(getAssets(),"font/adventure.otf");
+        Typeface heros = Typeface.createFromAsset(getAssets(),"font/nightmachine.otf");
+
+        TextView nameGame = (TextView) findViewById(R.id.nameGame);
+        nameGame.setTypeface(heros);
+
+        TextView description = (TextView) findViewById(R.id.description);
+        description.setTypeface(comic_book);
     }
 
     /**
