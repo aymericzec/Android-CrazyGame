@@ -41,7 +41,7 @@ import fr.upem.crazygame.searchgameactivity.SocketHandler;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_morpion);
 
-        //getInformation();
+        getInformation();
         initButton();
         initGraphic();
 

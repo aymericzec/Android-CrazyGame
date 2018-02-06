@@ -28,15 +28,14 @@ public class SearchGameActivity extends ListActivity {
     private ListView listView;
 
     String[] games ={
-            "Morpion",
-            "LuckyEgg"
+            getResources().getString(R.string.morpion_name),
+            getResources().getString(R.string.mixWord_name)
     };
 
     Integer[] img = {
             R.drawable.sad1,
             R.drawable.sad2
     };
-
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

@@ -4,6 +4,7 @@
     <string name="app_name">CrazyGame</string>
     <string name="description">What game do you want to play?</string>
     <string name="morpion_name">Morpion</string>
+    <string name="mixWord_name">MixWord</string>
     <string name="player1">Player 1</string>
     <string name="player2">Player 2</string>
     <string name="messageBottomWait">Wait ....</string>

@@ -3,6 +3,7 @@
     <string name="app_name">CrazyGame</string>
     <string name="description">Selectionner le jeu à lequel vous souhaitez jouer</string>
     <string name="morpion_name">Morpion</string>
+    <string name="mixWord_name">MixWord</string>
     <string name="player1">Joueur 1</string>
     <string name="player2">Joueur 2</string>
     <string name="messageBottomWait">Attendez ....</string>
