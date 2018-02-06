@@ -72,7 +72,7 @@ public class AsyncTaskWaitOtherPlayer extends AsyncTask<Void,Void, Cell>{
             morpionActivity.putClickAdvsersary(x, y);
 
             if (!(handlerMorpion.isWinner() || handlerMorpion.isEgality())) {
-                morpionActivity.isYourTurn();
+                morpionActivity.setYourTurn();
 
             } else {
                 Context context = morpionActivity.getApplicationContext();
