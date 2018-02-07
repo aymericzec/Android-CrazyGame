@@ -225,26 +225,6 @@ import fr.upem.crazygame.searchgameactivity.SocketHandler;
         cases[2][2] = (Button) findViewById(R.id.button8);
     }
 
-    public Button[][] getCases() {
-        return cases;
-    }
-
-    public SocketChannel getSc() {
-        return sc;
-    }
-
-    public TextView getPlayerLeft() {
-        return playerLeft;
-    }
-
-    public TextView getPlayerRight() {
-        return playerRight;
-    }
-
-    public TextView getMessageBottom() {
-        return messageBottom;
-    }
-
     public Players getCurrentPlayer() {
         return currentPlayer;
     }
