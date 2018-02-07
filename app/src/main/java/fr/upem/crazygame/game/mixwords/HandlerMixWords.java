@@ -1,14 +1,10 @@
 package fr.upem.crazygame.game.mixwords;
 
-import org.apache.http.entity.ByteArrayEntity;
-
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
-import java.nio.charset.Charset;
 
 import fr.upem.crazygame.charset.CharsetServer;
-import fr.upem.crazygame.game.morpion.AsyncTaskWaitResult;
 
 /**
  * Created by myfou on 06/02/2018.
@@ -20,13 +16,13 @@ public class HandlerMixWords {
     private ByteBuffer out = ByteBuffer.allocate(128);
     private MixWords mixWords;
     private boolean waitResult = false;
-    private AsyncTaskWaitResult asyncTaskWaitResult;
+    private AsyncTaskWaitResult asyncTaskWaitOtherPlayerMixWords;
 
 
-    public HandlerMixWords(SocketChannel sc, MixWords mixWords) {
+    public HandlerMixWords(SocketChannel sc, MixWords mixWords, MixWordActivity mixWordActivity) {
         this.sc = sc;
         this.mixWords = mixWords;
-        this.asyncTaskWaitResult = new AsyncTaskWaitResult();
+        this.asyncTaskWaitOtherPlayerMixWords = new AsyncTaskWaitResult(sc, this, mixWordActivity);
     }
 
     public void sendWord(String word) throws IOException {

@@ -23,13 +23,13 @@ import fr.upem.crazygame.game.morpion.MorpionActivity;
 /**
  * Wait the result of adversary if he win before us the the game finish
  */
-public class AsyncTaskWaitOtherPlayerMixWords extends AsyncTask<Void,Void, Void>{
+public class AsyncTaskWaitResult extends AsyncTask<Void,Void, Players>{
 
     private final SocketChannel sc;
     private final HandlerMixWords handlerMixWords;
     private final MixWordActivity mixWordActivity;
 
-    public AsyncTaskWaitOtherPlayerMixWords(SocketChannel sc, HandlerMixWords handlerMixWords, MixWordActivity mixWordActivity) {
+    public AsyncTaskWaitResult(SocketChannel sc, HandlerMixWords handlerMixWords, MixWordActivity mixWordActivity) {
         this.sc = sc;
         this.handlerMixWords = handlerMixWords;
         this.mixWordActivity = mixWordActivity;
@@ -37,7 +37,7 @@ public class AsyncTaskWaitOtherPlayerMixWords extends AsyncTask<Void,Void, Void>
 
 
     @Override
-    protected Void doInBackground(Void... voids) {
+    protected Players doInBackground(Void... voids) {
         ByteBuffer bb = ByteBuffer.allocate(1024);
 
         int idRequest;
@@ -74,11 +74,15 @@ public class AsyncTaskWaitOtherPlayerMixWords extends AsyncTask<Void,Void, Void>
                     } else if (idRequest == 3) {
 
                     }
+
+                    return Players.PLAYER1;
                 }
             }
         } catch (IOException e) {
             //Loose connexion with the other client
             e.printStackTrace();
         }
+
+        return null;
     }
 }
