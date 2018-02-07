@@ -1,11 +1,16 @@
 package fr.upem.crazygame.searchgameactivity;
 
 import android.os.StrictMode;
+import android.util.Log;
 
 import java.io.IOException;
 import java.io.Serializable;
 import java.net.InetSocketAddress;
+import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
+import java.util.Locale;
+
+import fr.upem.crazygame.charset.CharsetServer;
 
 /**
  * Created by myfou on 31/01/2018.
@@ -36,6 +41,7 @@ public class SearchGameSocketManager implements Serializable {
                 public void run() {
                     try {
                         sc.connect(serverAddressTmp);
+                        sendLanguage();
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
@@ -55,5 +61,24 @@ public class SearchGameSocketManager implements Serializable {
         }
 
         return null;
+    }
+
+
+    /**
+     * Send the language of device, first request
+     */
+    private void sendLanguage () throws IOException {
+        ByteBuffer in = ByteBuffer.allocate(16);
+
+
+        ByteBuffer buffer = CharsetServer.CHARSET_UTF_8.encode(Locale.getDefault().getLanguage());
+        Log.d("Envoie Name Language de ", buffer.limit() + "");
+        in.putInt(buffer.limit());
+
+        in.put(buffer);//fr en...
+
+        Log.d("Envoie Name Language de ", Locale.getDefault().getLanguage());
+        in.flip();
+        sc.write(in);
     }
 }

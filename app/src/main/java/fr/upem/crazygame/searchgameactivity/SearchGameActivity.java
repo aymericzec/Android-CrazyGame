@@ -14,10 +14,14 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import java.io.IOException;
+import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 import fr.upem.crazygame.R;
+import fr.upem.crazygame.bytebuffer_manager.ByteBufferManager;
+import fr.upem.crazygame.charset.CharsetServer;
 
 /**
  * Created by myfou on 15/01/2018.
@@ -35,7 +39,8 @@ public class SearchGameActivity extends ListActivity {
 
     Integer[] img = {
             R.drawable.sad1,
-            R.drawable.sad2
+            R.drawable.sad2,
+            R.drawable.sad3
     };
 
 
@@ -100,6 +105,8 @@ public class SearchGameActivity extends ListActivity {
             Log.d("Connecté", nameGame + " est lancé");
         }
     }
+
+
 
     public void launchGameActivity (Intent intent) {
         Log.d("Socket envoye ", SocketHandler.getSocket() + "");

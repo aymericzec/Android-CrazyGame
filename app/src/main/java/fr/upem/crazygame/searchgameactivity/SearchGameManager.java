@@ -35,8 +35,6 @@ public class SearchGameManager {
         Log.d("Longuer de " + nameGame, tmp.position() + " " + tmp.limit());
         this.in.putInt(tmp.limit()); //lenght name game
         this.in.put(tmp); //name game
-        this.in.putInt(2);
-        this.in.put(CharsetServer.CHARSET_UTF_8.encode(Locale.getDefault().getLanguage()));//fr en...
         this.in.flip();
 
         this.socketChannel.write(this.in);
@@ -129,10 +127,6 @@ public class SearchGameManager {
                 SocketHandler.setSocket(socketChannel);
                 SearchGameManager.this.searchGameActivity.launchGameActivity(intent);
             }
-
-
-
         }
     }
-
 }

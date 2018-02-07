@@ -41,9 +41,11 @@ import fr.upem.crazygame.searchgameactivity.SocketHandler;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_morpion);
 
-        //getInformation();
+
         initButton();
+        getInformation();
         initGraphic();
+
 
         //Log.d("Test ", begin + " " + SocketHandler.getSocket());
     }
@@ -223,26 +225,6 @@ import fr.upem.crazygame.searchgameactivity.SocketHandler;
         cases[2][0] = (Button) findViewById(R.id.button6);
         cases[2][1] = (Button) findViewById(R.id.button7);
         cases[2][2] = (Button) findViewById(R.id.button8);
-    }
-
-    public Button[][] getCases() {
-        return cases;
-    }
-
-    public SocketChannel getSc() {
-        return sc;
-    }
-
-    public TextView getPlayerLeft() {
-        return playerLeft;
-    }
-
-    public TextView getPlayerRight() {
-        return playerRight;
-    }
-
-    public TextView getMessageBottom() {
-        return messageBottom;
     }
 
     public Players getCurrentPlayer() {

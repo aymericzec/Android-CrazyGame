@@ -2,6 +2,7 @@ package fr.upem.crazygame.game.mixwords;
 
 import java.nio.charset.Charset;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -37,5 +38,9 @@ public class MixWords {
 
     public void removeCaracter (int i) {
         wordOrder[i] = null;
+    }
+
+    public String getWord () {
+        return Arrays.toString(wordOrder);
     }
 }
