@@ -2,15 +2,18 @@ package fr.upem.crazygame.game.mixwords;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
+
 import fr.upem.crazygame.R;
+import fr.upem.crazygame.searchgameactivity.SocketHandler;
 
 public class MixWordActivity extends Activity {
-
     private Button[] keypad;
     private Button[] keypadTop;
+    private HandlerMixWords handlerMixWords;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +24,9 @@ public class MixWordActivity extends Activity {
 
         initKeypadTop(word.length());
         initKeypadBottom(word);
+
+        MixWords mixWords = new MixWords(word);
+        this.handlerMixWords = new HandlerMixWords(SocketHandler.getSocket(), mixWords, this);
     }
 
     public void initKeypadTop(int letters) {
@@ -29,6 +35,21 @@ public class MixWordActivity extends Activity {
         for (int i = 0; i < letters; i++) {
             Button button = new Button(this);
             keypadTop[i] = button;
+            keypadTop[i].setClickable(false);
+            keypadTop[i].setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Button b = (Button) view;
+                    int i = 0;
+                    for (;i < keypadTop.length; i++) {
+                        if (b.equals(keypadTop[i])) {
+                            break;
+                        }
+                    }
+
+                    MixWordActivity.this.handlerMixWords.removeLetter(keypad, b, i);
+                }
+            });
             linearKeyPadTop.addView(button);
         }
     }

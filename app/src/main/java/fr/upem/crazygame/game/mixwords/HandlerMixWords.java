@@ -1,5 +1,7 @@
 package fr.upem.crazygame.game.mixwords;
 
+import android.widget.Button;
+
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
@@ -41,5 +43,22 @@ public class HandlerMixWords {
 
     public void receiveResult () {
         waitResult = false;
+    }
+
+    public void addLetter(Button keypadTop[], Button click) {
+        String letter = click.getText().toString();
+        int i = mixWords.addCaracter(letter);
+        keypadTop[i].setText(letter);
+        keypadTop[i].setClickable(true);
+        click.setText("");
+        click.setClickable(false);
+    }
+
+    public void removeLetter(Button keypadBottom[], Button click, int i) {
+        mixWords.removeCaracter(i);
+        keypadBottom[i].setText(click.getText());
+        keypadBottom[i].setClickable(true);
+        click.setText("");
+        click.setClickable(false);
     }
 }
