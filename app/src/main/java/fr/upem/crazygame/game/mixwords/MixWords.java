@@ -43,6 +43,12 @@ public class MixWords {
     }
 
     public String getWord () {
-        return Arrays.toString(wordOrder);
+        StringBuilder sb = new StringBuilder();
+
+        for (String s: wordOrder) {
+            sb.append(s);
+        }
+
+        return sb.toString();
     }
 }

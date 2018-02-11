@@ -28,6 +28,7 @@ public class AsyncTaskWaitResult extends AsyncTask<Void,Void, Players>{
     private final SocketChannel sc;
     private final HandlerMixWords handlerMixWords;
     private final MixWordActivity mixWordActivity;
+    private String word = null;
 
     public AsyncTaskWaitResult(SocketChannel sc, HandlerMixWords handlerMixWords, MixWordActivity mixWordActivity) {
         this.sc = sc;
@@ -38,7 +39,7 @@ public class AsyncTaskWaitResult extends AsyncTask<Void,Void, Players>{
 
     @Override
     protected Players doInBackground(Void... voids) {
-        ByteBuffer bb = ByteBuffer.allocate(1024);
+        ByteBuffer bb = ByteBuffer.allocate(64);
 
         int idRequest;
         int i = 0;
@@ -53,10 +54,10 @@ public class AsyncTaskWaitResult extends AsyncTask<Void,Void, Players>{
                 if (ByteBufferManager.readFully(sc, bb)) {
                     bb.flip();
                     idRequest = bb.getInt();
-
-                    //1 = You Win, 2 = Adversay found Word
+                    Log.d("Idrequest", idRequest + "");
+                    //1 = You Win, 2 = Adversay found Word, 3 Bad Word
                     if (idRequest == 1) {
-                        break;
+                        return Players.PLAYER1;
                     } else if (idRequest == 2) {
                         bb.clear();
                         bb.limit(4);
@@ -68,14 +69,20 @@ public class AsyncTaskWaitResult extends AsyncTask<Void,Void, Players>{
                             bb.limit(l);
                             if (ByteBufferManager.readFully(sc, bb)) {
                                 bb.flip();
-                                String word = CharsetServer.CHARSET_UTF_8.decode(bb).toString();
+                                this.word = CharsetServer.CHARSET_UTF_8.decode(bb).toString();
+                                Log.d("Perdu", "Perdu");
+                                return Players.PLAYER2;
+
                             }
                         }
                     } else if (idRequest == 3) {
-
+                        Log.d("Pas le bon mot", "Ce n'est pas le bon");
+                    }
+                    bb.clear();
+                    if (idRequest == 3) {
+                        handlerMixWords.receiveResult();
                     }
 
-                    return Players.PLAYER1;
                 }
             }
         } catch (IOException e) {
@@ -84,5 +91,12 @@ public class AsyncTaskWaitResult extends AsyncTask<Void,Void, Players>{
         }
 
         return null;
+    }
+
+    @Override
+    protected void onPostExecute(Players players) {
+        super.onPostExecute(players);
+
+        mixWordActivity.endGame();
     }
 }

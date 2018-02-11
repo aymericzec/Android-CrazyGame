@@ -1,5 +1,6 @@
 package fr.upem.crazygame.game.mixwords;
 
+import android.util.Log;
 import android.widget.Button;
 
 import java.io.IOException;
@@ -18,24 +19,26 @@ public class HandlerMixWords {
     private ByteBuffer out = ByteBuffer.allocate(128);
     private MixWords mixWords;
     private boolean waitResult = false;
-    private AsyncTaskWaitResult asyncTaskWaitOtherPlayerMixWords;
+    private AsyncTaskWaitResult asyncTaskWaitResult;
 
 
     public HandlerMixWords(SocketChannel sc, MixWords mixWords, MixWordActivity mixWordActivity) {
         this.sc = sc;
         this.mixWords = mixWords;
-        this.asyncTaskWaitOtherPlayerMixWords = new AsyncTaskWaitResult(sc, this, mixWordActivity);
+        this.asyncTaskWaitResult = new AsyncTaskWaitResult(sc, this, mixWordActivity);
+        this.asyncTaskWaitResult.execute();
     }
 
-    public void sendWord(String word) throws IOException {
+    public void sendWord() throws IOException {
         if (!waitResult) {
             out.clear();
 
-            ByteBuffer byteBuffer = CharsetServer.CHARSET_UTF_8.encode(word);
+            ByteBuffer byteBuffer = CharsetServer.CHARSET_UTF_8.encode(mixWords.getWord());
 
             out.putInt(byteBuffer.limit());
             out.put(byteBuffer);
             out.flip();
+            Log.d("Envoie d'un mot", mixWords.getWord());
             sc.write(out);
             waitResult = true;
         }
@@ -45,20 +48,31 @@ public class HandlerMixWords {
         waitResult = false;
     }
 
-    public void addLetter(Button keypadTop[], Button click) {
-        String letter = click.getText().toString();
-        int i = mixWords.addCaracter(letter);
-        keypadTop[i].setText(letter);
-        keypadTop[i].setClickable(true);
-        click.setText("");
-        click.setClickable(false);
+    public void waitRequest () {
+        asyncTaskWaitResult.execute();
     }
 
-    public void removeLetter(Button keypadBottom[], Button click, int i) {
+    public void addLetter(Button clickBottom, Button [] topButtons) {
+        String letter = clickBottom.getText().toString();
+        int i = mixWords.addCaracter(letter);
+        topButtons[i].setText(letter);
+        topButtons[i].setClickable(true);
+        clickBottom.setText("");
+        clickBottom.setClickable(false);
+    }
+
+    public void removeLetter(Button clickButton, Button[] bottomButtons, int i) {
         mixWords.removeCaracter(i);
-        keypadBottom[i].setText(click.getText());
-        keypadBottom[i].setClickable(true);
-        click.setText("");
-        click.setClickable(false);
+        int j;
+
+        for (j = 0; j < bottomButtons.length; j++) {
+            if (bottomButtons[j].getText().equals("")) {
+                break;
+            }
+        }
+        bottomButtons[j].setText(clickButton.getText());
+        bottomButtons[j].setClickable(true);
+        clickButton.setText("");
+        clickButton.setClickable(false);
     }
 }
