@@ -24,16 +24,18 @@ public class MixWords {
         keyboard = mixWord.split("");
     }
 
-    public void addCaracter (String c) {
+    public int addCaracter (String c) {
         int i = 0;
 
         for(String letter : wordOrder) {
             if(letter == null) {
                  wordOrder[i] = c;
-                 break;
+                 return i;
             }
             i++;
         }
+
+        return -1;
     }
 
     public void removeCaracter (int i) {
@@ -41,6 +43,12 @@ public class MixWords {
     }
 
     public String getWord () {
-        return Arrays.toString(wordOrder);
+        StringBuilder sb = new StringBuilder();
+
+        for (String s: wordOrder) {
+            sb.append(s);
+        }
+
+        return sb.toString();
     }
 }

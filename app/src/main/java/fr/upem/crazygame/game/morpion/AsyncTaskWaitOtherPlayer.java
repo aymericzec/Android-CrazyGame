@@ -16,13 +16,13 @@ import fr.upem.crazygame.game.Players;
  * Created by myfou on 16/01/2018.
  */
 
-public class AsyncTaskWaitResult extends AsyncTask<Void,Void, Cell>{
+public class AsyncTaskWaitOtherPlayer extends AsyncTask<Void,Void, Cell>{
 
     private final SocketChannel sc;
     private final HandlerMorpion handlerMorpion;
     private final MorpionActivity morpionActivity;
 
-    public AsyncTaskWaitResult(SocketChannel sc, HandlerMorpion handlerMorpion, MorpionActivity morpionActivity) {
+    public AsyncTaskWaitOtherPlayer(SocketChannel sc, HandlerMorpion handlerMorpion, MorpionActivity morpionActivity) {
         this.sc = sc;
         this.handlerMorpion = handlerMorpion;
         this.morpionActivity = morpionActivity;

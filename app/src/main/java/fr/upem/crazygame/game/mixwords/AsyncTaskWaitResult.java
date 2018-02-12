@@ -23,13 +23,14 @@ import fr.upem.crazygame.game.morpion.MorpionActivity;
 /**
  * Wait the result of adversary if he win before us the the game finish
  */
-public class AsyncTaskWaitOtherPlayerMixWords extends AsyncTask<Void,Void, Void>{
+public class AsyncTaskWaitResult extends AsyncTask<Void,Void, Players>{
 
     private final SocketChannel sc;
     private final HandlerMixWords handlerMixWords;
     private final MixWordActivity mixWordActivity;
+    private String word = null;
 
-    public AsyncTaskWaitOtherPlayerMixWords(SocketChannel sc, HandlerMixWords handlerMixWords, MixWordActivity mixWordActivity) {
+    public AsyncTaskWaitResult(SocketChannel sc, HandlerMixWords handlerMixWords, MixWordActivity mixWordActivity) {
         this.sc = sc;
         this.handlerMixWords = handlerMixWords;
         this.mixWordActivity = mixWordActivity;
@@ -37,8 +38,8 @@ public class AsyncTaskWaitOtherPlayerMixWords extends AsyncTask<Void,Void, Void>
 
 
     @Override
-    protected Void doInBackground(Void... voids) {
-        ByteBuffer bb = ByteBuffer.allocate(1024);
+    protected Players doInBackground(Void... voids) {
+        ByteBuffer bb = ByteBuffer.allocate(64);
 
         int idRequest;
         int i = 0;
@@ -53,10 +54,10 @@ public class AsyncTaskWaitOtherPlayerMixWords extends AsyncTask<Void,Void, Void>
                 if (ByteBufferManager.readFully(sc, bb)) {
                     bb.flip();
                     idRequest = bb.getInt();
-
-                    //1 = You Win, 2 = Adversay found Word
+                    Log.d("Idrequest", idRequest + "");
+                    //1 = You Win, 2 = Adversay found Word, 3 Bad Word
                     if (idRequest == 1) {
-                        break;
+                        return Players.PLAYER1;
                     } else if (idRequest == 2) {
                         bb.clear();
                         bb.limit(4);
@@ -68,17 +69,34 @@ public class AsyncTaskWaitOtherPlayerMixWords extends AsyncTask<Void,Void, Void>
                             bb.limit(l);
                             if (ByteBufferManager.readFully(sc, bb)) {
                                 bb.flip();
-                                String word = CharsetServer.CHARSET_UTF_8.decode(bb).toString();
+                                this.word = CharsetServer.CHARSET_UTF_8.decode(bb).toString();
+                                Log.d("Perdu", "Perdu");
+                                return Players.PLAYER2;
+
                             }
                         }
                     } else if (idRequest == 3) {
-
+                        Log.d("Pas le bon mot", "Ce n'est pas le bon");
                     }
+                    bb.clear();
+                    if (idRequest == 3) {
+                        handlerMixWords.receiveResult();
+                    }
+
                 }
             }
         } catch (IOException e) {
             //Loose connexion with the other client
             e.printStackTrace();
         }
+
+        return null;
+    }
+
+    @Override
+    protected void onPostExecute(Players players) {
+        super.onPostExecute(players);
+
+        mixWordActivity.endGame();
     }
 }

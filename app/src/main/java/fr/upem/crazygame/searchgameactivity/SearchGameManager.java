@@ -113,19 +113,28 @@ public class SearchGameManager {
         SearchGameManager.this.out.limit(4);
         if (ByteBufferManager.readFully(SearchGameManager.this.socketChannel, SearchGameManager.this.out)) {
             SearchGameManager.this.out.flip();
-            final int lengthWord = SearchGameManager.this.out.getInt();
+            int playerBegin = SearchGameManager.this.out.getInt(); //pas d'importance pour ce jeux
+            Log.d("Player qui commence", playerBegin + "");
             SearchGameManager.this.out.compact();
-            SearchGameManager.this.out.limit(lengthWord);
-
+            SearchGameManager.this.out.limit(4);
             if (ByteBufferManager.readFully(SearchGameManager.this.socketChannel, SearchGameManager.this.out)) {
-                Log.d("Partie trouvé MixWord", "Partie trouvé");
                 SearchGameManager.this.out.flip();
-                String word =   CharsetServer.CHARSET_UTF_8.decode(SearchGameManager.this.out).toString();
-                //Launch Activity
-                Intent intent = new Intent(SearchGameManager.this.searchGameActivity, MixWordActivity.class);
-                intent.putExtra("wordSearch", word);
-                SocketHandler.setSocket(socketChannel);
-                SearchGameManager.this.searchGameActivity.launchGameActivity(intent);
+                final int lengthWord = SearchGameManager.this.out.getInt();
+                Log.d("Longueur du mot", lengthWord + "");
+                SearchGameManager.this.out.compact();
+                SearchGameManager.this.out.limit(lengthWord);
+
+                if (ByteBufferManager.readFully(SearchGameManager.this.socketChannel, SearchGameManager.this.out)) {
+                    Log.d("Partie trouvé MixWord", "Partie trouvé");
+                    SearchGameManager.this.out.flip();
+                    String word = CharsetServer.CHARSET_UTF_8.decode(SearchGameManager.this.out).toString();
+                    Log.d("Mot", word);
+                    //Launch Activity
+                    Intent intent = new Intent(SearchGameManager.this.searchGameActivity, MixWordActivity.class);
+                    intent.putExtra("wordSearch", word);
+                    SocketHandler.setSocket(socketChannel);
+                    SearchGameManager.this.searchGameActivity.launchGameActivity(intent);
+                }
             }
         }
     }
