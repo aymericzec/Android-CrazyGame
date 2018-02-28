@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BDBDBD"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/nameGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="#151515"
+        android:fontFamily="@font/nightmachine"
+        android:gravity="center"
+        android:minHeight="100dp"
+        android:text="@string/app_name"
+        android:textColor="#0489B1"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="#BDBDBD"
+        android:fontFamily="@font/comic_book"
+        android:gravity="center_horizontal"
+        android:minHeight="50dp"
+        android:text="@string/description"
+        android:textColor="@color/material_blue_grey_900" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:background="#BDBDBD"
+        android:divider="@android:color/white"
+        android:dividerHeight="1dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Service test"
+        android:id="@+id/serviceBtn"
+        />
+</LinearLayout>

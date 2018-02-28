@@ -66,17 +66,18 @@
     </LinearLayout>
 
     <TableLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="0dp"
         android:layout_marginLeft="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginTop="0dp"
         android:layout_weight="6"
-        android:paddingBottom="50dp"
+        android:minWidth="150dp"
+        android:paddingBottom="80dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:paddingTop="50dp">
+        android:paddingTop="80dp">
 
         <TableRow
             android:layout_width="match_parent"
@@ -92,6 +93,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@android:color/white"
+                android:minHeight="150dp"
+                android:minWidth="100dp"
                 android:onClick="clickCell"
                 android:textColor="@android:color/black" />
 
@@ -102,6 +105,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#A9F5D0"
+                android:minHeight="150dp"
+                android:minWidth="100dp"
                 android:onClick="clickCell"
                 android:textColor="@android:color/black" />
 
@@ -112,6 +117,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@android:color/white"
+                android:minHeight="150dp"
+                android:minWidth="100dp"
                 android:onClick="clickCell"
                 android:textColor="@android:color/black" />
         </TableRow>
@@ -130,6 +137,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#A9F5D0"
+                android:minHeight="150dp"
+                android:minWidth="100dp"
                 android:onClick="clickCell"
                 android:textColor="@android:color/black" />
 
@@ -140,6 +149,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@android:color/white"
+                android:minHeight="150dp"
+                android:minWidth="100dp"
                 android:onClick="clickCell"
                 android:textColor="@android:color/black" />
 
@@ -150,6 +161,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#A9F5D0"
+                android:minHeight="150dp"
+                android:minWidth="100dp"
                 android:onClick="clickCell"
                 android:textColor="@android:color/black" />
         </TableRow>
@@ -168,6 +181,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@android:color/white"
+                android:minHeight="150dp"
+                android:minWidth="100dp"
                 android:onClick="clickCell"
                 android:textColor="@android:color/black" />
 
@@ -178,6 +193,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#A9F5D0"
+                android:minHeight="150dp"
+                android:minWidth="100dp"
                 android:onClick="clickCell"
                 android:textColor="@android:color/black" />
 
@@ -188,6 +205,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@android:color/white"
+                android:minHeight="150dp"
+                android:minWidth="100dp"
                 android:onClick="clickCell"
                 android:textColor="@android:color/black" />
         </TableRow>

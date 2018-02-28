@@ -1,27 +1,24 @@
 package fr.upem.crazygame.searchgameactivity;
 
-import android.app.Activity;
 import android.app.ListActivity;
+import android.content.ContentProvider;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import java.io.IOException;
-import java.nio.ByteBuffer;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
 
 import fr.upem.crazygame.R;
-import fr.upem.crazygame.bytebuffer_manager.ByteBufferManager;
-import fr.upem.crazygame.charset.CharsetServer;
+import fr.upem.crazygame.chat.ContentProviderExempleActivity;
+import fr.upem.crazygame.chat.chatService;
 
 /**
  * Created by myfou on 15/01/2018.
@@ -30,10 +27,14 @@ import fr.upem.crazygame.charset.CharsetServer;
 public class SearchGameActivity extends ListActivity {
     private SearchGameSocketManager searchGameSocketManager;
     private ListView listView;
+    private String TAG = SearchGameActivity.class.getSimpleName();
+    float initialX, initialY;
 
     String[] games ={
-            getResources().getString(R.string.morpion_name),
-            getResources().getString(R.string.mixWord_name)
+            //getResources().getString(R.string.morpion_name),
+            //getResources().getString(R.string.mixWord_name)
+            "Morpion",
+            "MixWord"
     };
 
     Integer[] img = {
@@ -56,8 +57,8 @@ public class SearchGameActivity extends ListActivity {
             listView = (ListView)findViewById(android.R.id.list);
             Log.d("test", listView + "");
 
-            CustomListAdapter adapter = new
-                    CustomListAdapter(this, games, img);
+            CustomListSearchGame adapter = new
+                    CustomListSearchGame(this, games, img);
             listView=(ListView)findViewById(android.R.id.list);
             listView.setAdapter(adapter);
             listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -65,11 +66,26 @@ public class SearchGameActivity extends ListActivity {
                 public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                     clickSearchGame((String) adapterView.getItemAtPosition(i));
                 }
-            });
 
+
+            });
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        /* Test Service */
+        /*
+        Button serviceBtn = (Button) findViewById(R.id.serviceBtn);
+        serviceBtn.setOnClickListener( new View.OnClickListener()
+        {
+
+            @Override
+            public void onClick(View actuelView)
+            {
+                startService(new Intent(SearchGameActivity.this, chatService.class));
+            }
+        });
+        */
     }
 
     public void initGraphic (){
@@ -99,12 +115,9 @@ public class SearchGameActivity extends ListActivity {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-
             Log.d("Connecté", nameGame + " est lancé");
         }
     }
-
-
 
     public void launchGameActivity (Intent intent) {
         Log.d("Socket envoye ", SocketHandler.getSocket() + "");
@@ -116,6 +129,61 @@ public class SearchGameActivity extends ListActivity {
         super.onActivityResult(requestCode, resultCode, data);
     }
 
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        //mGestureDetector.onTouchEvent(event);
 
+        int action = event.getActionMasked();
+
+        switch (action) {
+
+            case MotionEvent.ACTION_DOWN:
+                initialX = event.getX();
+                initialY = event.getY();
+
+                Log.d(TAG, "Action was DOWN");
+                break;
+
+            case MotionEvent.ACTION_MOVE:
+                Log.d(TAG, "Action was MOVE");
+                break;
+
+            case MotionEvent.ACTION_UP:
+                float finalX = event.getX();
+                float finalY = event.getY();
+
+                Intent intent = new Intent(SearchGameActivity.this, ContentProviderExempleActivity.class);
+                Log.d(TAG, "Action was UP");
+
+                if (initialX < finalX) {
+                    Log.d(TAG, "Left to Right swipe performed");
+                    startActivity(intent);
+                }
+
+                if (initialX > finalX) {
+                    Log.d(TAG, "Right to Left swipe performed");
+                    startActivity(intent);
+                }
+
+                if (initialY < finalY) {
+                    Log.d(TAG, "Up to Down swipe performed");
+                }
+
+                if (initialY > finalY) {
+                    Log.d(TAG, "Down to Up swipe performed");
+                }
+
+                break;
+
+            case MotionEvent.ACTION_CANCEL:
+                Log.d(TAG,"Action was CANCEL");
+                break;
+
+            case MotionEvent.ACTION_OUTSIDE:
+                Log.d(TAG, "Movement occurred outside bounds of current screen element");
+                break;
+        }
+        return SearchGameActivity.super.onTouchEvent(event);
+    }
 }
 

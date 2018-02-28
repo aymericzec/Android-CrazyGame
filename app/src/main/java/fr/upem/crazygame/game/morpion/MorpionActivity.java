@@ -44,8 +44,6 @@ import fr.upem.crazygame.searchgameactivity.SocketHandler;
         getInformation();
         initButton();
         initGraphic();
-
-        //Log.d("Test ", begin + " " + SocketHandler.getSocket());
     }
 
      @Override

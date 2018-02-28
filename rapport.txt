@@ -1,0 +1,154 @@
+﻿https://elearning.u-pem.fr/mod/page/view.php?id=63893
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Développement d’un application Android : Crazy Game !
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MOREAU Ameline
+ZECCHINI Aymeric
+VIERA NORO Kevin
+
+
+SOMMAIRE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DEVELOPPEMENT DU PROJET
+
+	
+	Ce projet fut développer sous android studio 3,0,1 avec 
+version android : 
+version APK :
+
+	
+	MULTILANGUE
+	CrazyGame ! Est disponible en français ainsi qu’en anglais. La langue de notre application s’applique en fonction de le langue par défaut du téléphone. 
+	Pour permettre à notre application d’être multi langue, nous avons utilisé le fichier string.xml. Se fichier se décline en deux string.xml, l’un contenant les champs en francais et l’autre contenant ces même champs en anglais.
+
+	LES LAYOUT
+	Image des layout au format portait et paysage.
+	Montrer sous différents format.
+
+	ASSET
+	Afin de rendre notre application plus « fun » nous avons utiliser des font et image dans nos layout. 
+	Les différents font utilisés sont situés dans res>font. On initialise les font dans le code Java à la création de l’application en cours. 
+
+	Pour les images, elles sont situé dans le répertoire res>drawable. Les images sont appeler directement dans le code xml.
+	
+
+	CHANGEMENT D’ACTIVITE
+	schema de l’architecture du projet.
+
+
+
+	SERVICE
+
+
+
+	Broadcast receiver
+
+
+
+	SERVEUR
+	Parce que plus on est de fou, plus on rit, Crazy Games ! Est un jeu multioueur ! Pour cela nous avons développer un serveur annexe….
+Aymeric...
+
+	REPRISE DE L’ACTIVITE
+	En cas de rotation de l’écran le jeu n’est pas arreter.
+
+
+REPARTITION DU TRAVAIL
+	Nous avons utilisé GIT pour nous partager le code.
+
+	L’application est décomposer en plusieures partie (chaque jeu est independant), le serveur. Ainsi chacun pouvais développer une partie du projet.
+
+
+CONCLUSION
+
+Préciser la source des image et fonts

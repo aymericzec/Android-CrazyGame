@@ -1,0 +1,5 @@
+
+
+Mettre des fonts différentes de celles qui sont par defaut sous android
+    - on a du initialiser les font dans le code java, car les téléphone de les prenaient pas en
+    compte dans les layouts.

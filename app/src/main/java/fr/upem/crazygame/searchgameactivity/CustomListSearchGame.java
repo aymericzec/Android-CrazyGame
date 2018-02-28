@@ -1,7 +1,9 @@
 package fr.upem.crazygame.searchgameactivity;
 
 import android.app.Activity;
+import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -10,14 +12,14 @@ import android.widget.TextView;
 
 import fr.upem.crazygame.R;
 
-public class CustomListAdapter extends ArrayAdapter<String> {
+public class CustomListSearchGame extends ArrayAdapter<String> {
 
     private final Activity context;
     private final String[] itemname;
     private final Integer[] imgid;
 
-    public CustomListAdapter(Activity context, String[] itemname, Integer[] imgid) {
-        super(context, R.layout.row_layout, itemname);
+    public CustomListSearchGame(Activity context, String[] itemname, Integer[] imgid) {
+        super(context, R.layout.row_layout_searchgame, itemname);
         // TODO Auto-generated constructor stub
 
         this.context=context;
@@ -27,7 +29,7 @@ public class CustomListAdapter extends ArrayAdapter<String> {
 
     public View getView(int position,View view,ViewGroup parent) {
         LayoutInflater inflater=context.getLayoutInflater();
-        View rowView=inflater.inflate(R.layout.row_layout, null,true);
+        View rowView=inflater.inflate(R.layout.row_layout_searchgame, null,true);
 
         ImageView imageView = (ImageView) rowView.findViewById(R.id.icon);
         TextView extratxt = (TextView) rowView.findViewById(R.id.label);
@@ -35,6 +37,7 @@ public class CustomListAdapter extends ArrayAdapter<String> {
         imageView.setImageResource(imgid[position]);
         extratxt.setText(itemname[position]);
         return rowView;
-
     };
+
+
 }
