@@ -19,3 +19,7 @@ Faire en sorte que le bandeau de titre ai la meme taille pour toutes les activit
 
 BroadCast receiver quand on a pas internet  ??
 https://stackoverflow.com/questions/44007421/why-is-my-broadcast-receiver-not-working
+
+
+Service: Se lance au démarage avec brodacast et récupère une fois par heure les statistiques de jeux
+
