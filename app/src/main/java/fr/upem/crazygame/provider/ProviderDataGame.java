@@ -11,9 +11,7 @@ import android.support.annotation.Nullable;
 import android.util.Log;
 
 
-/**
- * Created by myfou on 03/03/2018.
- */
+
 
 public class ProviderDataGame extends ContentProvider {
 
@@ -28,13 +26,23 @@ public class ProviderDataGame extends ContentProvider {
     @Override
     public boolean onCreate() {
         dbHelper = new DatabaseHelper(getContext());
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+
+        db.execSQL("CREATE TABLE " + ProviderDataGame.CONTENT_PROVIDER_TABLE_NAME
+                + " (" + GameCrazyGameColumns.NAME_GAME + " VARCHAR(50),"
+                + GameCrazyGameColumns.GAME + " INTEGER,"
+                + GameCrazyGameColumns.GAME_WIN + " INTEGER,"
+                + GameCrazyGameColumns.GAME_LAST_PLAY + " INTEGER"
+                + ");");
         return true;
     }
 
     @Nullable
     @Override
-    public Cursor query(@NonNull Uri uri, @Nullable String[] strings, @Nullable String s, @Nullable String[] strings1, @Nullable String s1) {
-        return null;
+    public Cursor query(@NonNull Uri uri, @Nullable String[] columns, @Nullable String selection, @Nullable String[] selectionArgs, @Nullable String sortOrder) {
+        SQLiteDatabase db = dbHelper.getReadableDatabase();
+
+        return db.query(CONTENT_PROVIDER_TABLE_NAME, columns, selection, selectionArgs, null, null, sortOrder);
     }
 
     @Nullable

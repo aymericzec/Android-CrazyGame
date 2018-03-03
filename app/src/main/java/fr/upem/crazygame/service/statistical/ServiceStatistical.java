@@ -2,6 +2,7 @@ package fr.upem.crazygame.service.statistical;
 
 import android.app.Service;
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.IBinder;
 import android.support.annotation.Nullable;
 import android.widget.Toast;
@@ -12,6 +13,8 @@ import java.nio.channels.SocketChannel;
 import java.util.Locale;
 
 import fr.upem.crazygame.charset.CharsetServer;
+import fr.upem.crazygame.provider.GameCrazyGameColumns;
+import fr.upem.crazygame.provider.ProviderDataGame;
 
 
 public class ServiceStatistical extends Service {
@@ -40,7 +43,7 @@ public class ServiceStatistical extends Service {
         super.onDestroy();
     }
 
-    public void sendStatistics() throws IOException {
+    public void initSocketChanel() throws IOException {
 
         ByteBuffer in = ByteBuffer.allocate(2048);
 
@@ -60,14 +63,21 @@ public class ServiceStatistical extends Service {
             isExecuting = true;
 
             try {
-                sendStatistics();
+                initSocketChanel();
             } catch (IOException e) {
                 onDestroy();
             }
 
+            ProviderDataGame providerDataGame = new ProviderDataGame();
+            String [] columns = {GameCrazyGameColumns.NAME_GAME, GameCrazyGameColumns.GAME_LAST_PLAY};
+
             do {
                 try {
                     Thread.sleep(10000);
+                    Cursor cursor = providerDataGame.query(ProviderDataGame.CONTENT_URI, columns, null, null, null);
+
+                    //Parser le curseur
+
                 } catch (InterruptedException e) {
                     isExecuting = false;
                 }
