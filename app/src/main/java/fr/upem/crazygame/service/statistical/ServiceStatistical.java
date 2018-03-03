@@ -4,6 +4,7 @@ import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
 import android.support.annotation.Nullable;
+<<<<<<< HEAD
 import android.widget.Toast;
 
 import java.io.IOException;
@@ -18,11 +19,21 @@ public class ServiceStatistical extends Service {
 
     private boolean isExecuting = false;
 
+=======
+
+/**
+ * Created by myfou on 03/03/2018.
+ */
+
+public class ServiceStatistical extends Service {
+
+>>>>>>> 18c0a0da8d47c175ac05513e6e3c1d697c241762
     @Nullable
     @Override
     public IBinder onBind(Intent intent) {
         return null;
     }
+<<<<<<< HEAD
 
     @Override
     public void onCreate() {
@@ -75,4 +86,6 @@ public class ServiceStatistical extends Service {
             }while(isExecuting);
         }
     });
+=======
+>>>>>>> 18c0a0da8d47c175ac05513e6e3c1d697c241762
 }
