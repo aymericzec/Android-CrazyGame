@@ -6,6 +6,9 @@ import android.provider.BaseColumns;
 public class GameCrazyGameColumns implements BaseColumns {
     private GameCrazyGameColumns() {}
 
+    public static final String NAME_MORPION = "MORPION";
+    public static final String NAME_MIXWORD = "MIXWORD";
+
     public static final String NAME_GAME = "NAME";
     public static final String GAME = "PLAY";
     public static final String GAME_WIN = "WIN";

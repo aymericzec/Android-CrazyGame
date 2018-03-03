@@ -12,6 +12,8 @@ import android.widget.LinearLayout;
 import java.io.IOException;
 
 import fr.upem.crazygame.R;
+import fr.upem.crazygame.provider.GameCrazyGameColumns;
+import fr.upem.crazygame.provider.ProviderDataGame;
 import fr.upem.crazygame.searchgameactivity.SearchGameActivity;
 import fr.upem.crazygame.searchgameactivity.SocketHandler;
 
@@ -25,6 +27,7 @@ public class MixWordActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mix_word);
 
+        ProviderDataGame.addGame(GameCrazyGameColumns.NAME_MIXWORD, this);
         String word = getIntent().getStringExtra("wordSearch");
 
         initKeypadTop(word.length());

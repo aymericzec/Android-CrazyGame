@@ -11,6 +11,8 @@ import java.nio.channels.SocketChannel;
 
 import fr.upem.crazygame.bytebuffer_manager.ByteBufferManager;
 import fr.upem.crazygame.game.Players;
+import fr.upem.crazygame.provider.GameCrazyGameColumns;
+import fr.upem.crazygame.provider.ProviderDataGame;
 
 /**
  * Created by myfou on 16/01/2018.
@@ -78,6 +80,7 @@ public class AsyncTaskWaitOtherPlayer extends AsyncTask<Void,Void, Cell>{
                 Context context = morpionActivity.getApplicationContext();
                 CharSequence text;
                 if (handlerMorpion.isWinner()) {
+                    ProviderDataGame.addWinGame(GameCrazyGameColumns.NAME_MORPION, morpionActivity);
                    text = "Vous avez perdu";
                 } else {
                     text = "Egalité";

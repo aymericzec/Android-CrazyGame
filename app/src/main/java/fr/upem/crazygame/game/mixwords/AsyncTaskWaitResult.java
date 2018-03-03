@@ -15,6 +15,8 @@ import fr.upem.crazygame.game.Players;
 import fr.upem.crazygame.game.morpion.Cell;
 import fr.upem.crazygame.game.morpion.HandlerMorpion;
 import fr.upem.crazygame.game.morpion.MorpionActivity;
+import fr.upem.crazygame.provider.GameCrazyGameColumns;
+import fr.upem.crazygame.provider.ProviderDataGame;
 
 /**
  * Created by myfou on 16/01/2018.
@@ -57,6 +59,7 @@ public class AsyncTaskWaitResult extends AsyncTask<Void,Void, Players>{
                     Log.d("Idrequest", idRequest + "");
                     //1 = You Win, 2 = Adversay found Word, 3 Bad Word
                     if (idRequest == 1) {
+                        ProviderDataGame.addWinGame(GameCrazyGameColumns.NAME_MIXWORD, mixWordActivity);
                         return Players.PLAYER1;
                     } else if (idRequest == 2) {
                         bb.clear();

@@ -26,12 +26,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:mimeType="vnd.android.cursor.item/vnd.tutos.android.content.provider.cours" />
-
+                <data android:mimeType="vnd.android.cursor.item/vnd.tutos.android.content.provider.messages" />
             </intent-filter>
         </activity>
 
         <provider android:name=".chat.AndroidProvider"
             android:authorities="com.tutos.android.content.provider.tutosandroidprovider" />
+
+        <provider android:name=".provider.ProviderDataGame"
+            android:authorities="fr.upem.crazygame.provider.crazygameprovider" />
 
 
         <activity android:name=".game.morpion.MorpionActivity"></activity>

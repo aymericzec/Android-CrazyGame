@@ -17,6 +17,8 @@ import java.nio.channels.SocketChannel;
 
 import fr.upem.crazygame.R;
 import fr.upem.crazygame.game.Players;
+import fr.upem.crazygame.provider.GameCrazyGameColumns;
+import fr.upem.crazygame.provider.ProviderDataGame;
 import fr.upem.crazygame.searchgameactivity.SearchGameActivity;
 import fr.upem.crazygame.searchgameactivity.SocketHandler;
 
@@ -41,6 +43,7 @@ import fr.upem.crazygame.searchgameactivity.SocketHandler;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_morpion);
 
+        ProviderDataGame.addGame(GameCrazyGameColumns.NAME_MORPION, this);
         getInformation();
         initButton();
         initGraphic();

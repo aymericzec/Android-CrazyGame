@@ -1,5 +1,6 @@
 package fr.upem.crazygame.provider;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -22,6 +23,23 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     + GameCrazyGameColumns.GAME_WIN + " INTEGER,"
                     + GameCrazyGameColumns.GAME_LAST_PLAY + " INTEGER"
                     + ");");
+
+            //Initialise les lignes
+            ContentValues contentValuesMorpion = new ContentValues();
+            contentValuesMorpion.put(GameCrazyGameColumns.NAME_GAME, GameCrazyGameColumns.NAME_MORPION);
+            contentValuesMorpion.put(GameCrazyGameColumns.GAME, 0);
+            contentValuesMorpion.put(GameCrazyGameColumns.GAME_WIN, 0);
+            contentValuesMorpion.put(GameCrazyGameColumns.GAME_LAST_PLAY, 0);
+
+            db.insert(ProviderDataGame.CONTENT_PROVIDER_TABLE_NAME, null, contentValuesMorpion);
+
+            ContentValues contentValuesMixWord = new ContentValues();
+            contentValuesMixWord.put(GameCrazyGameColumns.NAME_GAME, GameCrazyGameColumns.NAME_MIXWORD);
+            contentValuesMixWord.put(GameCrazyGameColumns.GAME, 0);
+            contentValuesMixWord.put(GameCrazyGameColumns.GAME_WIN, 0);
+            contentValuesMixWord.put(GameCrazyGameColumns.GAME_LAST_PLAY, 0);
+
+            db.insert(ProviderDataGame.CONTENT_PROVIDER_TABLE_NAME, null, contentValuesMixWord);
         }
 
         // Cette méthode sert à gérer la montée de version de notre base

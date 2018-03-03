@@ -2,8 +2,11 @@ package fr.upem.crazygame.searchgameactivity;
 
 import android.app.ListActivity;
 import android.content.ContentProvider;
+import android.content.ContentValues;
 import android.content.Intent;
+import android.database.Cursor;
 import android.graphics.Typeface;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
@@ -14,11 +17,16 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import java.io.Console;
 import java.io.IOException;
 
 import fr.upem.crazygame.R;
+import fr.upem.crazygame.chat.AndroidProvider;
 import fr.upem.crazygame.chat.ContentProviderExempleActivity;
+import fr.upem.crazygame.chat.SharedInformation;
 import fr.upem.crazygame.chat.chatService;
+import fr.upem.crazygame.provider.GameCrazyGameColumns;
+import fr.upem.crazygame.provider.ProviderDataGame;
 
 /**
  * Created by myfou on 15/01/2018.
@@ -47,6 +55,7 @@ public class SearchGameActivity extends ListActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_games);
+
         initGraphic();
 
         try {
@@ -72,20 +81,6 @@ public class SearchGameActivity extends ListActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        /* Test Service */
-        /*
-        Button serviceBtn = (Button) findViewById(R.id.serviceBtn);
-        serviceBtn.setOnClickListener( new View.OnClickListener()
-        {
-
-            @Override
-            public void onClick(View actuelView)
-            {
-                startService(new Intent(SearchGameActivity.this, chatService.class));
-            }
-        });
-        */
     }
 
     public void initGraphic (){

@@ -3,6 +3,7 @@ package fr.upem.crazygame.provider;
 import android.content.ContentProvider;
 import android.content.ContentUris;
 import android.content.ContentValues;
+import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
@@ -10,45 +11,44 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.util.Log;
 
+import java.nio.ByteBuffer;
 
+import fr.upem.crazygame.charset.CharsetServer;
 
 
 public class ProviderDataGame extends ContentProvider {
-
     public static final Uri CONTENT_URI = Uri.parse("content://fr.upem.crazygame.provider.crazygameprovider");
     public static final String CONTENT_PROVIDER_DB_NAME = "crazygame.db";
     public static final int CONTENT_PROVIDER_DB_VERSION = 1;
     public static final String CONTENT_PROVIDER_TABLE_NAME = "statisticalDB";
-    public static final String CONTENT_PROVIDER_MIME = "vnd.android.cursor.item/vnd.tutos.android.content.provider.messages";
+    public static final String CONTENT_PROVIDER_MIME = "vnd.android.cursor.item/vnd.upem.crazygame.provider.crazygameprovider";
 
     public DatabaseHelper dbHelper;
 
     @Override
     public boolean onCreate() {
-        dbHelper = new DatabaseHelper(getContext());
-        SQLiteDatabase db = dbHelper.getWritableDatabase();
-
-        db.execSQL("CREATE TABLE " + ProviderDataGame.CONTENT_PROVIDER_TABLE_NAME
-                + " (" + GameCrazyGameColumns.NAME_GAME + " VARCHAR(50),"
-                + GameCrazyGameColumns.GAME + " INTEGER,"
-                + GameCrazyGameColumns.GAME_WIN + " INTEGER,"
-                + GameCrazyGameColumns.GAME_LAST_PLAY + " INTEGER"
-                + ");");
+        this.dbHelper = new DatabaseHelper(getContext());
         return true;
     }
 
     @Nullable
     @Override
     public Cursor query(@NonNull Uri uri, @Nullable String[] columns, @Nullable String selection, @Nullable String[] selectionArgs, @Nullable String sortOrder) {
+        long id = getId(uri);
         SQLiteDatabase db = dbHelper.getReadableDatabase();
+        if (id < 0) {
+            return  db.query(ProviderDataGame.CONTENT_PROVIDER_TABLE_NAME,
+                    columns, selection, selectionArgs, null, null,
+                    sortOrder);
+        }
 
-        return db.query(CONTENT_PROVIDER_TABLE_NAME, columns, selection, selectionArgs, null, null, sortOrder);
+        return null;
     }
 
     @Nullable
     @Override
     public String getType(@NonNull Uri uri) {
-        return null;
+        return ProviderDataGame.CONTENT_PROVIDER_MIME;
     }
 
     @Nullable
@@ -102,6 +102,38 @@ public class ProviderDataGame extends ContentProvider {
                         values, GameCrazyGameColumns.NAME_GAME + "=" + id, null);
         } finally {
             db.close();
+        }
+    }
+
+    public static void addGame (String nameGame, Context context) {
+        String [] columns = {GameCrazyGameColumns.NAME_GAME, GameCrazyGameColumns.GAME};
+
+        String selection = GameCrazyGameColumns.NAME_GAME + " = ?";
+        String [] selectionArgs = {nameGame};
+        Cursor cursor = context.getContentResolver().query(ProviderDataGame.CONTENT_URI, columns, selection, selectionArgs, null);
+
+        if (cursor.moveToFirst()) {
+            int value = cursor.getInt(cursor.getColumnIndex(GameCrazyGameColumns.GAME));
+            ContentValues mUpdateValues = new ContentValues();
+            mUpdateValues.put(GameCrazyGameColumns.GAME, value + 1);
+            String args[] = {nameGame};
+            context.getContentResolver().update(ProviderDataGame.CONTENT_URI, mUpdateValues, GameCrazyGameColumns.NAME_GAME + " = ?", args);
+        }
+    }
+
+    public static void addWinGame (String nameGame, Context context) {
+        String [] columns = {GameCrazyGameColumns.NAME_GAME, GameCrazyGameColumns.GAME};
+
+        String selection = GameCrazyGameColumns.NAME_GAME + " = ?";
+        String [] selectionArgs = {nameGame};
+        Cursor cursor = context.getContentResolver().query(ProviderDataGame.CONTENT_URI, columns, selection, selectionArgs, null);
+
+        if (cursor.moveToFirst()) {
+            int value = cursor.getInt(cursor.getColumnIndex(GameCrazyGameColumns.GAME_WIN));
+            ContentValues mUpdateValues = new ContentValues();
+            mUpdateValues.put(GameCrazyGameColumns.GAME_WIN, value + 1);
+            String args[] = {nameGame};
+            context.getContentResolver().update(ProviderDataGame.CONTENT_URI, mUpdateValues, GameCrazyGameColumns.NAME_GAME + " = ?", args);
         }
     }
 }

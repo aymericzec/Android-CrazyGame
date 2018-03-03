@@ -17,7 +17,32 @@ Développement d’un application Android : Crazy Game !
 
 
 
+Cursor cursor = getContentResolver().query(ProviderDataGame.CONTENT_URI, projections, null, null, null);
 
+        if (cursor.moveToFirst()) {
+            Log.d("Column", cursor.getColumnName(0));
+            do {
+                Log.d("TEST", cursor.getString(cursor.getColumnIndex(GameCrazyGameColumns.NAME_GAME)));
+                Log.d("TEST", cursor.getString(cursor.getColumnIndex(GameCrazyGameColumns.GAME_WIN)));
+            } while (cursor.moveToNext());
+        }
+
+        ContentValues mUpdateValues = new ContentValues();
+        mUpdateValues.put(GameCrazyGameColumns.GAME_WIN, 2);
+        String args[] = {GameCrazyGameColumns.NAME_MORPION};
+        getContentResolver().update(ProviderDataGame.CONTENT_URI, mUpdateValues, GameCrazyGameColumns.NAME_GAME + " = ?", args);
+
+
+       /* String columns[] = new String[]{GameCrazyGameColumns.NAME_GAME, GameCrazyGameColumns.GAME, GameCrazyGameColumns.GAME_WIN, GameCrazyGameColumns.GAME_LAST_PLAY};
+        Uri mContacts = ProviderDataGame.CONTENT_URI;
+        Cursor cur = managedQuery(mContacts, columns, null, null, null);
+
+        if (cur.moveToFirst()) {
+            String name = null;
+            do {
+                Log.d("TEST", cur.getString(cur.getColumnIndex(GameCrazyGameColumns.NAME_GAME)));
+            } while (cur.moveToNext());
+        }*/
 
 
 
