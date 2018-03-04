@@ -86,6 +86,7 @@ public class ServiceStatistical extends Service {
                                 byteBuffer.putInt(game);
                             } while (cursor.moveToNext());
 
+                            byteBuffer.putInt(400);
                             byteBuffer.flip();
                             sc.write(byteBuffer);
                             byteBuffer.clear();
