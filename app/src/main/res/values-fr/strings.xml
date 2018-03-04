@@ -8,4 +8,6 @@
     <string name="player2">Joueur 2</string>
     <string name="messageBottomWait">Attendez ....</string>
     <string name="messageBottomPlay">A vous de jouer !</string>
+    <string name="playedGame">Partie joué :</string>
+    <string name="winGame">Partie gagné :</string>
 </resources>

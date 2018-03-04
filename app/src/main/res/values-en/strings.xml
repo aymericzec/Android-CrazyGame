@@ -9,4 +9,6 @@
     <string name="player2">Player 2</string>
     <string name="messageBottomWait">Wait ....</string>
     <string name="messageBottomPlay">It\'s your turn !</string>
+    <string name="playedGame">Game played :</string>
+    <string name="winGame">Game won :</string>
 </resources>
