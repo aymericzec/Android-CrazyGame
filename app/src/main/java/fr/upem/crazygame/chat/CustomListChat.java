@@ -36,14 +36,14 @@ public class CustomListChat extends ArrayAdapter<String> {
             LayoutInflater inflater=context.getLayoutInflater();
             View rowView=inflater.inflate(R.layout.row_layout_chat, null,true);
 
-            TextView user = (TextView) rowView.findViewById(R.id.user);
+            /*TextView user = (TextView) rowView.findViewById(R.id.user);
             user.setText(users.get(position));
 
             TextView date = (TextView) rowView.findViewById(R.id.date);
             date.setText(dates.get(position));
 
             TextView message = (TextView) rowView.findViewById(R.id.message);
-            message.setText(messages.get(position));
+            message.setText(messages.get(position));*/
 
             return rowView;
         };

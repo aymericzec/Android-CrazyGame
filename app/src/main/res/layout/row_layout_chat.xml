@@ -10,7 +10,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/user"
+            android:id="@+id/nameGame"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -18,7 +18,7 @@
             android:text="Joueur 2" />
 
         <TextView
-            android:id="@+id/date"
+            android:id="@+id/gameTotal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -28,7 +28,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/message"
+        android:id="@+id/gameWin"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="20dp"
@@ -40,5 +40,6 @@
         android:textSize="18sp">
 
     </TextView>
+
 
 </LinearLayout>
