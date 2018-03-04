@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.text.Layout;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -39,7 +38,7 @@ public class ScoreActivity extends Activity {
             } while (cursor.moveToNext());
         }
 
-        ScoresAdaptater adapter = new ScoresAdaptater(this, R.layout.row_layout_chat, scores);
+        ScoresAdapter adapter = new ScoresAdapter(this, R.layout.row_layout_score, scores);
         ListView listView=(ListView)findViewById(R.id.listScores);
         listView.setAdapter(adapter);
     }

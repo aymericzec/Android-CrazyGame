@@ -1,32 +1,19 @@
 package fr.upem.crazygame.searchgameactivity;
 
 import android.app.ListActivity;
-import android.content.ContentProvider;
-import android.content.ContentValues;
 import android.content.Intent;
-import android.database.Cursor;
 import android.graphics.Typeface;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
-
-import java.io.Console;
 import java.io.IOException;
-
 import fr.upem.crazygame.R;
-import fr.upem.crazygame.chat.AndroidProvider;
-import fr.upem.crazygame.chat.ContentProviderExempleActivity;
-import fr.upem.crazygame.chat.SharedInformation;
-import fr.upem.crazygame.chat.chatService;
-import fr.upem.crazygame.provider.GameCrazyGameColumns;
-import fr.upem.crazygame.provider.ProviderDataGame;
+
 
 /**
  * Created by myfou on 15/01/2018.
@@ -147,7 +134,7 @@ public class SearchGameActivity extends ListActivity {
                 float finalX = event.getX();
                 float finalY = event.getY();
 
-                Intent intent = new Intent(SearchGameActivity.this, ContentProviderExempleActivity.class);
+                Intent intent = new Intent(SearchGameActivity.this, ScoreActivity.class);
                 Log.d(TAG, "Action was UP");
 
                 if (initialX < finalX) {
