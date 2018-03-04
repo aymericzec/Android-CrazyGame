@@ -5,8 +5,8 @@
 
     <ImageView
         android:id="@+id/icon"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginBottom="5dp"
         android:layout_marginLeft="6dp"
         android:layout_marginRight="6dp"
@@ -21,6 +21,8 @@
         android:layout_marginBottom="20dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
+        android:fontFamily="@font/comic_book"
+        android:gravity="center_vertical"
         android:text="text"
         android:textColor="@android:color/darker_gray"
         android:textSize="26sp"></TextView>

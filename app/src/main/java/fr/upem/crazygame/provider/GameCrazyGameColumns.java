@@ -13,7 +13,5 @@ public class GameCrazyGameColumns implements BaseColumns {
     public static final String GAME = "PLAY";
     public static final String GAME_WIN = "WIN";
     public static final String GAME_LAST_PLAY = "LAST_UPDATE_PLAY";
-
-
 }
 

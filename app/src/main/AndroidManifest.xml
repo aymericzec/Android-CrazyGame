@@ -24,7 +24,7 @@
 
         <activity android:name=".game.morpion.MorpionActivity"></activity>
         <activity android:name=".game.mixwords.MixWordActivity"></activity>
-        <activity android:name=".searchgameactivity.ScoreActivity"></activity>
+        <activity android:name=".Score.ScoreActivity"></activity>
 
 
         <receiver android:name=".service.statistical.broadCastReceiverBoot.BroadCastBoot">

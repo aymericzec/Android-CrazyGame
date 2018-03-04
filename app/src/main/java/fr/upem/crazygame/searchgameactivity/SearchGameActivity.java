@@ -1,6 +1,6 @@
 package fr.upem.crazygame.searchgameactivity;
 
-import android.app.ListActivity;
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -13,36 +13,28 @@ import android.widget.ListView;
 import android.widget.TextView;
 import java.io.IOException;
 import fr.upem.crazygame.R;
+import fr.upem.crazygame.Score.ScoreActivity;
 
 
 /**
  * Created by myfou on 15/01/2018.
  */
 
-public class SearchGameActivity extends ListActivity {
+public class SearchGameActivity extends Activity {
     private SearchGameSocketManager searchGameSocketManager;
     private ListView listView;
-    private String TAG = SearchGameActivity.class.getSimpleName();
-    float initialX, initialY;
-
-    String[] games ={
-            //getResources().getString(R.string.morpion_name),
-            //getResources().getString(R.string.mixWord_name)
-            "Morpion",
-            "MixWord"
-    };
-
-    Integer[] img = {
-            R.drawable.sad1,
-            R.drawable.sad2,
-            R.drawable.sad3
-    };
+    private final int nbGames = 2;
+    private String[] games = new String[nbGames];
+    private Integer[] img = new Integer[nbGames];
+    private float initialX;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_games);
 
+        initGames();
+        initImg();
         initGraphic();
 
         try {
@@ -51,7 +43,6 @@ public class SearchGameActivity extends ListActivity {
             //searchGameSocketManager.connectSocket("192.168.1.13", 8086);
 
             listView = (ListView)findViewById(android.R.id.list);
-            Log.d("test", listView + "");
 
             CustomListSearchGame adapter = new
                     CustomListSearchGame(this, games, img);
@@ -70,9 +61,18 @@ public class SearchGameActivity extends ListActivity {
         }
     }
 
+    private void initGames(){
+        games[0] = getResources().getString(R.string.morpion_name);
+        games[1] = getResources().getString(R.string.mixWord_name);
+    }
+
+    private void initImg(){
+        img[0] = R.drawable.sad1;
+        img[1] = R.drawable.sad1;
+    }
+
     public void initGraphic (){
         Typeface comic_book = Typeface.createFromAsset(getAssets(),"font/comic_book.otf");
-        Typeface adventure = Typeface.createFromAsset(getAssets(),"font/adventure.otf");
         Typeface heros = Typeface.createFromAsset(getAssets(),"font/nightmachine.otf");
 
         TextView nameGame = (TextView) findViewById(R.id.nameGame);
@@ -80,7 +80,11 @@ public class SearchGameActivity extends ListActivity {
 
         TextView description = (TextView) findViewById(R.id.description);
         description.setTypeface(comic_book);
+
+        TextView score = (TextView) findViewById(R.id.score);
+        score.setTypeface(comic_book);
     }
+
 
     /**
      * Init and send the bytebuffer for found a game
@@ -113,56 +117,24 @@ public class SearchGameActivity extends ListActivity {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        //mGestureDetector.onTouchEvent(event);
-
         int action = event.getActionMasked();
 
         switch (action) {
-
+            case MotionEvent.ACTION_MOVE:break;
+            case MotionEvent.ACTION_CANCEL:break;
+            case MotionEvent.ACTION_OUTSIDE:break;
             case MotionEvent.ACTION_DOWN:
                 initialX = event.getX();
-                initialY = event.getY();
-
-                Log.d(TAG, "Action was DOWN");
-                break;
-
-            case MotionEvent.ACTION_MOVE:
-                Log.d(TAG, "Action was MOVE");
                 break;
 
             case MotionEvent.ACTION_UP:
                 float finalX = event.getX();
-                float finalY = event.getY();
 
                 Intent intent = new Intent(SearchGameActivity.this, ScoreActivity.class);
-                Log.d(TAG, "Action was UP");
 
-                if (initialX < finalX) {
-                    Log.d(TAG, "Left to Right swipe performed");
+                if (initialX > 400 + finalX) {
                     startActivity(intent);
                 }
-
-                if (initialX > finalX) {
-                    Log.d(TAG, "Right to Left swipe performed");
-                    startActivity(intent);
-                }
-
-                if (initialY < finalY) {
-                    Log.d(TAG, "Up to Down swipe performed");
-                }
-
-                if (initialY > finalY) {
-                    Log.d(TAG, "Down to Up swipe performed");
-                }
-
-                break;
-
-            case MotionEvent.ACTION_CANCEL:
-                Log.d(TAG,"Action was CANCEL");
-                break;
-
-            case MotionEvent.ACTION_OUTSIDE:
-                Log.d(TAG, "Movement occurred outside bounds of current screen element");
                 break;
         }
         return SearchGameActivity.super.onTouchEvent(event);

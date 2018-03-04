@@ -22,7 +22,6 @@ public class ProviderDataGame extends ContentProvider {
     public static final int CONTENT_PROVIDER_DB_VERSION = 1;
     public static final String CONTENT_PROVIDER_TABLE_NAME = "statisticalDB";
     public static final String CONTENT_PROVIDER_MIME = "vnd.android.cursor.item/vnd.upem.crazygame.provider.crazygameprovider";
-
     public DatabaseHelper dbHelper;
 
     @Override

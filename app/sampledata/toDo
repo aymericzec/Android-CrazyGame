@@ -1,15 +1,10 @@
 
 - Faire la reprise du jeux apres rotation de l'ecrant.
 
-- CHAT : (le chat est commun à tous les utilisateur, on peut y deposer des message)
-        - interface du chat (ok)
-        - ajout d'un ContentProvider pour stocker les messages du chat (ok)
-        - ajout d'un service qui lance un toast lorsqu l'on recois un message sur la chat.
-        - ajouter dans searchGame
-getContext().getContentResolver().notifyChange(returnUri, null);
--> service qui dit quand quelqu'un est proche de vous !! (5m ou moin pour tester)
-
-tuto ContentProvider: http://www.tutos-android.com/contentprovider-android
+CONTENT PROVIDER : permet d'afficher les score du joueurs
+BROADCAST RECEIVER : lance un service qui s'accopue de récuperer les score du joueur
+SERVICE : permet de calculer les score du joureur
+        + fait des stat sur les jeux les plus jouer
 
 Mettre les champs en private !!!
 
@@ -17,7 +12,7 @@ Resoudre tous les warning des classe et des layout.
 
 Faire en sorte que le bandeau de titre ai la meme taille pour toutes les activité.
 
-BroadCast receiver quand on a pas internet  ??
+BroadCast receiver quand on a pas internet (en mode avion)  ??
 https://stackoverflow.com/questions/44007421/why-is-my-broadcast-receiver-not-working
 
 
