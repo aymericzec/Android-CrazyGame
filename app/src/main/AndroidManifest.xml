@@ -21,7 +21,6 @@
         <provider android:name=".provider.ProviderDataGame"
             android:authorities="fr.upem.crazygame.provider.crazygameprovider" />
 
-
         <activity android:name=".game.morpion.MorpionActivity"></activity>
         <activity android:name=".game.mixwords.MixWordActivity"></activity>
         <activity android:name=".Score.ScoreActivity"></activity>

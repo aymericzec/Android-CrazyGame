@@ -5,25 +5,26 @@ package fr.upem.crazygame.Score;
  */
 
 public class Score {
-    private final String nameGame;
-    private final int nbGamePlay;
-    private final int nbGameWin;
 
-    public Score (String nameGame, int nbGamePlay, int nbGameWin) {
-        this.nbGameWin = nbGameWin;
-        this.nbGamePlay = nbGamePlay;
-        this.nameGame = nameGame;
+    private final String name;
+    private final int game;
+    private final int gameWin;
+
+    public Score (String name, int game, int gameWin) {
+        this.gameWin = gameWin;
+        this.name = name;
+        this.game = game;
     }
 
     public int getGame() {
-        return nbGamePlay;
+        return game;
     }
 
     public int getGameWin() {
-        return nbGameWin;
+        return gameWin;
     }
 
     public String getName() {
-        return nameGame;
+        return name;
     }
 }

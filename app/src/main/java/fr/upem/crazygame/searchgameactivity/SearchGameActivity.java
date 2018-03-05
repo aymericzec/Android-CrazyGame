@@ -1,6 +1,6 @@
 package fr.upem.crazygame.searchgameactivity;
 
-import android.app.Activity;
+import android.app.ListActivity;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -20,13 +20,14 @@ import fr.upem.crazygame.Score.ScoreActivity;
  * Created by myfou on 15/01/2018.
  */
 
-public class SearchGameActivity extends Activity {
+public class SearchGameActivity extends ListActivity {
     private SearchGameSocketManager searchGameSocketManager;
     private ListView listView;
     private final int nbGames = 2;
     private String[] games = new String[nbGames];
     private Integer[] img = new Integer[nbGames];
     private float initialX;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -43,6 +44,7 @@ public class SearchGameActivity extends Activity {
             //searchGameSocketManager.connectSocket("192.168.1.13", 8086);
 
             listView = (ListView)findViewById(android.R.id.list);
+            Log.d("test", listView + "");
 
             CustomListSearchGame adapter = new
                     CustomListSearchGame(this, games, img);
@@ -84,7 +86,6 @@ public class SearchGameActivity extends Activity {
         TextView score = (TextView) findViewById(R.id.score);
         score.setTypeface(comic_book);
     }
-
 
     /**
      * Init and send the bytebuffer for found a game

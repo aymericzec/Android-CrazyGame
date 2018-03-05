@@ -1,6 +1,7 @@
 package fr.upem.crazygame.Score;
 
-import android.app.Activity;
+import android.content.Context;
+import android.graphics.Typeface;
 import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,32 +18,36 @@ import fr.upem.crazygame.R;
  */
 
 public class ScoresAdapter extends ArrayAdapter<Score> {
-    private List<Score> scores;
-    private final Activity context;
 
-    public ScoresAdapter(@NonNull Activity context, @NonNull List<Score> scores) {
-        super(context, R.layout.row_layout_score, scores);
+    private List<Score> scores;
+
+    public ScoresAdapter(@NonNull Context context, int resource, @NonNull List<Score> scores) {
+        super(context, resource, scores);
         this.scores = scores;
-        this.context = context;
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         Score score = getItem(position);
-
-        LayoutInflater inflater=context.getLayoutInflater();
-        View rowView=inflater.inflate(R.layout.row_layout_score, null,true);
-
+        // Check if an existing view is being reused, otherwise inflate the view
+        if (convertView == null) {
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.row_layout_score, parent, false);
+        }
         // Lookup view for data population
-        TextView txNameGame = (TextView) rowView.findViewById(R.id.nameGame);
-        TextView txScore = (TextView) rowView.findViewById(R.id.nbGamePlay);
-        TextView txScoreWin = (TextView) rowView.findViewById(R.id.nbGameWin);
+        TextView txNameGame = (TextView) convertView.findViewById(R.id.nameGame);
+        TextView txScore = (TextView) convertView.findViewById(R.id.nbGamePlay);
+        TextView txScoreWin = (TextView) convertView.findViewById(R.id.nbGameWin);
 
         txNameGame.setText(score.getName());
-        txScore.setText(score.getGame() + "");
-        txScoreWin.setText(score.getGameWin() + "");
+        txScore.setText(score.getGame() + " parties au total");
+        txScoreWin.setText(score.getGameWin() + " parties gagné");
+
+        Typeface comic_book = Typeface.createFromAsset(this.getContext().getAssets(),"font/comic_book.otf");
+        txNameGame.setTypeface(comic_book);
 
         // Return the completed view to render on screen
-        return rowView;
+        return convertView;
     }
+
+
 }
