@@ -44,12 +44,12 @@
 
         <TextView
             android:id="@+id/score"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:fontFamily="@font/comic_book"
             android:gravity="center"
-            android:text="Mes scores"
+            android:text="@string/score"
             android:textSize="24sp" />
 
         <ImageView
@@ -57,6 +57,7 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
+            android:contentDescription="@string/left_arrow"
             android:src="@drawable/left"></ImageView>
     </LinearLayout>
 </LinearLayout>

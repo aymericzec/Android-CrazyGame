@@ -13,4 +13,8 @@
     <string name="descriptionScore">Here are your statistics on CrazyGame</string>
     <string name="back">Go back</string>
 
+    <string name="right_arrow">right arrow</string>
+    <string name="left_arrow">left arrow</string>
+    <string name="score">My score</string>
+
 </resources>

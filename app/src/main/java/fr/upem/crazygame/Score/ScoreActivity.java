@@ -42,7 +42,6 @@ public class ScoreActivity extends Activity {
                 scores.add(new Score(nameGame, scoreTotal, scoreWin));
             } while (cursor.moveToNext());
         }
-
         ScoresAdapter adapter = new ScoresAdapter(this, R.layout.row_layout_score, scores);
         ListView listView=(ListView)findViewById(R.id.listScores);
         listView.setAdapter(adapter);
