@@ -1,19 +1,18 @@
 package fr.upem.crazygame.Score;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.database.Cursor;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.MotionEvent;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
-
 import fr.upem.crazygame.R;
 import fr.upem.crazygame.provider.GameCrazyGameColumns;
 import fr.upem.crazygame.provider.ProviderDataGame;
-import fr.upem.crazygame.searchgameactivity.SearchGameActivity;
 
 /**
  * Created by myfou on 04/03/2018.
@@ -26,6 +25,8 @@ public class ScoreActivity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scores);
+
+        initGraphic();
 
         ArrayList<Score> scores = new ArrayList<>();
 
@@ -45,6 +46,20 @@ public class ScoreActivity extends Activity {
         ScoresAdapter adapter = new ScoresAdapter(this, R.layout.row_layout_score, scores);
         ListView listView=(ListView)findViewById(R.id.listScores);
         listView.setAdapter(adapter);
+    }
+
+    private void initGraphic(){
+        Typeface comic_book = Typeface.createFromAsset(getAssets(),"font/comic_book.otf");
+        Typeface heros = Typeface.createFromAsset(getAssets(),"font/nightmachine.otf");
+
+        TextView nameGame = (TextView) findViewById(R.id.nameGame);
+        nameGame.setTypeface(heros);
+
+        TextView descriptionScore = (TextView) findViewById(R.id.descriptionScore);
+        descriptionScore.setTypeface(comic_book);
+
+        TextView back = (TextView) findViewById(R.id.back);
+        back.setTypeface(comic_book);
     }
 
 

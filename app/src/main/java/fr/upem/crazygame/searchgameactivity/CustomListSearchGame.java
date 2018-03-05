@@ -2,9 +2,7 @@ package fr.upem.crazygame.searchgameactivity;
 
 import android.app.Activity;
 import android.graphics.Typeface;
-import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -14,14 +12,12 @@ import android.widget.TextView;
 import fr.upem.crazygame.R;
 
 public class CustomListSearchGame extends ArrayAdapter<String> {
-
     private final Activity context;
     private final String[] itemname;
     private final Integer[] imgid;
 
     public CustomListSearchGame(Activity context, String[] itemname, Integer[] imgid) {
         super(context, R.layout.row_layout_searchgame, itemname);
-        // TODO Auto-generated constructor stub
 
         this.context=context;
         this.itemname=itemname;
@@ -41,6 +37,4 @@ public class CustomListSearchGame extends ArrayAdapter<String> {
         extratxt.setText(itemname[position]);
         return rowView;
     };
-
-
 }

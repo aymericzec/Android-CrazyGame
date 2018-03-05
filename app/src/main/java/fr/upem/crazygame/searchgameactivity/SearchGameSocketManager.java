@@ -2,14 +2,12 @@ package fr.upem.crazygame.searchgameactivity;
 
 import android.os.StrictMode;
 import android.util.Log;
-
 import java.io.IOException;
 import java.io.Serializable;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
 import java.util.Locale;
-
 import fr.upem.crazygame.charset.CharsetServer;
 
 /**

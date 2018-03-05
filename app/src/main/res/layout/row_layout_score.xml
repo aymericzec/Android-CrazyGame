@@ -13,7 +13,7 @@
         android:layout_marginTop="20dp"
         android:layout_weight="1"
         android:text="Morpion"
-        android:textColor="@android:color/darker_gray"
+        android:textColor="@android:color/black"
         android:textSize="24sp">
 
     </TextView>

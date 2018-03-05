@@ -2,12 +2,9 @@ package fr.upem.crazygame.searchgameactivity;
 
 import android.content.Intent;
 import android.util.Log;
-
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
-import java.util.Locale;
-
 import fr.upem.crazygame.bytebuffer_manager.ByteBufferManager;
 import fr.upem.crazygame.charset.CharsetServer;
 import fr.upem.crazygame.game.mixwords.MixWordActivity;
@@ -78,9 +75,6 @@ public class SearchGameManager {
                                 default:
                                     break;
                             }
-
-
-
                         }
                     }
                 } catch (IOException e) {

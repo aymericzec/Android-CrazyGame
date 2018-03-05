@@ -8,9 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
-
 import java.util.List;
-
 import fr.upem.crazygame.R;
 
 /**
@@ -29,25 +27,24 @@ public class ScoresAdapter extends ArrayAdapter<Score> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         Score score = getItem(position);
-        // Check if an existing view is being reused, otherwise inflate the view
+
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.row_layout_score, parent, false);
         }
-        // Lookup view for data population
+
         TextView txNameGame = (TextView) convertView.findViewById(R.id.nameGame);
         TextView txScore = (TextView) convertView.findViewById(R.id.nbGamePlay);
         TextView txScoreWin = (TextView) convertView.findViewById(R.id.nbGameWin);
 
         txNameGame.setText(score.getName());
-        txScore.setText(score.getGame() + " parties au total");
-        txScoreWin.setText(score.getGameWin() + " parties gagné");
+        txScore.setText(score.getGame() + " " + this.getContext().getResources().getString(R.string.playedGame));
+        txScoreWin.setText(score.getGameWin() + " " + this.getContext().getResources().getString(R.string.winGame));
 
         Typeface comic_book = Typeface.createFromAsset(this.getContext().getAssets(),"font/comic_book.otf");
         txNameGame.setTypeface(comic_book);
+        txScore.setTypeface(comic_book);
+        txScoreWin.setTypeface(comic_book);
 
-        // Return the completed view to render on screen
         return convertView;
     }
-
-
 }
