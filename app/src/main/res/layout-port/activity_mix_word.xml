@@ -4,28 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     android:orientation="vertical"
     tools:context="fr.upem.crazygame.game.mixwords.MixWordActivity">
 
-    <LinearLayout
-        android:id="@+id/wordOrder"
+    <TextView
+        android:id="@+id/nameGame"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"></LinearLayout>
+        android:layout_height="match_parent"
+        android:layout_weight="1.3"
+        android:background="#00AD97"
+        android:fontFamily="@font/nightmachine"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@android:color/black"
+        android:textSize="40sp" />
+
 
     <LinearLayout
         android:id="@+id/lettersAvailaible"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
         android:orientation="horizontal">
 
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/wordOrder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"></LinearLayout>
+
     <Button
         android:id="@+id/actionMixWord"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_weight="1.34"
+        android:background="#D8D8D8"
         android:onClick="sendWord"
-        android:text="Envoyer" />
+        android:text="@string/envoyer"
+        android:textColor="#00AD97" />
 </LinearLayout>

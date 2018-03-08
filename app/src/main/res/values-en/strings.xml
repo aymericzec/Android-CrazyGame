@@ -17,4 +17,7 @@
     <string name="left_arrow">left arrow</string>
     <string name="score">My score</string>
 
+    <string name="envoyer">Send your answer before your opponent!</string>
+    <string name="loseBack">Other player is faster than you...\n Return to the menu</string>
+
 </resources>
