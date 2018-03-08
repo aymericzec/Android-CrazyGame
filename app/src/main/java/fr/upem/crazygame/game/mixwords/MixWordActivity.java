@@ -2,11 +2,14 @@ package fr.upem.crazygame.game.mixwords;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 
 import java.io.IOException;
@@ -30,12 +33,28 @@ public class MixWordActivity extends Activity {
         ProviderDataGame.addGame(GameCrazyGameColumns.NAME_MIXWORD, this);
         String word = getIntent().getStringExtra("wordSearch");
 
+        initGraphic();
         initKeypadTop(word.length());
         initKeypadBottom(word);
 
         MixWords mixWords = new MixWords(word);
         this.handlerMixWords = new HandlerMixWords(SocketHandler.getSocket(), mixWords, this);
     }
+
+    private void initGraphic (){
+        Typeface comic_book = Typeface.createFromAsset(getAssets(),"font/comic_book.otf");
+        Typeface heros = Typeface.createFromAsset(getAssets(),"font/nightmachine.otf");
+
+        TextView nameGame = (TextView) findViewById(R.id.nameGame);
+        nameGame.setTypeface(heros);
+
+        TextView description = (TextView) findViewById(R.id.description);
+        description.setTypeface(comic_book);
+
+        TextView score = (TextView) findViewById(R.id.score);
+        score.setTypeface(comic_book);
+    }
+
 
     /**
      * Initialize the top button
@@ -64,7 +83,6 @@ public class MixWordActivity extends Activity {
                             break;
                         }
                     }
-
                     MixWordActivity.this.handlerMixWords.removeLetter(b, keypadBottom, i);
                 }
             });
@@ -95,7 +113,6 @@ public class MixWordActivity extends Activity {
                             break;
                         }
                     }
-
                     MixWordActivity.this.handlerMixWords.addLetter(b, keypadTop);
                 }
             });
@@ -111,7 +128,6 @@ public class MixWordActivity extends Activity {
                 return;
             }
         }
-
         try {
             this.handlerMixWords.sendWord();
 
@@ -127,7 +143,7 @@ public class MixWordActivity extends Activity {
         }
 
         Button action = (Button) findViewById(R.id.actionMixWord);
-        action.setText("Retourner au Menu");
+        action.setText(getText(R.string.loseBack));
         action.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

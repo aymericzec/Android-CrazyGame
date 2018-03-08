@@ -73,7 +73,7 @@ public class SearchGameActivity extends ListActivity {
         img[1] = R.drawable.sad1;
     }
 
-    public void initGraphic (){
+    private void initGraphic (){
         Typeface comic_book = Typeface.createFromAsset(getAssets(),"font/comic_book.otf");
         Typeface heros = Typeface.createFromAsset(getAssets(),"font/nightmachine.otf");
 
