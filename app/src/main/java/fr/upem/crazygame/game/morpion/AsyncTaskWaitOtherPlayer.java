@@ -80,7 +80,6 @@ public class AsyncTaskWaitOtherPlayer extends AsyncTask<Void,Void, Cell>{
                 Context context = morpionActivity.getApplicationContext();
                 CharSequence text;
                 if (handlerMorpion.isWinner()) {
-                    ProviderDataGame.addWinGame(GameCrazyGameColumns.NAME_MORPION, morpionActivity);
                    text = "Vous avez perdu";
                 } else {
                     text = "Egalité";

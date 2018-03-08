@@ -122,7 +122,7 @@ public class ProviderDataGame extends ContentProvider {
     }
 
     public static void addWinGame (String nameGame, Context context) {
-        String [] columns = {GameCrazyGameColumns.NAME_GAME, GameCrazyGameColumns.GAME};
+        String [] columns = {GameCrazyGameColumns.NAME_GAME, GameCrazyGameColumns.GAME_WIN};
 
         String selection = GameCrazyGameColumns.NAME_GAME + " = ?";
         String [] selectionArgs = {nameGame};

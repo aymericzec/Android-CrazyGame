@@ -146,6 +146,7 @@ import fr.upem.crazygame.searchgameactivity.SocketHandler;
                                 if (handlerMorpion.isWinner()) {
                                     Context context = getApplicationContext();
                                     CharSequence text = "Vous avez gagné";
+                                    ProviderDataGame.addWinGame(GameCrazyGameColumns.NAME_MORPION, this);
                                     int duration = Toast.LENGTH_LONG;
 
                                     Toast toast = Toast.makeText(context, text, duration);
