@@ -109,7 +109,6 @@ public class Morpion {
                 }
             }
         }
-
         return true;
     }
 }

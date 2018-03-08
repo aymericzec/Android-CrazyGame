@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
 
+import fr.upem.crazygame.R;
 import fr.upem.crazygame.bytebuffer_manager.ByteBufferManager;
 import fr.upem.crazygame.game.Players;
 import fr.upem.crazygame.provider.GameCrazyGameColumns;
@@ -45,6 +46,8 @@ public class AsyncTaskWaitOtherPlayer extends AsyncTask<Void,Void, Cell>{
             bb.limit(4 * 3);
             Log.d("ReadFully", "tranquille");
             if (ByteBufferManager.readFully(sc, bb)) {
+                morpionActivity.myTurnGraphic();
+
                 bb.flip();
                 idRequest = bb.getInt();
                 i = bb.getInt();
@@ -57,6 +60,7 @@ public class AsyncTaskWaitOtherPlayer extends AsyncTask<Void,Void, Cell>{
             //Loose connexion with the other client
             e.printStackTrace();
         }
+
 
         return null;
     }
@@ -81,9 +85,9 @@ public class AsyncTaskWaitOtherPlayer extends AsyncTask<Void,Void, Cell>{
                 CharSequence text;
                 if (handlerMorpion.isWinner()) {
                     ProviderDataGame.addWinGame(GameCrazyGameColumns.NAME_MORPION, morpionActivity);
-                   text = "Vous avez perdu";
+                   text = context.getString(R.string.lose);
                 } else {
-                    text = "Egalité";
+                    text = context.getString(R.string.equality);
                 }
 
                 int duration = Toast.LENGTH_LONG;
@@ -91,7 +95,6 @@ public class AsyncTaskWaitOtherPlayer extends AsyncTask<Void,Void, Cell>{
                 Toast toast = Toast.makeText(context, text, duration);
                 toast.show();
             }
-
 
         } else {
             handlerMorpion.looseConnexion();

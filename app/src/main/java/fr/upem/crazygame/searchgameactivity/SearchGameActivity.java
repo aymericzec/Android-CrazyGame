@@ -85,6 +85,8 @@ public class SearchGameActivity extends ListActivity {
 
         TextView score = (TextView) findViewById(R.id.score);
         score.setTypeface(comic_book);
+
+        //findViewById(R.id.loadingPanel).setVisibility(View.GONE);
     }
 
     /**
@@ -93,11 +95,11 @@ public class SearchGameActivity extends ListActivity {
      */
     public void clickSearchGame (String nameGame) {
         SearchGameManager searchGameManager = searchGameSocketManager.isConnected();
+        //findViewById(R.id.loadingPanel).setVisibility(View.VISIBLE);
 
         if (null != searchGameManager) {
             try {
                 searchGameManager.sendSearchGame(nameGame);
-                //ecran de chargement
                 searchGameManager.waitFoundGame();
             } catch (IOException e) {
                 e.printStackTrace();
@@ -114,6 +116,7 @@ public class SearchGameActivity extends ListActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        //findViewById(R.id.loadingPanel).setVisibility(View.GONE);
     }
 
     @Override

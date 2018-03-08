@@ -72,7 +72,6 @@ public class HandlerMorpion extends Handler {
             out.putInt(1);
         }
 
-
         out.putInt(i);
         out.putInt(j);
         out.flip();
