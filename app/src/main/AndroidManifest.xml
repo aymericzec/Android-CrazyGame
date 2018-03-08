@@ -9,14 +9,10 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity android:name=".searchgameactivity.SearchGameActivity">
-            android:name=".SearchGameActivity"
-            android:label="@string/app_name"
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <data android:mimeType="vnd.android.cursor.item/vnd.tutos.android.content.provider.cours" />
-                <data android:mimeType="vnd.android.cursor.item/vnd.tutos.android.content.provider.messages" />
             </intent-filter>
         </activity>
 
