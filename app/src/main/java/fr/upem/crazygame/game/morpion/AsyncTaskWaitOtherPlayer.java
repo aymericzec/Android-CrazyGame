@@ -46,8 +46,8 @@ public class AsyncTaskWaitOtherPlayer extends AsyncTask<Void,Void, Cell>{
             bb.limit(4 * 3);
             Log.d("ReadFully", "tranquille");
             if (ByteBufferManager.readFully(sc, bb)) {
-                morpionActivity.myTurnGraphic();
 
+                this.publishProgress();
                 bb.flip();
                 idRequest = bb.getInt();
                 i = bb.getInt();
@@ -60,10 +60,16 @@ public class AsyncTaskWaitOtherPlayer extends AsyncTask<Void,Void, Cell>{
             //Loose connexion with the other client
             e.printStackTrace();
         }
-
-
         return null;
     }
+
+    @Override
+    protected void onProgressUpdate(Void... values) {
+        super.onProgressUpdate(values);
+        morpionActivity.myTurnGraphic();
+    }
+
+
 
     @Override
     protected void onPostExecute(Cell cell) {

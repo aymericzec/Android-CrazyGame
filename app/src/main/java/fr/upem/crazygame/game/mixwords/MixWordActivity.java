@@ -48,11 +48,8 @@ public class MixWordActivity extends Activity {
         TextView nameGame = (TextView) findViewById(R.id.nameGame);
         nameGame.setTypeface(heros);
 
-        TextView description = (TextView) findViewById(R.id.description);
-        description.setTypeface(comic_book);
-
-        TextView score = (TextView) findViewById(R.id.score);
-        score.setTypeface(comic_book);
+        TextView actionMixWord = (TextView) findViewById(R.id.actionMixWord);
+        actionMixWord.setTypeface(comic_book);
     }
 
 

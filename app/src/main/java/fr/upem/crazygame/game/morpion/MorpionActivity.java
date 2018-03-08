@@ -44,9 +44,9 @@ public class MorpionActivity extends Activity {
         setContentView(R.layout.activity_morpion);
 
         ProviderDataGame.addGame(GameCrazyGameColumns.NAME_MORPION, this);
+        initGraphic();
         getInformation();
         initButton();
-        initGraphic();
     }
 
     @Override
@@ -173,7 +173,6 @@ public class MorpionActivity extends Activity {
                     }
                 }
             }
-        } else {
             notMyTurnGraphic();
         }
     }
@@ -193,13 +192,13 @@ public class MorpionActivity extends Activity {
     public void myTurnGraphic() {
         playerLeft.setTextColor(Color.parseColor("#0489B1"));
         playerRight.setTextColor(getResources().getColor(R.color.material_blue_grey_900));
-        messageBottom.setText(R.string.messageBottomWait);
+        messageBottom.setText(R.string.messageBottomPlay);
     }
 
     public void notMyTurnGraphic() {
         playerRight.setTextColor(Color.parseColor("#0489B1"));
         playerLeft.setTextColor(getResources().getColor(R.color.material_blue_grey_900));
-        messageBottom.setText(R.string.messageBottomPlay);
+        messageBottom.setText(R.string.messageBottomWait);
     }
 
 
@@ -219,7 +218,6 @@ public class MorpionActivity extends Activity {
         cases[2][1] = (Button) findViewById(R.id.button7);
         cases[2][2] = (Button) findViewById(R.id.button8);
     }
-
     public Players getCurrentPlayer() {
         return currentPlayer;
     }
