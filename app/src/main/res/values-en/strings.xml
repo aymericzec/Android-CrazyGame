@@ -22,4 +22,10 @@
     <string name="lose">You lose</string>
     <string name="equality">Equality</string>
 
+    <string name="waitBeforeStart">Wait before beginning</string>
+    <string name="shake">Shake it !!!</string>
+    <string name="timeBeforeStart">Time before start : </string>
+    <string name="yourScore">Your score :</string>
+    <string name="great">Great</string>
+
 </resources>

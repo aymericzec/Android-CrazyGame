@@ -10,11 +10,8 @@ Mettre les champs en private !!!
 
 Resoudre tous les warning des classe et des layout.
 
-Faire en sorte que le bandeau de titre ai la meme taille pour toutes les activité.
-
 BroadCast receiver quand on a pas internet (en mode avion)  ??
 https://stackoverflow.com/questions/44007421/why-is-my-broadcast-receiver-not-working
-
 
 Service: Se lance au démarage avec brodacast et récupère une fois par heure les statistiques de jeux
 
