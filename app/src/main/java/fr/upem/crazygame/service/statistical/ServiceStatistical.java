@@ -4,12 +4,15 @@ import android.app.Service;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
+import android.os.Handler;
 import android.os.IBinder;
+import android.os.Looper;
+import android.os.StrictMode;
 import android.support.annotation.Nullable;
-import android.util.Log;
 import android.widget.Toast;
 
 import java.io.IOException;
+import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
 import java.util.Locale;
@@ -17,7 +20,7 @@ import java.util.Locale;
 import fr.upem.crazygame.charset.CharsetServer;
 import fr.upem.crazygame.provider.GameCrazyGameColumns;
 import fr.upem.crazygame.provider.ProviderDataGame;
-import fr.upem.crazygame.searchgameactivity.SocketHandler;
+import fr.upem.crazygame.searchgameactivity.SearchGameSocketManager;
 
 
 public class ServiceStatistical extends Service {
@@ -48,17 +51,21 @@ public class ServiceStatistical extends Service {
 
     public SocketChannel initSocketChanel() throws IOException {
 
-        ByteBuffer in = ByteBuffer.allocate(2048);
+        final SocketChannel sc = SocketChannel.open();
+        InetSocketAddress serverAddress =  new InetSocketAddress("90.3.251.211", 1002);
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
+        final InetSocketAddress serverAddressTmp = serverAddress;
+        sc.connect(serverAddressTmp);
 
-        try (SocketChannel sc = SocketChannel.open()) {
-            ByteBuffer buffer = CharsetServer.CHARSET_UTF_8.encode(Locale.getDefault().getLanguage());
-            in.putInt(buffer.limit());
-            in.put(buffer);
-            in.putInt(4200);
-            in.flip();
-            sc.write(in);
-            return sc;
-        }
+        ByteBuffer in = ByteBuffer.allocate(2048);
+        ByteBuffer buffer = CharsetServer.CHARSET_UTF_8.encode(Locale.getDefault().getLanguage());
+        in.putInt(buffer.limit());
+        in.put(buffer);
+        in.putInt(4200);
+        in.flip();
+        sc.write(in);
+        return sc;
     }
 
     Thread thread = new Thread(new Runnable() {
@@ -66,14 +73,29 @@ public class ServiceStatistical extends Service {
         public void run() {
             isExecuting = true;
             SocketChannel sc;
-
             try {
                 sc = initSocketChanel();
+                Handler handler = new Handler(Looper.getMainLooper());
+
+                handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        Toast.makeText(getBaseContext(), "Un tour de boucle", Toast.LENGTH_LONG).show();
+                    }
+                });
+
                 String [] columns = {GameCrazyGameColumns.NAME_GAME, GameCrazyGameColumns.GAME_LAST_PLAY};
                 ByteBuffer byteBuffer = ByteBuffer.allocate(1024);
                 do {
                     try {
                         Thread.sleep(10000);
+                        handler.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                Toast.makeText(getBaseContext(), "Un tour de boucle", Toast.LENGTH_LONG).show();
+                            }
+                        });
+
                         Cursor cursor = getContentResolver().query(ProviderDataGame.CONTENT_URI, columns, null, null, null);
 
                         if (cursor.moveToFirst()) {
