@@ -28,5 +28,6 @@
     <string name="timeBeforeStart">Temps avant de commencer : </string>
     <string name="yourScore">Votre score :</string>
     <string name="great">Pas mal</string>
+    <string name="cantPlay">CrazyGame nécessite une connexion internet pour jouer</string>
 
 </resources>
