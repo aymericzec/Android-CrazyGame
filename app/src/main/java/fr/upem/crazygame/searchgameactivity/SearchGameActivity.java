@@ -12,10 +12,12 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 import java.io.IOException;
+
 import fr.upem.crazygame.classement.ClassementActivity;
 import fr.upem.crazygame.connectivityReceiver.ConnectivityReceiver;
 import fr.upem.crazygame.R;
 import fr.upem.crazygame.score.ScoreActivity;
+import fr.upem.crazygame.service.statistical.ServiceStatistical;
 
 
 /**
@@ -35,6 +37,7 @@ public class SearchGameActivity extends ListActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_games);
+        startService();
         initGraphic();
         initListView();
 
@@ -48,6 +51,11 @@ public class SearchGameActivity extends ListActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    private void startService() {
+        Intent i = new Intent(this, ServiceStatistical.class);
+        this.startService(i);
     }
 
     private void initListView(){
@@ -73,8 +81,6 @@ public class SearchGameActivity extends ListActivity {
             }
         });
     }
-
-
 
     private void initGraphic() {
         Typeface comic_book = Typeface.createFromAsset(getAssets(), "font/comic_book.otf");

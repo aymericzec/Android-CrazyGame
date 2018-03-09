@@ -28,7 +28,7 @@ public class ScoreActivity extends Activity {
 
         initGraphic();
 
-        ArrayList<Score> scores = new ArrayList<>();
+        ArrayList<fr.upem.crazygame.score.Score> scores = new ArrayList<>();
 
         String [] columns = {GameCrazyGameColumns.NAME_GAME, GameCrazyGameColumns.GAME_WIN, GameCrazyGameColumns.GAME};
         Cursor cursor = getContentResolver().query(ProviderDataGame.CONTENT_URI, columns, null, null, null);
