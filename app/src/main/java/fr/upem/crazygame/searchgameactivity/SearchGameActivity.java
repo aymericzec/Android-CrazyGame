@@ -28,7 +28,7 @@ import fr.upem.crazygame.service.statistical.ServiceStatistical;
 public class SearchGameActivity extends ListActivity {
     private SearchGameSocketManager searchGameSocketManager;
     private ListView listView;
-    private final int nbGames = 3;
+    private final int nbGames = 2;
     private String[] games = new String[nbGames];
     private Integer[] img = new Integer[nbGames];
     private float initialX;

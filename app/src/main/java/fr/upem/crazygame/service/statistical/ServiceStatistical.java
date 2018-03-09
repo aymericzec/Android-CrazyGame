@@ -76,6 +76,7 @@ public class ServiceStatistical extends Service {
     Thread thread = new Thread(new Runnable() {
         @Override
         public void run() {
+            Looper.prepare();
             isExecuting = true;
             SocketChannel sc;
             try {
