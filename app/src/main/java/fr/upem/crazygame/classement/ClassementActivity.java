@@ -95,6 +95,7 @@ public class ClassementActivity extends Activity {
 
                 if (initialX > finalX + 400) {
                     this.finish();
+                    overridePendingTransition(R.transition.slide_from_right, R.transition.slide_to_left);
                 }
                 break;
         }

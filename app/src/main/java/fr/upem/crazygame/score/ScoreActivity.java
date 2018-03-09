@@ -79,6 +79,7 @@ public class ScoreActivity extends Activity {
 
                 if (initialX < finalX - 400) {
                     this.finish();
+                    overridePendingTransition(R.transition.slide_from_left, R.transition.slide_to_right);
                 }
                 break;
         }

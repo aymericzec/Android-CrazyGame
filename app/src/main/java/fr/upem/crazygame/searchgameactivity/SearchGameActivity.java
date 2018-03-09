@@ -11,10 +11,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
-
 import java.io.IOException;
-
-import fr.upem.crazygame.classement.Classement;
 import fr.upem.crazygame.classement.ClassementActivity;
 import fr.upem.crazygame.connectivityReceiver.ConnectivityReceiver;
 import fr.upem.crazygame.R;
@@ -146,16 +143,15 @@ public class SearchGameActivity extends ListActivity {
                 Intent intent;
 
                 if (initialX > 400 + finalX) {
-                    Log.d("------------------", "SCORE");
-
                     intent = new Intent(SearchGameActivity.this, ScoreActivity.class);
                     startActivity(intent);
+                    overridePendingTransition(R.transition.slide_from_right, R.transition.slide_to_left);
                 }else if (initialX < finalX - 400) {
-                    Log.d("------------------", "CLASSEMENT");
                     intent = new Intent(SearchGameActivity.this, ClassementActivity.class);
                     startActivity(intent);
+                    overridePendingTransition(R.transition.slide_from_left, R.transition.slide_to_right);
+                    break;
                 }
-                break;
         }
         return SearchGameActivity.super.onTouchEvent(event);
     }

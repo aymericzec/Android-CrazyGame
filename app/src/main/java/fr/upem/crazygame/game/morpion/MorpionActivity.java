@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import java.io.IOException;
 import java.nio.channels.SocketChannel;
+import java.util.ArrayList;
 
 import fr.upem.crazygame.R;
 import fr.upem.crazygame.game.Players;
@@ -33,10 +34,9 @@ public class MorpionActivity extends Activity {
     private TextView messageBottom;
 
     private Players currentPlayer;
-
     private boolean isTurn = false; //It's the turn of current player
-
     private boolean isBegin;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,9 +45,12 @@ public class MorpionActivity extends Activity {
 
         ProviderDataGame.addGame(GameCrazyGameColumns.NAME_MORPION, this);
         initGraphic();
-        getInformation();
         initButton();
+        getInformation();
+
     }
+
+
 
     @Override
     protected void onResume() {
@@ -201,7 +204,6 @@ public class MorpionActivity extends Activity {
         messageBottom.setText(R.string.messageBottomWait);
     }
 
-
     /**
      * Init the gameBoard
      */
@@ -218,6 +220,7 @@ public class MorpionActivity extends Activity {
         cases[2][1] = (Button) findViewById(R.id.button7);
         cases[2][2] = (Button) findViewById(R.id.button8);
     }
+
     public Players getCurrentPlayer() {
         return currentPlayer;
     }
