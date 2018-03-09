@@ -118,6 +118,11 @@ public class ProviderDataGame extends ContentProvider {
             mUpdateValues.put(GameCrazyGameColumns.GAME, value + 1);
             String args[] = {nameGame};
             context.getContentResolver().update(ProviderDataGame.CONTENT_URI, mUpdateValues, GameCrazyGameColumns.NAME_GAME + " = ?", args);
+
+            int valueService = cursor.getInt(cursor.getColumnIndex(GameCrazyGameColumns.GAME_LAST_PLAY));
+            ContentValues mUpdateValuesLastPlay = new ContentValues();
+            mUpdateValuesLastPlay.put(GameCrazyGameColumns.GAME_LAST_PLAY, valueService + 1);
+            context.getContentResolver().update(ProviderDataGame.CONTENT_URI, mUpdateValues, GameCrazyGameColumns.NAME_GAME + " = ?", args);
         }
     }
 

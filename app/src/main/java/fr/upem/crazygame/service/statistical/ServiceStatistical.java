@@ -25,7 +25,8 @@ import fr.upem.crazygame.searchgameactivity.SearchGameSocketManager;
 
 public class ServiceStatistical extends Service {
 
-    private boolean isExecuting = false;
+    private static boolean isExecuting = false;
+    private static int test = 0;
 
     @Nullable
     @Override
@@ -35,9 +36,12 @@ public class ServiceStatistical extends Service {
 
     @Override
     public void onCreate() {
-        Toast.makeText(this, "Service started", Toast.LENGTH_LONG).show();
-        thread.start();
-        super.onCreate();
+        if (!isExecuting) {
+            Toast.makeText(this, "Service started " + test++, Toast.LENGTH_LONG).show();
+            thread.start();
+            isExecuting = true;
+            super.onCreate();
+        }
     }
 
     @Override
@@ -46,6 +50,7 @@ public class ServiceStatistical extends Service {
             thread.isInterrupted();
         }
         Toast.makeText(this, "Service Destroyed", Toast.LENGTH_LONG).show();
+        isExecuting = false;
         super.onDestroy();
     }
 
@@ -75,26 +80,26 @@ public class ServiceStatistical extends Service {
             SocketChannel sc;
             try {
                 sc = initSocketChanel();
-                Handler handler = new Handler(Looper.getMainLooper());
-
-                handler.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        Toast.makeText(getBaseContext(), "Un tour de boucle", Toast.LENGTH_LONG).show();
-                    }
-                });
+//                Handler handler = new Handler(Looper.getMainLooper());
+//
+//                handler.post(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        Toast.makeText(getBaseContext(), "Un tour de boucle " + test, Toast.LENGTH_LONG).show();
+//                    }
+//                });
 
                 String [] columns = {GameCrazyGameColumns.NAME_GAME, GameCrazyGameColumns.GAME_LAST_PLAY};
                 ByteBuffer byteBuffer = ByteBuffer.allocate(1024);
                 do {
                     try {
                         Thread.sleep(10000);
-                        handler.post(new Runnable() {
-                            @Override
-                            public void run() {
-                                Toast.makeText(getBaseContext(), "Un tour de boucle", Toast.LENGTH_LONG).show();
-                            }
-                        });
+//                        handler.post(new Runnable() {
+//                            @Override
+//                            public void run() {
+//                                Toast.makeText(getBaseContext(), "Un tour de boucle " + test, Toast.LENGTH_LONG).show();
+//                            }
+//                        });
 
                         Cursor cursor = getContentResolver().query(ProviderDataGame.CONTENT_URI, columns, null, null, null);
 
@@ -120,6 +125,8 @@ public class ServiceStatistical extends Service {
 
                     } catch (InterruptedException e) {
                         isExecuting = false;
+                        onDestroy();
+                        return;
                     }
                 }while(isExecuting);
             } catch (IOException e) {

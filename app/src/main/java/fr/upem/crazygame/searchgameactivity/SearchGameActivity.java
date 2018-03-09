@@ -20,6 +20,7 @@ import java.io.IOException;
 
 import fr.upem.crazygame.R;
 import fr.upem.crazygame.Score.ScoreActivity;
+import fr.upem.crazygame.service.statistical.ServiceStatistical;
 
 
 /**
@@ -29,7 +30,7 @@ import fr.upem.crazygame.Score.ScoreActivity;
 public class SearchGameActivity extends ListActivity {
     private SearchGameSocketManager searchGameSocketManager;
     private ListView listView;
-    private final int nbGames = 2;
+    private final int nbGames = 3;
     private String[] games = new String[nbGames];
     private Integer[] img = new Integer[nbGames];
     private float initialX;
@@ -55,6 +56,7 @@ public class SearchGameActivity extends ListActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_games);
+        startService();
         initGames();
         initImg();
         initGraphic();
@@ -85,6 +87,11 @@ public class SearchGameActivity extends ListActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    private void startService() {
+        Intent i = new Intent(this, ServiceStatistical.class);
+        this.startService(i);
     }
 
     private void initGames() {

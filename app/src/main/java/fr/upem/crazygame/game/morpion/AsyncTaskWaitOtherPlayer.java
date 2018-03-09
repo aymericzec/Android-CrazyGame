@@ -69,8 +69,6 @@ public class AsyncTaskWaitOtherPlayer extends AsyncTask<Void,Void, Cell>{
         morpionActivity.myTurnGraphic();
     }
 
-
-
     @Override
     protected void onPostExecute(Cell cell) {
         super.onPostExecute(cell);
