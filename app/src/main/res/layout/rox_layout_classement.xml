@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/nbPartyTotal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="6616513"
+        android:textColor="#00AD97"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/nameGame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:text="Morpion"
+        android:textColor="@android:color/black"
+        android:textSize="24sp">
+
+    </TextView>
+
+
+</LinearLayout>

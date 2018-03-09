@@ -6,6 +6,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.graphics.Typeface;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
@@ -18,6 +20,7 @@ import android.widget.Toast;
 
 import java.io.IOException;
 
+import fr.upem.crazygame.ConnectivityReceiver.ConnectivityReceiver;
 import fr.upem.crazygame.R;
 import fr.upem.crazygame.Score.ScoreActivity;
 
@@ -33,69 +36,52 @@ public class SearchGameActivity extends ListActivity {
     private String[] games = new String[nbGames];
     private Integer[] img = new Integer[nbGames];
     private float initialX;
-
-
-    IntentFilter intentFilter = new IntentFilter("android.intent.action.AIRPLANE_MODE");
-
-    BroadcastReceiver receiver = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            boolean isAirplaneModeOn = intent.getBooleanExtra("state", false);
-            if(isAirplaneModeOn){
-                Toast.makeText(SearchGameActivity.this,
-                        getString(R.string.cantPlay), Toast.LENGTH_LONG).show();
-            } else {
-                // handle Airplane Mode off
-            }
-        }
-    };
-
+    private ConnectivityReceiver connectivityReceiver = new ConnectivityReceiver();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_games);
-        initGames();
-        initImg();
         initGraphic();
+        initListView();
 
-        this.registerReceiver(receiver, intentFilter);
-
+        registerReceiver(connectivityReceiver, connectivityReceiver.getIntentFilter());
 
         try {
             searchGameSocketManager = SearchGameSocketManager.createSearchGameSocketManager(this);
             searchGameSocketManager.connectSocket("90.3.251.211", 1002);
             //searchGameSocketManager.connectSocket("192.168.1.13", 8086);
 
-            listView = (ListView) findViewById(android.R.id.list);
-            Log.d("test", listView + "");
-
-            CustomListSearchGame adapter = new
-                    CustomListSearchGame(this, games, img);
-            listView = (ListView) findViewById(android.R.id.list);
-            listView.setAdapter(adapter);
-            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                @Override
-                public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                    clickSearchGame((String) adapterView.getItemAtPosition(i));
-                }
-
-
-            });
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    private void initGames() {
+    private void initListView(){
+        // init Game List
         games[0] = getResources().getString(R.string.morpion_name);
         games[1] = getResources().getString(R.string.mixWord_name);
-    }
 
-    private void initImg() {
+        // init Image List
         img[0] = R.drawable.sad1;
         img[1] = R.drawable.sad1;
+
+        listView = (ListView) findViewById(android.R.id.list);
+
+        CustomListSearchGame adapter = new
+                CustomListSearchGame(this, games, img);
+        listView = (ListView) findViewById(android.R.id.list);
+        listView.setAdapter(adapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                view.findViewById(R.id.loadingPanel).setVisibility(View.VISIBLE);
+                clickSearchGame((String) adapterView.getItemAtPosition(i));
+            }
+        });
     }
+
+
 
     private void initGraphic() {
         Typeface comic_book = Typeface.createFromAsset(getAssets(), "font/comic_book.otf");
@@ -109,8 +95,6 @@ public class SearchGameActivity extends ListActivity {
 
         TextView score = (TextView) findViewById(R.id.score);
         score.setTypeface(comic_book);
-
-        findViewById(R.id.loadingPanel).setVisibility(View.GONE);
     }
 
     /**
@@ -120,7 +104,6 @@ public class SearchGameActivity extends ListActivity {
      */
     public void clickSearchGame(String nameGame) {
         SearchGameManager searchGameManager = searchGameSocketManager.isConnected();
-        findViewById(R.id.loadingPanel).setVisibility(View.VISIBLE);
 
         if (null != searchGameManager) {
             try {

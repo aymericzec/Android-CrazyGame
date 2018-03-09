@@ -11,6 +11,7 @@
     <string name="playedGame">parties joués</string>
     <string name="winGame">parties gagnées</string>
 
+    <string name="descriptionClassement">Voici le classement des jeux le plus jouer sur CrazyGame</string>
     <string name="descriptionScore">Voici vos statistiques sur CrazyGame</string>
     <string name="back">Retour</string>
 
@@ -29,5 +30,6 @@
     <string name="yourScore">Votre score :</string>
     <string name="great">Pas mal</string>
     <string name="cantPlay">CrazyGame nécessite une connexion internet pour jouer</string>
+    <string name="airPlaneMode">Vous ne pouvez pas jouer à CrazyGame en mode avion</string>
 
 </resources>
