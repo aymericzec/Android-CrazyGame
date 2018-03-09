@@ -10,12 +10,16 @@
     <string name="messageBottomPlay">It\'s your turn !</string>
     <string name="playedGame">games played</string>
     <string name="winGame">games won</string>
+
+    <string name="descriptionClassement">Here is the classification of the games most to play on CrazyGame</string>
     <string name="descriptionScore">Here are your statistics on CrazyGame</string>
     <string name="back">Go back</string>
 
     <string name="right_arrow">right arrow</string>
     <string name="left_arrow">left arrow</string>
     <string name="score">My score</string>
+    <string name="classement">General classification</string>
+
 
     <string name="envoyer">Send your answer before your opponent!</string>
     <string name="loseBack">Other player is faster than you...\n Return to the menu</string>
@@ -28,5 +32,5 @@
     <string name="yourScore">Your score :</string>
     <string name="great">Great</string>
     <string name="cantPlay">CrazyGame requires an internet connection to play</string>
-
+    <string name="airPlaneMode">You cannot play CrazyGame in airplane mode</string>
 </resources>

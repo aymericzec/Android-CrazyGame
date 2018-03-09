@@ -1,10 +1,7 @@
 package fr.upem.crazygame.searchgameactivity;
 
 import android.app.ListActivity;
-import android.content.BroadcastReceiver;
-import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -14,13 +11,19 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.io.IOException;
 
+import fr.upem.crazygame.classement.Classement;
+import fr.upem.crazygame.classement.ClassementActivity;
+import fr.upem.crazygame.connectivityReceiver.ConnectivityReceiver;
 import fr.upem.crazygame.R;
+<<<<<<< HEAD
 import fr.upem.crazygame.Score.ScoreActivity;
 import fr.upem.crazygame.service.statistical.ServiceStatistical;
+=======
+import fr.upem.crazygame.score.ScoreActivity;
+>>>>>>> c1dfa6d01c6cc1949448d69c6cc7b639f2e331ef
 
 
 /**
@@ -34,56 +37,23 @@ public class SearchGameActivity extends ListActivity {
     private String[] games = new String[nbGames];
     private Integer[] img = new Integer[nbGames];
     private float initialX;
-
-
-    IntentFilter intentFilter = new IntentFilter("android.intent.action.AIRPLANE_MODE");
-
-    BroadcastReceiver receiver = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            boolean isAirplaneModeOn = intent.getBooleanExtra("state", false);
-            if(isAirplaneModeOn){
-                Toast.makeText(SearchGameActivity.this,
-                        getString(R.string.cantPlay), Toast.LENGTH_LONG).show();
-            } else {
-                // handle Airplane Mode off
-            }
-        }
-    };
-
+    private ConnectivityReceiver connectivityReceiver = new ConnectivityReceiver();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_games);
         startService();
-        initGames();
-        initImg();
         initGraphic();
+        initListView();
 
-        this.registerReceiver(receiver, intentFilter);
-
+        registerReceiver(connectivityReceiver, connectivityReceiver.getIntentFilter());
 
         try {
             searchGameSocketManager = SearchGameSocketManager.createSearchGameSocketManager(this);
             searchGameSocketManager.connectSocket("90.3.251.211", 1002);
             //searchGameSocketManager.connectSocket("192.168.1.13", 8086);
 
-            listView = (ListView) findViewById(android.R.id.list);
-            Log.d("test", listView + "");
-
-            CustomListSearchGame adapter = new
-                    CustomListSearchGame(this, games, img);
-            listView = (ListView) findViewById(android.R.id.list);
-            listView.setAdapter(adapter);
-            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                @Override
-                public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                    clickSearchGame((String) adapterView.getItemAtPosition(i));
-                }
-
-
-            });
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -93,16 +63,32 @@ public class SearchGameActivity extends ListActivity {
         Intent i = new Intent(this, ServiceStatistical.class);
         this.startService(i);
     }
-
-    private void initGames() {
+    
+    private void initListView(){
+        // init Game List
         games[0] = getResources().getString(R.string.morpion_name);
         games[1] = getResources().getString(R.string.mixWord_name);
-    }
 
-    private void initImg() {
+        // init Image List
         img[0] = R.drawable.sad1;
         img[1] = R.drawable.sad1;
+
+        listView = (ListView) findViewById(android.R.id.list);
+
+        CustomListSearchGame adapter = new
+                CustomListSearchGame(this, games, img);
+        listView = (ListView) findViewById(android.R.id.list);
+        listView.setAdapter(adapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                view.findViewById(R.id.loadingPanel).setVisibility(View.VISIBLE);
+                clickSearchGame((String) adapterView.getItemAtPosition(i));
+            }
+        });
     }
+
+
 
     private void initGraphic() {
         Typeface comic_book = Typeface.createFromAsset(getAssets(), "font/comic_book.otf");
@@ -117,7 +103,8 @@ public class SearchGameActivity extends ListActivity {
         TextView score = (TextView) findViewById(R.id.score);
         score.setTypeface(comic_book);
 
-        findViewById(R.id.loadingPanel).setVisibility(View.GONE);
+        TextView classement = (TextView) findViewById(R.id.classement);
+        classement.setTypeface(comic_book);
     }
 
     /**
@@ -127,7 +114,6 @@ public class SearchGameActivity extends ListActivity {
      */
     public void clickSearchGame(String nameGame) {
         SearchGameManager searchGameManager = searchGameSocketManager.isConnected();
-        findViewById(R.id.loadingPanel).setVisibility(View.VISIBLE);
 
         if (null != searchGameManager) {
             try {
@@ -168,10 +154,16 @@ public class SearchGameActivity extends ListActivity {
 
             case MotionEvent.ACTION_UP:
                 float finalX = event.getX();
-
-                Intent intent = new Intent(SearchGameActivity.this, ScoreActivity.class);
+                Intent intent;
 
                 if (initialX > 400 + finalX) {
+                    Log.d("------------------", "SCORE");
+
+                    intent = new Intent(SearchGameActivity.this, ScoreActivity.class);
+                    startActivity(intent);
+                }else if (initialX < finalX - 400) {
+                    Log.d("------------------", "CLASSEMENT");
+                    intent = new Intent(SearchGameActivity.this, ClassementActivity.class);
                     startActivity(intent);
                 }
                 break;

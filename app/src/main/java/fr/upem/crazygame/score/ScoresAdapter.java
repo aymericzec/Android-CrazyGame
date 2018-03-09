@@ -1,4 +1,4 @@
-package fr.upem.crazygame.Score;
+package fr.upem.crazygame.score;
 
 import android.content.Context;
 import android.graphics.Typeface;

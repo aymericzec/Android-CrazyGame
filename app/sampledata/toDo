@@ -16,3 +16,6 @@ https://stackoverflow.com/questions/44007421/why-is-my-broadcast-receiver-not-wo
 Service: Se lance au démarage avec brodacast et récupère une fois par heure les statistiques de jeux
 
 Icon lorsqu'on cherche un adversaire
+
+
+UNregister Service on destroy !!!

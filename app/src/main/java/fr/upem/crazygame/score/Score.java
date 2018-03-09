@@ -1,4 +1,4 @@
-package fr.upem.crazygame.Score;
+package fr.upem.crazygame.score;
 
 /**
  * Created by myfou on 04/03/2018.

@@ -28,19 +28,6 @@
         android:text="@string/description"
         android:textColor="#00AD97" />
 
-    <RelativeLayout
-        android:id="@+id/loadingPanel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
-        android:gravity="center">
-
-        <ProgressBar
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:indeterminate="true" />
-    </RelativeLayout>
-
     <ListView
         android:id="@android:id/list"
         android:layout_width="match_parent"
@@ -55,9 +42,28 @@
         android:background="#D8D8D8"
         android:orientation="horizontal">
 
+        <ImageView
+            android:id="@+id/icon2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:contentDescription="@string/right_arrow"
+            android:src="@drawable/right"></ImageView>
+
+        <TextView
+            android:id="@+id/classement"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/comic_book"
+            android:gravity="center"
+            android:text="@string/classement"
+            android:textSize="24sp" />
+
         <TextView
             android:id="@+id/score"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:fontFamily="@font/comic_book"
@@ -67,10 +73,12 @@
 
         <ImageView
             android:id="@+id/icon"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_gravity="center"
+            android:layout_weight="1.5"
             android:contentDescription="@string/left_arrow"
             android:src="@drawable/left"></ImageView>
+
     </LinearLayout>
 </LinearLayout>
