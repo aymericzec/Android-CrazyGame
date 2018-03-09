@@ -18,6 +18,8 @@
     <string name="right_arrow">flêche droite</string>
     <string name="left_arrow">flêche gauche</string>
     <string name="score">Mes scores</string>
+    <string name="classement">Classement générale</string>
+
 
     <string name="envoyer">Envoyer votre réponse avant votre adversaire !</string>
     <string name="loseBack">L\'autre joueur à été la plus rapide... \n Retour au menu</string>

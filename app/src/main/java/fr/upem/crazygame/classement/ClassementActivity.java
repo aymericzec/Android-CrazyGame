@@ -1,15 +1,18 @@
-package fr.upem.crazygame.Score;
+package fr.upem.crazygame.classement;
 
 import android.app.Activity;
 import android.database.Cursor;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Collections;
+
 import fr.upem.crazygame.R;
 import fr.upem.crazygame.provider.GameCrazyGameColumns;
 import fr.upem.crazygame.provider.ProviderDataGame;
@@ -18,32 +21,45 @@ import fr.upem.crazygame.provider.ProviderDataGame;
  * Created by myfou on 04/03/2018.
  */
 
-public class ScoreActivity extends Activity {
+public class ClassementActivity extends Activity {
     private float initialX;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_scores);
+        setContentView(R.layout.activity_classement);
+
+        Log.d("----------", "Creation Classement");
 
         initGraphic();
 
-        ArrayList<Score> scores = new ArrayList<>();
+        ArrayList<Classement> classements = new ArrayList<>();
 
         String [] columns = {GameCrazyGameColumns.NAME_GAME, GameCrazyGameColumns.GAME_WIN, GameCrazyGameColumns.GAME};
         Cursor cursor = getContentResolver().query(ProviderDataGame.CONTENT_URI, columns, null, null, null);
 
+        /*
         if (cursor.moveToFirst()) {
             do {
                 String nameGame = cursor.getString(cursor.getColumnIndex(GameCrazyGameColumns.NAME_GAME));
-                int scoreWin = cursor.getInt(cursor.getColumnIndex(GameCrazyGameColumns.GAME_WIN));
-                int scoreTotal = cursor.getInt(cursor.getColumnIndex(GameCrazyGameColumns.GAME));
+                int nbGameTotal = 3; //= cursor.getInt(cursor.getColumnIndex(GameCrazyGameColumns.TOTAL_GAME));
 
-                scores.add(new Score(nameGame, scoreTotal, scoreWin));
+                classements.add(new Classement(nameGame, nbGameTotal));
             } while (cursor.moveToNext());
         }
-        ScoresAdapter adapter = new ScoresAdapter(this, R.layout.row_layout_score, scores);
-        ListView listView=(ListView)findViewById(R.id.listScores);
+        */
+        Classement c1 = new Classement("CrazyGame", 12);
+        Classement c2 = new Classement("Morpion", 56);
+        Classement c3 = new Classement("MixWord", 2);
+
+        classements.add(c1);
+        classements.add(c2);
+        classements.add(c3);
+
+        Collections.sort(classements);
+
+        ClassementAdapter adapter = new ClassementAdapter(this, R.layout.row_layout_classement, classements);
+        ListView listView=(ListView)findViewById(R.id.listClassement);
         listView.setAdapter(adapter);
     }
 
@@ -54,8 +70,8 @@ public class ScoreActivity extends Activity {
         TextView nameGame = (TextView) findViewById(R.id.nameGame);
         nameGame.setTypeface(heros);
 
-        TextView descriptionScore = (TextView) findViewById(R.id.descriptionScore);
-        descriptionScore.setTypeface(comic_book);
+        TextView descriptionClassement = (TextView) findViewById(R.id.descriptionClassement);
+        descriptionClassement.setTypeface(comic_book);
 
         TextView back = (TextView) findViewById(R.id.back);
         back.setTypeface(comic_book);
@@ -77,11 +93,11 @@ public class ScoreActivity extends Activity {
             case MotionEvent.ACTION_UP:
                 float finalX = event.getX();
 
-                if (initialX < finalX - 400) {
+                if (initialX > finalX + 400) {
                     this.finish();
                 }
                 break;
         }
-        return ScoreActivity.super.onTouchEvent(event);
+        return ClassementActivity.super.onTouchEvent(event);
     }
 }

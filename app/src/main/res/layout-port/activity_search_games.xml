@@ -52,13 +52,13 @@
             android:src="@drawable/right"></ImageView>
 
         <TextView
-            android:id="@+id/score2"
+            android:id="@+id/classement"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:fontFamily="@font/comic_book"
             android:gravity="center"
-            android:text="@string/score"
+            android:text="@string/classement"
             android:textSize="24sp" />
 
         <TextView

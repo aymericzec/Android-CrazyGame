@@ -1,4 +1,4 @@
-package fr.upem.crazygame.ConnectivityReceiver;
+package fr.upem.crazygame.connectivityReceiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

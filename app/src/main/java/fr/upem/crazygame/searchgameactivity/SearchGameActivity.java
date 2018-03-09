@@ -1,13 +1,8 @@
 package fr.upem.crazygame.searchgameactivity;
 
 import android.app.ListActivity;
-import android.content.BroadcastReceiver;
-import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.graphics.Typeface;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
@@ -16,13 +11,14 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.io.IOException;
 
-import fr.upem.crazygame.ConnectivityReceiver.ConnectivityReceiver;
+import fr.upem.crazygame.classement.Classement;
+import fr.upem.crazygame.classement.ClassementActivity;
+import fr.upem.crazygame.connectivityReceiver.ConnectivityReceiver;
 import fr.upem.crazygame.R;
-import fr.upem.crazygame.Score.ScoreActivity;
+import fr.upem.crazygame.score.ScoreActivity;
 
 
 /**
@@ -95,6 +91,9 @@ public class SearchGameActivity extends ListActivity {
 
         TextView score = (TextView) findViewById(R.id.score);
         score.setTypeface(comic_book);
+
+        TextView classement = (TextView) findViewById(R.id.classement);
+        classement.setTypeface(comic_book);
     }
 
     /**
@@ -144,10 +143,16 @@ public class SearchGameActivity extends ListActivity {
 
             case MotionEvent.ACTION_UP:
                 float finalX = event.getX();
-
-                Intent intent = new Intent(SearchGameActivity.this, ScoreActivity.class);
+                Intent intent;
 
                 if (initialX > 400 + finalX) {
+                    Log.d("------------------", "SCORE");
+
+                    intent = new Intent(SearchGameActivity.this, ScoreActivity.class);
+                    startActivity(intent);
+                }else if (initialX < finalX - 400) {
+                    Log.d("------------------", "CLASSEMENT");
+                    intent = new Intent(SearchGameActivity.this, ClassementActivity.class);
                     startActivity(intent);
                 }
                 break;

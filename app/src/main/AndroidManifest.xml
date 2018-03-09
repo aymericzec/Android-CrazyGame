@@ -22,8 +22,10 @@
 
         <activity android:name=".game.morpion.MorpionActivity"></activity>
         <activity android:name=".game.mixwords.MixWordActivity"></activity>
-        <activity android:name=".Score.ScoreActivity"></activity>
+        <activity android:name=".score.ScoreActivity"></activity>
         <activity android:name=".game.checkGame.ShakeGameActivity"></activity>
+        <activity android:name=".classement.ClassementActivity"></activity>
+
 
         <receiver android:name=".service.statistical.broadCastReceiverBoot.BroadCastBoot">
             <intent-filter android:priority="100">
