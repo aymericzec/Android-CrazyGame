@@ -50,8 +50,6 @@ public class MorpionActivity extends Activity {
 
     }
 
-
-
     @Override
     protected void onResume() {
         super.onResume();

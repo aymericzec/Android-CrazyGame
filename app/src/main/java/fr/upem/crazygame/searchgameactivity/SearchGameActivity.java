@@ -27,7 +27,7 @@ import fr.upem.crazygame.service.statistical.ServiceStatistical;
 public class SearchGameActivity extends ListActivity {
     private SearchGameSocketManager searchGameSocketManager;
     private ListView listView;
-    private final int nbGames = 2;
+    private final int nbGames = 3;
     private String[] games = new String[nbGames];
     private Integer[] img = new Integer[nbGames];
     private float initialX;
@@ -41,7 +41,7 @@ public class SearchGameActivity extends ListActivity {
         initGraphic();
         initListView();
 
-        registerReceiver(connectivityReceiver, connectivityReceiver.getIntentFilter());
+        //registerReceiver(connectivityReceiver, connectivityReceiver.getIntentFilter());
 
         try {
             searchGameSocketManager = SearchGameSocketManager.createSearchGameSocketManager(this);
@@ -62,10 +62,12 @@ public class SearchGameActivity extends ListActivity {
         // init Game List
         games[0] = getResources().getString(R.string.morpion_name);
         games[1] = getResources().getString(R.string.mixWord_name);
+        games[2] = getResources().getString(R.string.shake_name);
 
         // init Image List
         img[0] = R.drawable.sad1;
         img[1] = R.drawable.sad1;
+        img[2] = R.drawable.sad1;
 
         listView = (ListView) findViewById(android.R.id.list);
 

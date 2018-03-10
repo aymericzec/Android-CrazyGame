@@ -4,18 +4,29 @@ import android.app.Activity;
 import android.database.Cursor;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import org.apache.http.entity.ByteArrayEntity;
+
+import java.io.IOException;
+import java.nio.ByteBuffer;
+import java.nio.channels.SocketChannel;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 import fr.upem.crazygame.R;
+import fr.upem.crazygame.bytebuffer_manager.ByteBufferManager;
+import fr.upem.crazygame.charset.CharsetServer;
 import fr.upem.crazygame.provider.GameCrazyGameColumns;
 import fr.upem.crazygame.provider.ProviderDataGame;
+import fr.upem.crazygame.score.ScoreActivity;
+import fr.upem.crazygame.searchgameactivity.SocketHandler;
 
 /**
  * Created by myfou on 04/03/2018.
@@ -32,35 +43,7 @@ public class ClassementActivity extends Activity {
         Log.d("----------", "Creation Classement");
 
         initGraphic();
-
-        ArrayList<Classement> classements = new ArrayList<>();
-
-        String [] columns = {GameCrazyGameColumns.NAME_GAME, GameCrazyGameColumns.GAME_WIN, GameCrazyGameColumns.GAME};
-        Cursor cursor = getContentResolver().query(ProviderDataGame.CONTENT_URI, columns, null, null, null);
-
-        /*
-        if (cursor.moveToFirst()) {
-            do {
-                String nameGame = cursor.getString(cursor.getColumnIndex(GameCrazyGameColumns.NAME_GAME));
-                int nbGameTotal = 3; //= cursor.getInt(cursor.getColumnIndex(GameCrazyGameColumns.TOTAL_GAME));
-
-                classements.add(new Classement(nameGame, nbGameTotal));
-            } while (cursor.moveToNext());
-        }
-        */
-        Classement c1 = new Classement("CrazyGame", 12);
-        Classement c2 = new Classement("Morpion", 56);
-        Classement c3 = new Classement("MixWord", 2);
-
-        classements.add(c1);
-        classements.add(c2);
-        classements.add(c3);
-
-        Collections.sort(classements);
-
-        ClassementAdapter adapter = new ClassementAdapter(this, R.layout.row_layout_classement, classements);
-        ListView listView=(ListView)findViewById(R.id.listClassement);
-        listView.setAdapter(adapter);
+        new AsyncTaskWaitScoreWorld(this).execute();
     }
 
     private void initGraphic(){
@@ -77,6 +60,12 @@ public class ClassementActivity extends Activity {
         back.setTypeface(comic_book);
     }
 
+    public void initList (List<Classement> classements) {
+        Collections.sort(classements);
+        ClassementAdapter adapter = new ClassementAdapter(ClassementActivity.this, R.layout.row_layout_classement, classements);
+        ListView listView=(ListView)findViewById(R.id.listClassement);
+        listView.setAdapter(adapter);
+    }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {

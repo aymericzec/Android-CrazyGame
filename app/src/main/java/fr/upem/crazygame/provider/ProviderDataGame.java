@@ -106,7 +106,7 @@ public class ProviderDataGame extends ContentProvider {
     }
 
     public static void addGame (String nameGame, Context context) {
-        String [] columns = {GameCrazyGameColumns.NAME_GAME, GameCrazyGameColumns.GAME};
+        String [] columns = {GameCrazyGameColumns.NAME_GAME, GameCrazyGameColumns.GAME, GameCrazyGameColumns.GAME_LAST_PLAY};
 
         String selection = GameCrazyGameColumns.NAME_GAME + " = ?";
         String [] selectionArgs = {nameGame};

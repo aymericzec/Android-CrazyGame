@@ -50,6 +50,7 @@ public class SearchGameSocketManager implements Serializable {
 
     public static SearchGameSocketManager createSearchGameSocketManager (SearchGameActivity searchGameActivity) throws IOException {
         SocketChannel sc = SocketChannel.open();
+        SocketHandler.setSocket(sc);
         return new SearchGameSocketManager(sc, searchGameActivity);
     }
 

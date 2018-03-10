@@ -10,9 +10,17 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+
+import java.io.IOException;
+import java.nio.ByteBuffer;
+import java.nio.channels.SocketChannel;
+
 import fr.upem.crazygame.R;
+import fr.upem.crazygame.game.mixwords.AsyncTaskWaitResult;
+import fr.upem.crazygame.searchgameactivity.SocketHandler;
 
 /**
  * Created by dagama on 08/03/18.
@@ -26,6 +34,8 @@ public class ShakeGameActivity extends Activity implements SensorEventListener {
     private long lastUpdate = 0;
     private float last_x, last_y, last_z;
     private float maxSpeed = 0;
+    private AsyncTaskWaitShakeResult waitResult;
+
 
     private CountDownTimer countDown = new CountDownTimer(15 * 1000, 1000) {
         public void onTick(long millisUntilFinished) {
@@ -33,15 +43,31 @@ public class ShakeGameActivity extends Activity implements SensorEventListener {
         }
 
         public void onFinish() {
-            chrono.setText(getString(R.string.yourScore) + "" +  maxSpeed);
-            messageBottom.setText(getString(R.string.great));
-            chrono.setOnClickListener(new View.OnClickListener() {
+            SocketChannel socketChannel = SocketHandler.getSocket();
+            ByteBuffer sendScore = ByteBuffer.allocate(4);
+            int score = Math.round(maxSpeed);
+            sendScore.putInt(score);
+            sendScore.flip();
 
-                @Override
-                public void onClick(View v) {
-                    ShakeGameActivity.this.finish();
-                }
-            });
+            try {
+                socketChannel.write(sendScore);
+                chrono.setText(getString(R.string.yourScore) + "" +  score);
+                Log.d("score", String.valueOf(score));
+                messageBottom.setText(getString(R.string.great));
+                chrono.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        ShakeGameActivity.this.finish();
+                    }
+                });
+                waitResult = new AsyncTaskWaitShakeResult(socketChannel, ShakeGameActivity.this);
+
+                waitResult.execute(score);
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     };
 
@@ -124,5 +150,9 @@ public class ShakeGameActivity extends Activity implements SensorEventListener {
 
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
+    }
+
+    public void endGame() {
+
     }
 }
