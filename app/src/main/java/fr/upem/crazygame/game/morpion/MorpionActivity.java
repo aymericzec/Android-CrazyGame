@@ -160,7 +160,7 @@ public class MorpionActivity extends Activity {
 
                                     Toast toast = Toast.makeText(context, text, duration);
                                     toast.show();*/
-                                    messageBottom.setText(R.string.win);
+                                    messageBottom.setText(text);
 
                                 } else if (handlerMorpion.isEgality()) {
                                     Context context = getApplicationContext();
@@ -170,7 +170,7 @@ public class MorpionActivity extends Activity {
 
                                     Toast toast = Toast.makeText(context, text, duration);
                                     toast.show();*/
-                                    messageBottom.setText(R.string.equality);
+                                    messageBottom.setText(text);
                                 } else {
                                     this.handlerMorpion.waitOther();
                                 }
