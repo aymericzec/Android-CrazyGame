@@ -1,8 +1,15 @@
 package fr.upem.crazygame.searchgameactivity;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.app.ListActivity;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
@@ -33,10 +40,16 @@ public class SearchGameActivity extends ListActivity {
     private float initialX;
     private ConnectivityReceiver connectivityReceiver = new ConnectivityReceiver();
 
+    private static final int DIALOG_INTERNET_CONNECTION_FAIL = 10;
+
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_games);
+
+        checkInternet();
+
         startService();
         initGraphic();
         initListView();
@@ -52,6 +65,55 @@ public class SearchGameActivity extends ListActivity {
             e.printStackTrace();
         }
     }
+
+    //CHECK CONNECTION
+
+    private boolean isConnect(){
+        NetworkInfo networkInfo = ((ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE)).getActiveNetworkInfo();
+        if(networkInfo==null || !networkInfo.isConnected()){
+            return false;
+        }
+        return true;
+    }
+
+    public void checkInternet(){
+        if(!isConnect()){
+            showDialog(DIALOG_INTERNET_CONNECTION_FAIL);
+        }
+    }
+
+    @Override
+    protected Dialog onCreateDialog(int id){
+        switch(id){
+            case DIALOG_INTERNET_CONNECTION_FAIL:
+                //Il n'y a pas de connection internet
+                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                builder.setMessage("Vous devez vous connectez à Internet");
+                builder.setCancelable(true);
+                builder.setPositiveButton("Réessayer", new retryOnClickListener());
+                builder.setNegativeButton("Fermer l'application",new exitOnClickListener());
+                AlertDialog dialog = builder.create();
+                dialog.show();
+                break;
+            default:
+                //DO NOTHING
+        }
+        return super.onCreateDialog(id);
+    }
+
+    private final class retryOnClickListener implements DialogInterface.OnClickListener{
+        public void onClick(DialogInterface dialogInterface, int id){
+            checkInternet();
+        }
+    }
+
+    private final class exitOnClickListener implements DialogInterface.OnClickListener{
+        public void onClick(DialogInterface dialogInterface, int id){
+            SearchGameActivity.this.finish();
+        }
+    }
+
+    //FIN CHECK CONNECTION
 
     private void startService() {
         Intent i = new Intent(this, ServiceStatistical.class);
