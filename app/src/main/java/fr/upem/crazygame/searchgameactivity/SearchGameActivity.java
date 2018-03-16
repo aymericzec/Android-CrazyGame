@@ -67,9 +67,9 @@ public class SearchGameActivity extends ListActivity {
         games[2] = getResources().getString(R.string.shake_name);
 
         // init Image List
-        img[0] = R.drawable.sad1;
-        img[1] = R.drawable.sad1;
-        img[2] = R.drawable.sad1;
+        img[0] = R.drawable.morpion;
+        img[1] = R.drawable.word;
+        img[2] = R.drawable.shake;
 
         listView = (ListView) findViewById(android.R.id.list);
 
