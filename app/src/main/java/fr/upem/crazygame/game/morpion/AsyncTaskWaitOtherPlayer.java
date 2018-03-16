@@ -6,7 +6,10 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.util.Log;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import org.w3c.dom.Text;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -79,7 +82,7 @@ public class AsyncTaskWaitOtherPlayer extends AsyncTask<Void,Void, Cell>{
             int x = cell.getX();
             int y = cell.getY();
 
-              handlerMorpion.playOtherPlayer(x, y);
+            handlerMorpion.playOtherPlayer(x, y);
             morpionActivity.putClickAdvsersary(x, y);
 
             if (!(handlerMorpion.isWinner() || handlerMorpion.isEgality())) {
@@ -100,21 +103,9 @@ public class AsyncTaskWaitOtherPlayer extends AsyncTask<Void,Void, Cell>{
 
                 Toast toast = Toast.makeText(context, text, duration);
                 toast.show();*/
+                TextView messageBottom = morpionActivity.getMessageBottom();
+                messageBottom.setText(text);
 
-                AlertDialog.Builder dialog = new AlertDialog.Builder(morpionActivity);
-                dialog.setMessage(text);
-
-                dialog.setPositiveButton(R.string.back, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        Intent intent = new Intent(morpionActivity, SearchGameActivity.class);
-                        morpionActivity.startActivity(intent);
-                        morpionActivity.finish();
-                    }
-                });
-
-                dialog.create();
-                dialog.show();
             }
 
         } else {

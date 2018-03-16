@@ -83,6 +83,10 @@ public class MorpionActivity extends Activity {
         }
     }
 
+    public TextView getMessageBottom() {
+        return messageBottom;
+    }
+
     /**
      * Init and launch the game
      */
@@ -156,21 +160,7 @@ public class MorpionActivity extends Activity {
 
                                     Toast toast = Toast.makeText(context, text, duration);
                                     toast.show();*/
-
-                                    AlertDialog.Builder dialog = new AlertDialog.Builder(this);
-                                    dialog.setMessage(R.string.win);
-
-                                    dialog.setPositiveButton(R.string.back, new DialogInterface.OnClickListener() {
-                                        @Override
-                                        public void onClick(DialogInterface dialogInterface, int i) {
-                                            Intent intent = new Intent(MorpionActivity.this, SearchGameActivity.class);
-                                            startActivity(intent);
-                                            finish();
-                                        }
-                                    });
-
-                                    dialog.create();
-                                    dialog.show();
+                                    messageBottom.setText(R.string.win);
 
                                 } else if (handlerMorpion.isEgality()) {
                                     Context context = getApplicationContext();
@@ -180,21 +170,7 @@ public class MorpionActivity extends Activity {
 
                                     Toast toast = Toast.makeText(context, text, duration);
                                     toast.show();*/
-
-                                    AlertDialog.Builder dialog = new AlertDialog.Builder(this);
-                                    dialog.setMessage(R.string.equality);
-
-                                    dialog.setPositiveButton(R.string.back, new DialogInterface.OnClickListener() {
-                                        @Override
-                                        public void onClick(DialogInterface dialogInterface, int i) {
-                                            Intent intent = new Intent(MorpionActivity.this, SearchGameActivity.class);
-                                            startActivity(intent);
-                                            finish();
-                                        }
-                                    });
-
-                                    dialog.create();
-                                    dialog.show();
+                                    messageBottom.setText(R.string.equality);
                                 } else {
                                     this.handlerMorpion.waitOther();
                                 }

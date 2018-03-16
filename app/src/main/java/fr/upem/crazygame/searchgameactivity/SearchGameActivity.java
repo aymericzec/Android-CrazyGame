@@ -38,7 +38,7 @@ public class SearchGameActivity extends ListActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_games);
 
-        //startService();
+        startService();
         initGraphic();
         initListView();
 
