@@ -7,13 +7,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
-import android.widget.ProgressBar;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import fr.upem.crazygame.R;
 
 public class CustomListSearchGame extends ArrayAdapter<String> {
+
     private final Activity context;
     private final String[] itemname;
     private final Integer[] imgid;

@@ -9,9 +9,6 @@ import java.nio.channels.SocketChannel;
 
 import fr.upem.crazygame.charset.CharsetServer;
 
-/**
- * Created by myfou on 06/02/2018.
- */
 
 public class HandlerMixWords {
 

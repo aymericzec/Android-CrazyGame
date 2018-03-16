@@ -1,15 +1,8 @@
 package fr.upem.crazygame.searchgameactivity;
 
-import android.app.AlertDialog;
-import android.app.Dialog;
 import android.app.ListActivity;
-import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Typeface;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
@@ -28,6 +21,7 @@ import fr.upem.crazygame.service.statistical.ServiceStatistical;
 
 
 public class SearchGameActivity extends ListActivity {
+
     private SearchGameSocketManager searchGameSocketManager;
     private ListView listView;
     private final int nbGames = 3;

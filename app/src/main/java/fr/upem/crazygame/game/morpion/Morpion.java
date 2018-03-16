@@ -4,11 +4,10 @@ import android.util.Log;
 
 import fr.upem.crazygame.game.Players;
 
-/**
- * Created by myfou on 14/01/2018.
- */
+
 
 public class Morpion {
+
     private Players current;
     private Players begin;
     private Cell [][] gameBoard = new Cell[3][3];

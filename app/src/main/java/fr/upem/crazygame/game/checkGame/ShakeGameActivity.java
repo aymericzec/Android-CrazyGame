@@ -19,14 +19,11 @@ import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
 
 import fr.upem.crazygame.R;
-import fr.upem.crazygame.game.mixwords.AsyncTaskWaitResult;
 import fr.upem.crazygame.searchgameactivity.SocketHandler;
 
-/**
- * Created by dagama on 08/03/18.
- */
 
 public class ShakeGameActivity extends Activity implements SensorEventListener {
+
     private SensorManager senSensorManager;
     private Sensor senAccelerometer;
     private TextView chrono;

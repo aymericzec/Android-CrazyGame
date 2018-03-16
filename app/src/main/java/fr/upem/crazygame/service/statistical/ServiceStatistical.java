@@ -4,7 +4,6 @@ import android.app.Service;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
-import android.os.Handler;
 import android.os.IBinder;
 import android.os.Looper;
 import android.os.StrictMode;
@@ -20,7 +19,6 @@ import java.util.Locale;
 import fr.upem.crazygame.charset.CharsetServer;
 import fr.upem.crazygame.provider.GameCrazyGameColumns;
 import fr.upem.crazygame.provider.ProviderDataGame;
-import fr.upem.crazygame.searchgameactivity.SearchGameSocketManager;
 
 
 public class ServiceStatistical extends Service {

@@ -11,9 +11,7 @@ import android.widget.TextView;
 import java.util.List;
 import fr.upem.crazygame.R;
 
-/**
- * Created by myfou on 31/01/2018.
- */
+
 
 public class ScoresAdapter extends ArrayAdapter<Score> {
 

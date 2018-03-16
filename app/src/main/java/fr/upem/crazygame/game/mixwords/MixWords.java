@@ -1,16 +1,6 @@
 package fr.upem.crazygame.game.mixwords;
 
-import java.nio.charset.Charset;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
-import fr.upem.crazygame.game.Players;
-
-/**
- * Created by myfou on 06/02/2018.
- */
 
 public class MixWords {
 

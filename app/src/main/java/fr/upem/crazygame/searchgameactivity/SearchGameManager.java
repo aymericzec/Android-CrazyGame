@@ -11,11 +11,10 @@ import fr.upem.crazygame.game.checkGame.ShakeGameActivity;
 import fr.upem.crazygame.game.mixwords.MixWordActivity;
 import fr.upem.crazygame.game.morpion.MorpionActivity;
 
-/**
- * Created by myfou on 31/01/2018.
- */
+
 
 public class SearchGameManager {
+
     private final SocketChannel socketChannel;
     private ByteBuffer in = ByteBuffer.allocate(4096);
     private ByteBuffer out = ByteBuffer.allocate(4096);

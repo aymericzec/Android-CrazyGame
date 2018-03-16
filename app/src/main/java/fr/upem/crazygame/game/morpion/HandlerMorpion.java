@@ -10,7 +10,6 @@ import fr.upem.crazygame.game.Players;
 
 
 /**
- * Created by myfou on 15/01/2018.
  * This class use to represent the connexion with the server and share information with the other player for morpion
  */
 

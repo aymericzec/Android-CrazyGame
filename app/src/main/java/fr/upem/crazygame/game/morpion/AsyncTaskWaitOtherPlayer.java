@@ -15,9 +15,6 @@ import fr.upem.crazygame.game.Players;
 import fr.upem.crazygame.provider.GameCrazyGameColumns;
 import fr.upem.crazygame.provider.ProviderDataGame;
 
-/**
- * Created by myfou on 16/01/2018.
- */
 
 public class AsyncTaskWaitOtherPlayer extends AsyncTask<Void,Void, Cell>{
 

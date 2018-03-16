@@ -24,6 +24,7 @@ import fr.upem.crazygame.searchgameactivity.SearchGameActivity;
 import fr.upem.crazygame.searchgameactivity.SocketHandler;
 
 public class MorpionActivity extends Activity {
+
     private final static int NUMBER_CELL = 3;
     private HandlerMorpion handlerMorpion;
     private SocketChannel sc;

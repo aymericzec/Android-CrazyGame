@@ -11,13 +11,8 @@ import java.util.List;
 
 import fr.upem.crazygame.bytebuffer_manager.ByteBufferManager;
 import fr.upem.crazygame.charset.CharsetServer;
-import fr.upem.crazygame.game.Players;
-import fr.upem.crazygame.game.checkGame.ShakeGameActivity;
 import fr.upem.crazygame.searchgameactivity.SocketHandler;
 
-/**
- * Created by myfou on 16/01/2018.
- */
 
 /**
  * Wait the result of adversary if he win before us the the game finish

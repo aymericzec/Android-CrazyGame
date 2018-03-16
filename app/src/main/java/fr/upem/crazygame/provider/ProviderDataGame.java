@@ -11,12 +11,10 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.util.Log;
 
-import java.nio.ByteBuffer;
-
-import fr.upem.crazygame.charset.CharsetServer;
 
 
 public class ProviderDataGame extends ContentProvider {
+
     public static final Uri CONTENT_URI = Uri.parse("content://fr.upem.crazygame.provider.crazygameprovider");
     public static final String CONTENT_PROVIDER_DB_NAME = "crazygame.db";
     public static final int CONTENT_PROVIDER_DB_VERSION = 1;

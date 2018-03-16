@@ -3,11 +3,9 @@ package fr.upem.crazygame.game.morpion;
 
 import fr.upem.crazygame.game.Players;
 
-/**
- * Created by myfou on 15/01/2018.
- */
 
 public class Cell {
+
     private final Players player;
     private final int x;
     private final int y;

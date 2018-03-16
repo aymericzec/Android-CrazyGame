@@ -2,9 +2,6 @@ package fr.upem.crazygame.classement;
 
 import android.support.annotation.NonNull;
 
-/**
- * Created by myfou on 04/03/2018.
- */
 
 public class Classement implements Comparable {
 

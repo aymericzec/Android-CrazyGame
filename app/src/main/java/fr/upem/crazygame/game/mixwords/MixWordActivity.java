@@ -20,6 +20,7 @@ import fr.upem.crazygame.searchgameactivity.SearchGameActivity;
 import fr.upem.crazygame.searchgameactivity.SocketHandler;
 
 public class MixWordActivity extends Activity {
+
     private Button[] keypadBottom;
     private Button[] keypadTop;
     private HandlerMixWords handlerMixWords;
