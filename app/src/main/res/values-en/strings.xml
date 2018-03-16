@@ -34,4 +34,6 @@
     <string name="great">Great</string>
     <string name="cantPlay">CrazyGame requires an internet connection to play</string>
     <string name="airPlaneMode">You cannot play CrazyGame in airplane mode</string>
+    <string name="retry">Retry</string>
+
 </resources>

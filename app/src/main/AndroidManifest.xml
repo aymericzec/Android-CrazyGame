@@ -26,7 +26,7 @@
         <activity android:name=".score.ScoreActivity"></activity>
         <activity android:name=".game.checkGame.ShakeGameActivity"></activity>
         <activity android:name=".classement.ClassementActivity"></activity>
-
+        <activity android:name=".connectivityReceiver.AlertDialogInternet"></activity>
 
         <receiver android:name=".service.statistical.broadCastReceiverBoot.BroadCastBoot">
             <intent-filter android:priority="100">

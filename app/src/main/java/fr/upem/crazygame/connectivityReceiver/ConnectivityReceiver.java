@@ -7,16 +7,11 @@ import android.content.IntentFilter;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.widget.Toast;
-import fr.upem.crazygame.R;
 
-/**
- * Created by dagama on 09/03/18.
- */
 
 public class ConnectivityReceiver extends BroadcastReceiver{
-    IntentFilter intentFilter;
-    BroadcastReceiver br;
+
+    private IntentFilter intentFilter;
 
     public IntentFilter getIntentFilter(){
         intentFilter = new IntentFilter("android.intent.action.AIRPLANE_MODE");
@@ -25,19 +20,15 @@ public class ConnectivityReceiver extends BroadcastReceiver{
     }
 
     @Override
-    public void onReceive(Context context, Intent intent) {
+    public void onReceive(final Context context, final Intent intent) {
 
         Bundle extras = intent.getExtras();
         NetworkInfo info = (NetworkInfo) extras.getParcelable("networkInfo");
         NetworkInfo.State state = info.getState();
 
-        boolean isAirplaneModeOn = intent.getBooleanExtra("state", false);
-
-        if(isAirplaneModeOn){
-            Toast.makeText(context, context.getString(R.string.cantPlay), Toast.LENGTH_LONG).show();
-        }
         if (state != NetworkInfo.State.CONNECTED) {
-            Toast.makeText(context, context.getString(R.string.cantPlay), Toast.LENGTH_LONG).show();
-        };
+            Intent i = new Intent(context.getApplicationContext(), AlertDialogInternet.class);
+            context.startActivity(i);
+        }
     }
 }
