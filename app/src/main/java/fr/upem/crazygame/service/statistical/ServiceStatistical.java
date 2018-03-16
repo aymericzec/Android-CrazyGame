@@ -8,6 +8,7 @@ import android.os.IBinder;
 import android.os.Looper;
 import android.os.StrictMode;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.widget.Toast;
 
 import java.io.IOException;
@@ -109,6 +110,7 @@ public class ServiceStatistical extends Service {
                                 ByteBuffer b = CharsetServer.CHARSET_UTF_8.encode(nameGame);
                                 byteBuffer.putInt(b.limit());
                                 byteBuffer.put(b);
+                                Log.d("test", game + " " + nameGame);
                                 byteBuffer.putInt(game);
                             } while (cursor.moveToNext());
 
