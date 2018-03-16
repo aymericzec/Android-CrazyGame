@@ -87,6 +87,14 @@ public class MorpionActivity extends Activity {
         return messageBottom;
     }
 
+    public Button getCases(int i, int j) {
+        return cases[i][j];
+    }
+
+    public static int getNumberCell() {
+        return NUMBER_CELL;
+    }
+
     /**
      * Init and launch the game
      */
@@ -159,7 +167,7 @@ public class MorpionActivity extends Activity {
                                             Button button = cases[l][m];
 
                                             if(handlerMorpion.getColorBoard(l, m) == "red") {
-                                                button.setBackgroundColor(Color.RED);
+                                                button.setTextColor(Color.RED);
                                             }
                                         }
                                     }

@@ -4,8 +4,10 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.AsyncTask;
 import android.util.Log;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -94,6 +96,16 @@ public class AsyncTaskWaitOtherPlayer extends AsyncTask<Void,Void, Cell>{
                 if (handlerMorpion.isWinner()) {
                    ProviderDataGame.addWinGame(GameCrazyGameColumns.NAME_MORPION, morpionActivity);
                    text = context.getString(R.string.lose);
+
+                    for (int l = 0; l < MorpionActivity.getNumberCell(); l++) {
+                        for (int m = 0; m < MorpionActivity.getNumberCell(); m++) {
+                            Button button = morpionActivity.getCases(l, m);
+
+                            if(handlerMorpion.getColorBoard(l, m) == "red") {
+                                button.setTextColor(Color.RED);
+                            }
+                        }
+                    }
 
                 } else {
                     text = context.getString(R.string.equality);
