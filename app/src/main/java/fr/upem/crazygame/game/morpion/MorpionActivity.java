@@ -148,29 +148,16 @@ public class MorpionActivity extends Activity {
                                     b.setText("O");
                                 }
 
+                                notMyTurnGraphic();
                                 //turn become true when receive data
 
                                 //if the player win with this game
                                 if (handlerMorpion.isWinner()) {
-                                    Context context = getApplicationContext();
-                                    CharSequence text = "Vous avez gagné";
                                     ProviderDataGame.addWinGame(GameCrazyGameColumns.NAME_MORPION, this);
-
-                                    /*int duration = Toast.LENGTH_LONG;
-
-                                    Toast toast = Toast.makeText(context, text, duration);
-                                    toast.show();*/
-                                    messageBottom.setText(text);
+                                    messageBottom.setText(R.string.win);
 
                                 } else if (handlerMorpion.isEgality()) {
-                                    Context context = getApplicationContext();
-                                    CharSequence text = "Egalité";
-
-                                    /*int duration = Toast.LENGTH_LONG;
-
-                                    Toast toast = Toast.makeText(context, text, duration);
-                                    toast.show();*/
-                                    messageBottom.setText(text);
+                                    messageBottom.setText(R.string.equality);
                                 } else {
                                     this.handlerMorpion.waitOther();
                                 }
@@ -186,7 +173,8 @@ public class MorpionActivity extends Activity {
                     }
                 }
             }
-            notMyTurnGraphic();
+
+
         }
     }
 
