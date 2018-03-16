@@ -47,6 +47,8 @@ public class HandlerMorpion extends Handler {
         morpion.playAround(((this.morpionActivity.getCurrentPlayer() == Players.PLAYER1) ? Players.PLAYER2 : Players.PLAYER1),x, y);
     }
 
+    public String getColorBoard(int i, int j) { return morpion.getColor(i, j); }
+
     public boolean isWinner () {
         return morpion.winner() != null;
     }

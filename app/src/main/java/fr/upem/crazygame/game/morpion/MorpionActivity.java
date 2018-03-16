@@ -153,6 +153,17 @@ public class MorpionActivity extends Activity {
 
                                 //if the player win with this game
                                 if (handlerMorpion.isWinner()) {
+
+                                    for (int l = 0; l < MorpionActivity.NUMBER_CELL; l++) {
+                                        for (int m = 0; m < MorpionActivity.NUMBER_CELL; m++) {
+                                            Button button = cases[l][m];
+
+                                            if(handlerMorpion.getColorBoard(l, m) == "red") {
+                                                button.setBackgroundColor(Color.RED);
+                                            }
+                                        }
+                                    }
+
                                     ProviderDataGame.addWinGame(GameCrazyGameColumns.NAME_MORPION, this);
                                     messageBottom.setText(R.string.win);
 

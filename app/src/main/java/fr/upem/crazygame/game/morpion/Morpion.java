@@ -11,6 +11,7 @@ public class Morpion {
     private Players current;
     private Players begin;
     private Cell [][] gameBoard = new Cell[3][3];
+    private String [][] colorBoard = new String[3][3];
 
     public Morpion (Players current, Players begin) {
         this.current = current;
@@ -23,7 +24,12 @@ public class Morpion {
      */
     public void initMorpion (Players current) {
         gameBoard = new Cell[3][3];
+        colorBoard = new String[3][3];
         this.current = current;
+    }
+
+    public String getColor(int i, int j) {
+        return colorBoard[i][j];
     }
 
     /**
@@ -55,6 +61,9 @@ public class Morpion {
             if (gameBoard[i][0] != null && gameBoard[i][1] != null && gameBoard[i][2] != null) {
                 if (gameBoard[i][0].getPlayer().equals(gameBoard[i][1].getPlayer()) && gameBoard[i][0].getPlayer().equals(gameBoard[i][2].getPlayer())) {
                     Log.d("Perdu 1", i + "");
+                    colorBoard[i][0] = "red";
+                    colorBoard[i][1] = "red";
+                    colorBoard[i][2] = "red";
                     return gameBoard[i][0].getPlayer();
                 }
             }
@@ -65,6 +74,9 @@ public class Morpion {
             if (gameBoard[0][i] != null && gameBoard[1][i] != null && gameBoard[2][i] != null) {
                 if (gameBoard[0][i].getPlayer().equals(gameBoard[1][i].getPlayer()) && gameBoard[0][i].getPlayer().equals(gameBoard[2][i].getPlayer())) {
                     Log.d("Perdu 2", i + "");
+                    colorBoard[0][i] = "red";
+                    colorBoard[1][i] = "red";
+                    colorBoard[2][i] = "red";
                     return gameBoard[0][i].getPlayer();
                 }
             }
@@ -76,6 +88,9 @@ public class Morpion {
                 Log.d("Test diagonale", gameBoard[0][0].getPlayer() + " " + gameBoard[1][1].getPlayer() + " " + gameBoard[2][2].getPlayer());
                 if (gameBoard[0][0].getPlayer().equals(gameBoard[1][1].getPlayer()) && gameBoard[0][0].getPlayer().equals(gameBoard[2][2].getPlayer())) {
                     Log.d("Perdu 3", i + "");
+                    colorBoard[0][0] = "red";
+                    colorBoard[1][1] = "red";
+                    colorBoard[2][2] = "red";
                     return gameBoard[0][0].getPlayer();
                 }
             }
@@ -85,6 +100,9 @@ public class Morpion {
             if (gameBoard[0][2] != null && gameBoard[1][1] != null && gameBoard[2][0] != null) {
                 if (gameBoard[0][2].getPlayer().equals(gameBoard[1][1].getPlayer()) && gameBoard[0][2].getPlayer().equals(gameBoard[2][0].getPlayer())) {
                     Log.d("Perdu 4", i + "");
+                    colorBoard[0][2] = "red";
+                    colorBoard[1][1] = "red";
+                    colorBoard[2][0] = "red";
                     return gameBoard[0][2].getPlayer();
                 }
             }
