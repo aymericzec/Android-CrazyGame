@@ -1,7 +1,9 @@
 package fr.upem.crazygame.game.morpion;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -149,17 +151,50 @@ public class MorpionActivity extends Activity {
                                     Context context = getApplicationContext();
                                     CharSequence text = "Vous avez gagné";
                                     ProviderDataGame.addWinGame(GameCrazyGameColumns.NAME_MORPION, this);
-                                    int duration = Toast.LENGTH_LONG;
+
+                                    /*int duration = Toast.LENGTH_LONG;
 
                                     Toast toast = Toast.makeText(context, text, duration);
-                                    toast.show();
+                                    toast.show();*/
+
+                                    AlertDialog.Builder dialog = new AlertDialog.Builder(this);
+                                    dialog.setMessage(R.string.win);
+
+                                    dialog.setPositiveButton(R.string.back, new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialogInterface, int i) {
+                                            Intent intent = new Intent(MorpionActivity.this, SearchGameActivity.class);
+                                            startActivity(intent);
+                                            finish();
+                                        }
+                                    });
+
+                                    dialog.create();
+                                    dialog.show();
+
                                 } else if (handlerMorpion.isEgality()) {
                                     Context context = getApplicationContext();
                                     CharSequence text = "Egalité";
-                                    int duration = Toast.LENGTH_LONG;
+
+                                    /*int duration = Toast.LENGTH_LONG;
 
                                     Toast toast = Toast.makeText(context, text, duration);
-                                    toast.show();
+                                    toast.show();*/
+
+                                    AlertDialog.Builder dialog = new AlertDialog.Builder(this);
+                                    dialog.setMessage(R.string.equality);
+
+                                    dialog.setPositiveButton(R.string.back, new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialogInterface, int i) {
+                                            Intent intent = new Intent(MorpionActivity.this, SearchGameActivity.class);
+                                            startActivity(intent);
+                                            finish();
+                                        }
+                                    });
+
+                                    dialog.create();
+                                    dialog.show();
                                 } else {
                                     this.handlerMorpion.waitOther();
                                 }

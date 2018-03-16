@@ -1,6 +1,9 @@
 package fr.upem.crazygame.game.morpion;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.Toast;
@@ -14,6 +17,7 @@ import fr.upem.crazygame.bytebuffer_manager.ByteBufferManager;
 import fr.upem.crazygame.game.Players;
 import fr.upem.crazygame.provider.GameCrazyGameColumns;
 import fr.upem.crazygame.provider.ProviderDataGame;
+import fr.upem.crazygame.searchgameactivity.SearchGameActivity;
 
 
 public class AsyncTaskWaitOtherPlayer extends AsyncTask<Void,Void, Cell>{
@@ -92,10 +96,25 @@ public class AsyncTaskWaitOtherPlayer extends AsyncTask<Void,Void, Cell>{
                     text = context.getString(R.string.equality);
                 }
 
-                int duration = Toast.LENGTH_LONG;
+                /*int duration = Toast.LENGTH_LONG;
 
                 Toast toast = Toast.makeText(context, text, duration);
-                toast.show();
+                toast.show();*/
+
+                AlertDialog.Builder dialog = new AlertDialog.Builder(morpionActivity);
+                dialog.setMessage(text);
+
+                dialog.setPositiveButton(R.string.back, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Intent intent = new Intent(morpionActivity, SearchGameActivity.class);
+                        morpionActivity.startActivity(intent);
+                        morpionActivity.finish();
+                    }
+                });
+
+                dialog.create();
+                dialog.show();
             }
 
         } else {
