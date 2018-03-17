@@ -2,11 +2,13 @@ package fr.upem.crazygame.game.checkGame;
 
 import android.os.AsyncTask;
 import android.util.Log;
+import android.widget.TextView;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
 
+import fr.upem.crazygame.R;
 import fr.upem.crazygame.bytebuffer_manager.ByteBufferManager;
 import fr.upem.crazygame.game.Players;
 
@@ -18,7 +20,9 @@ public class AsyncTaskWaitShakeResult extends AsyncTask<Integer, Integer, Player
 
     private final SocketChannel sc;
     private final ShakeGameActivity shakeGameActivity;
-    private String word = null;
+    private int result;
+    private int scoreAdversary;
+    private int score;
 
     public AsyncTaskWaitShakeResult(SocketChannel sc, ShakeGameActivity shakeGameActivity) {
         this.sc = sc;
@@ -29,8 +33,7 @@ public class AsyncTaskWaitShakeResult extends AsyncTask<Integer, Integer, Player
     @Override
     protected Players doInBackground(Integer... ints) {
         ByteBuffer bb = ByteBuffer.allocate(64);
-        int scoreAdversary;
-        int score = ints[0];
+        score = ints[0];
 
         //Wait the response of other player
         try {
@@ -43,10 +46,13 @@ public class AsyncTaskWaitShakeResult extends AsyncTask<Integer, Integer, Player
 
                     if (scoreAdversary > score) {
                         Log.d("Perdu", "perdu " + scoreAdversary);
+                        result = R.string.lose;
                     } else if (scoreAdversary < score) {
                         Log.d("Gagné", "Gagné" + scoreAdversary);
+                        result = R.string.win;
                     } else {
                         Log.d("egalité", "egalité" + scoreAdversary);
+                        result = R.string.equality;
                     }
                 }
         } catch (IOException e) {
@@ -61,6 +67,7 @@ public class AsyncTaskWaitShakeResult extends AsyncTask<Integer, Integer, Player
     protected void onProgressUpdate(Integer... values) {
         super.onProgressUpdate(values);
 
+
         //Vrai si gagné
         if (values[0] == 1) {
 
@@ -74,6 +81,6 @@ public class AsyncTaskWaitShakeResult extends AsyncTask<Integer, Integer, Player
     @Override
     protected void onPostExecute(Players players) {
         super.onPostExecute(players);
-        shakeGameActivity.endGame();
+        shakeGameActivity.endGame(result, score, scoreAdversary);
     }
 }

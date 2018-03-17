@@ -149,7 +149,12 @@ public class ShakeGameActivity extends Activity implements SensorEventListener {
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
     }
 
-    public void endGame() {
+    public void endGame(int result, int score, int scoreAdversary) {
+        messageBottom.setText(result);
 
+        chrono.setSingleLine(false);
+        chrono.setText(R.string.yourScore + " " + score);
+        chrono.setText("\n");
+        chrono.setText(R.string.scoreAdversary + " " + scoreAdversary);
     }
 }

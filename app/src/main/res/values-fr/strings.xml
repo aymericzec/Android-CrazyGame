@@ -32,6 +32,7 @@
     <string name="shake">Secouez !!!</string>
     <string name="timeBeforeStart">Temps avant de commencer : </string>
     <string name="yourScore">Votre score :</string>
+    <string name="scoreAdversary">Score Adversaire :</string>
     <string name="great">Pas mal</string>
     <string name="cantPlay">CrazyGame nécessite une connexion internet pour jouer</string>
     <string name="airPlaneMode">Vous ne pouvez pas jouer à CrazyGame en mode avion</string>
