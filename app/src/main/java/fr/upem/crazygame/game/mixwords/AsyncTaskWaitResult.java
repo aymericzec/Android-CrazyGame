@@ -68,7 +68,6 @@ public class AsyncTaskWaitResult extends AsyncTask<Void,Void, Players>{
                                 this.word = CharsetServer.CHARSET_UTF_8.decode(bb).toString();
                                 Log.d("Perdu", "Perdu");
                                 return Players.PLAYER2;
-
                             }
                         }
                     } else if (idRequest == 3) {
@@ -93,6 +92,6 @@ public class AsyncTaskWaitResult extends AsyncTask<Void,Void, Players>{
     protected void onPostExecute(Players players) {
         super.onPostExecute(players);
 
-        mixWordActivity.endGame();
+        mixWordActivity.endGame(players.equals(Players.PLAYER1));
     }
 }

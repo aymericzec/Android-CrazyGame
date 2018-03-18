@@ -24,6 +24,8 @@
 
     <string name="envoyer">Send your answer before your opponent!</string>
     <string name="loseBack">Other player is faster than you...\n Return to the menu</string>
+    <string name="winBack">You win !!! \n Return to the menu</string>
+
     <string name="win">You win</string>
     <string name="lose">You lose</string>
     <string name="equality">Equality</string>

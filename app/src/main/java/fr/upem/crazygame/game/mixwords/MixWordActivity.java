@@ -33,14 +33,14 @@ public class MixWordActivity extends Activity {
         setContentView(R.layout.activity_mix_word);
 
         ProviderDataGame.addGame(GameCrazyGameColumns.NAME_MIXWORD, this);
-        String word = "tes";//getIntent().getStringExtra("wordSearch");
+        String word = getIntent().getStringExtra("wordSearch");
 
         initGraphic();
         initKeypadTop(word.length());
         initKeypadBottom(word);
 
         MixWords mixWords = new MixWords(word);
-        //this.handlerMixWords = new HandlerMixWords(SocketHandler.getSocket(), mixWords, this);
+        this.handlerMixWords = new HandlerMixWords(SocketHandler.getSocket(), mixWords, this);
     }
 
     private void initGraphic (){
@@ -142,14 +142,20 @@ public class MixWordActivity extends Activity {
         }
     }
 
-    public void endGame() {
+    public void endGame(Boolean win) {
         for (int i = 0; i < keypadTop.length; i++) {
             keypadTop[i].setClickable(false);
             keypadBottom[i].setClickable(false);
         }
 
         Button action = (Button) findViewById(R.id.actionMixWord);
-        action.setText(getText(R.string.loseBack));
+
+        if (win) {
+            action.setText(getText(R.string.winBack));
+        } else {
+            action.setText(getText(R.string.loseBack));
+        }
+
         action.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
