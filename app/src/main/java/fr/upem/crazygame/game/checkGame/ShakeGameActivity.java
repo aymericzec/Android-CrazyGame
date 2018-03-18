@@ -19,6 +19,8 @@ import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
 
 import fr.upem.crazygame.R;
+import fr.upem.crazygame.provider.GameCrazyGameColumns;
+import fr.upem.crazygame.provider.ProviderDataGame;
 import fr.upem.crazygame.searchgameactivity.SocketHandler;
 
 
@@ -91,6 +93,7 @@ public class ShakeGameActivity extends Activity implements SensorEventListener {
         senSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         senAccelerometer = senSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         senSensorManager.registerListener(this, senAccelerometer , SensorManager.SENSOR_DELAY_NORMAL);
+        ProviderDataGame.addGame(GameCrazyGameColumns.NAME_MIXWORD, this);
     }
 
     protected void onPause() {

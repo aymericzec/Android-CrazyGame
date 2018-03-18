@@ -46,10 +46,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             db.insert(ProviderDataGame.CONTENT_PROVIDER_TABLE_NAME, null, contentValuesMixWord);
 
             ContentValues contentValuesShakeGame = new ContentValues();
-            contentValuesMixWord.put(GameCrazyGameColumns.NAME_GAME, GameCrazyGameColumns.NAME_SHAKEGAME);
-            contentValuesMixWord.put(GameCrazyGameColumns.GAME, 0);
-            contentValuesMixWord.put(GameCrazyGameColumns.GAME_WIN, 0);
-            contentValuesMixWord.put(GameCrazyGameColumns.GAME_LAST_PLAY, 0);
+            contentValuesShakeGame.put(GameCrazyGameColumns.NAME_GAME, GameCrazyGameColumns.NAME_SHAKEGAME);
+            contentValuesShakeGame.put(GameCrazyGameColumns.GAME, 0);
+            contentValuesShakeGame.put(GameCrazyGameColumns.GAME_WIN, 0);
+            contentValuesShakeGame.put(GameCrazyGameColumns.GAME_LAST_PLAY, 0);
 
             db.insert(ProviderDataGame.CONTENT_PROVIDER_TABLE_NAME, null, contentValuesShakeGame);
         }

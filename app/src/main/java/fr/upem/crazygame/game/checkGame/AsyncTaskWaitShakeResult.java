@@ -11,6 +11,8 @@ import java.nio.channels.SocketChannel;
 import fr.upem.crazygame.R;
 import fr.upem.crazygame.bytebuffer_manager.ByteBufferManager;
 import fr.upem.crazygame.game.Players;
+import fr.upem.crazygame.provider.GameCrazyGameColumns;
+import fr.upem.crazygame.provider.ProviderDataGame;
 
 
 /**
@@ -38,20 +40,16 @@ public class AsyncTaskWaitShakeResult extends AsyncTask<Integer, Integer, Player
         //Wait the response of other player
         try {
                 bb.limit(4);
-                Log.d("ReadFully", "tranquille");
                 if (ByteBufferManager.readFully(sc, bb)) {
-                    Log.d("ReadFully", "Reception du score adversaire");
                     bb.flip();
                     scoreAdversary = bb.getInt();
 
                     if (scoreAdversary > score) {
-                        Log.d("Perdu", "perdu " + scoreAdversary);
                         result = R.string.lose;
                     } else if (scoreAdversary < score) {
-                        Log.d("Gagné", "Gagné" + scoreAdversary);
+                        ProviderDataGame.addWinGame(GameCrazyGameColumns.NAME_SHAKEGAME, shakeGameActivity);
                         result = R.string.win;
                     } else {
-                        Log.d("egalité", "egalité" + scoreAdversary);
                         result = R.string.equality;
                     }
                 }
