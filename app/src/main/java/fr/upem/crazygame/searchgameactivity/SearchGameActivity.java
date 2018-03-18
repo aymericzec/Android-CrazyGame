@@ -29,6 +29,7 @@ public class SearchGameActivity extends ListActivity {
     private Integer[] img = new Integer[nbGames];
     private float initialX;
     private ConnectivityReceiver connectivityReceiver;
+    private static View lastClickSearch = null;
 
     private static final int DIALOG_INTERNET_CONNECTION_FAIL = 10;
 
@@ -81,7 +82,8 @@ public class SearchGameActivity extends ListActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 view.findViewById(R.id.loadingPanel).setVisibility(View.VISIBLE);
-                clickSearchGame((String) adapterView.getItemAtPosition(i));
+                SearchGameActivity.this.lastClickSearch = view;
+                clickSearchGame((String) adapterView.getItemAtPosition(i), view);
             }
         });
     }
@@ -108,7 +110,7 @@ public class SearchGameActivity extends ListActivity {
      *
      * @param nameGame
      */
-    public void clickSearchGame(String nameGame) {
+    public void clickSearchGame(String nameGame, View view) {
         SearchGameManager searchGameManager = searchGameSocketManager.isConnected();
 
         if (null != searchGameManager) {
@@ -130,7 +132,10 @@ public class SearchGameActivity extends ListActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        findViewById(R.id.loadingPanel).setVisibility(View.GONE);
+
+        if (lastClickSearch != null) {
+            lastClickSearch.findViewById(R.id.loadingPanel).setVisibility(View.GONE);
+        }
     }
 
     @Override

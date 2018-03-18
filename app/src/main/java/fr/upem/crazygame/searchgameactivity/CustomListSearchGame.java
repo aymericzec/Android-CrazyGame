@@ -41,26 +41,4 @@ public class CustomListSearchGame extends ArrayAdapter<String> {
         return rowView;
     };
 
-    /*
-    private void createLoadingPanel(int position){
-        // Creating a new RelativeLayout
-        RelativeLayout relativeLayout = new RelativeLayout(this.getContext());
-
-        // Defining the RelativeLayout layout parameters.
-        // In this case I want to fill its parent
-        RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(
-                RelativeLayout.LayoutParams.MATCH_PARENT,
-                RelativeLayout.LayoutParams.MATCH_PARENT);
-
-
-        ProgressBar progressBar = new ProgressBar(getContext(), null, android.R.attr.progressBarStyleSmall);;
-        progressBar.setIndeterminate(true);
-        progressBar.setVisibility(View.GONE);
-
-        //params.addRule(RelativeLayout.CENTER_IN_PARENT);
-
-        relativeLayout.addView(progressBar);
-        setContentView(relativeLayout, rlp);
-    }
-    */
 }
