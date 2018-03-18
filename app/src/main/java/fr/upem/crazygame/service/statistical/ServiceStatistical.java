@@ -4,11 +4,11 @@ import android.app.Service;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
-import android.os.Handler;
 import android.os.IBinder;
 import android.os.Looper;
 import android.os.StrictMode;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.widget.Toast;
 
 import java.io.IOException;
@@ -20,7 +20,6 @@ import java.util.Locale;
 import fr.upem.crazygame.charset.CharsetServer;
 import fr.upem.crazygame.provider.GameCrazyGameColumns;
 import fr.upem.crazygame.provider.ProviderDataGame;
-import fr.upem.crazygame.searchgameactivity.SearchGameSocketManager;
 
 
 public class ServiceStatistical extends Service {
@@ -111,6 +110,7 @@ public class ServiceStatistical extends Service {
                                 ByteBuffer b = CharsetServer.CHARSET_UTF_8.encode(nameGame);
                                 byteBuffer.putInt(b.limit());
                                 byteBuffer.put(b);
+                                Log.d("test", game + " " + nameGame);
                                 byteBuffer.putInt(game);
                             } while (cursor.moveToNext());
 

@@ -1,9 +1,17 @@
 package fr.upem.crazygame.game.morpion;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.graphics.Color;
 import android.os.AsyncTask;
 import android.util.Log;
+import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import org.w3c.dom.Text;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -14,10 +22,8 @@ import fr.upem.crazygame.bytebuffer_manager.ByteBufferManager;
 import fr.upem.crazygame.game.Players;
 import fr.upem.crazygame.provider.GameCrazyGameColumns;
 import fr.upem.crazygame.provider.ProviderDataGame;
+import fr.upem.crazygame.searchgameactivity.SearchGameActivity;
 
-/**
- * Created by myfou on 16/01/2018.
- */
 
 public class AsyncTaskWaitOtherPlayer extends AsyncTask<Void,Void, Cell>{
 
@@ -78,7 +84,7 @@ public class AsyncTaskWaitOtherPlayer extends AsyncTask<Void,Void, Cell>{
             int x = cell.getX();
             int y = cell.getY();
 
-              handlerMorpion.playOtherPlayer(x, y);
+            handlerMorpion.playOtherPlayer(x, y);
             morpionActivity.putClickAdvsersary(x, y);
 
             if (!(handlerMorpion.isWinner() || handlerMorpion.isEgality())) {
@@ -91,14 +97,27 @@ public class AsyncTaskWaitOtherPlayer extends AsyncTask<Void,Void, Cell>{
                    ProviderDataGame.addWinGame(GameCrazyGameColumns.NAME_MORPION, morpionActivity);
                    text = context.getString(R.string.lose);
 
+                    for (int l = 0; l < MorpionActivity.getNumberCell(); l++) {
+                        for (int m = 0; m < MorpionActivity.getNumberCell(); m++) {
+                            Button button = morpionActivity.getCases(l, m);
+
+                            if(handlerMorpion.getColorBoard(l, m) == "red") {
+                                button.setTextColor(Color.RED);
+                            }
+                        }
+                    }
+
                 } else {
                     text = context.getString(R.string.equality);
                 }
 
-                int duration = Toast.LENGTH_LONG;
+                /*int duration = Toast.LENGTH_LONG;
 
                 Toast toast = Toast.makeText(context, text, duration);
-                toast.show();
+                toast.show();*/
+                TextView messageBottom = morpionActivity.getMessageBottom();
+                messageBottom.setText(text);
+
             }
 
         } else {

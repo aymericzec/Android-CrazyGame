@@ -1,9 +1,8 @@
 package fr.upem.crazygame.game.mixwords;
 
-import android.content.Context;
+
 import android.os.AsyncTask;
 import android.util.Log;
-import android.widget.Toast;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -12,15 +11,9 @@ import java.nio.channels.SocketChannel;
 import fr.upem.crazygame.bytebuffer_manager.ByteBufferManager;
 import fr.upem.crazygame.charset.CharsetServer;
 import fr.upem.crazygame.game.Players;
-import fr.upem.crazygame.game.morpion.Cell;
-import fr.upem.crazygame.game.morpion.HandlerMorpion;
-import fr.upem.crazygame.game.morpion.MorpionActivity;
 import fr.upem.crazygame.provider.GameCrazyGameColumns;
 import fr.upem.crazygame.provider.ProviderDataGame;
 
-/**
- * Created by myfou on 16/01/2018.
- */
 
 /**
  * Wait the result of adversary if he win before us the the game finish

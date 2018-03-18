@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="fr.upem.crazygame">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
@@ -25,7 +26,7 @@
         <activity android:name=".score.ScoreActivity"></activity>
         <activity android:name=".game.checkGame.ShakeGameActivity"></activity>
         <activity android:name=".classement.ClassementActivity"></activity>
-
+        <activity android:name=".connectivityReceiver.AlertDialogInternet"></activity>
 
         <receiver android:name=".service.statistical.broadCastReceiverBoot.BroadCastBoot">
             <intent-filter android:priority="100">

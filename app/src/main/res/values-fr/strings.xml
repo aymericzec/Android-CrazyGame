@@ -4,6 +4,7 @@
     <string name="description">Selectionner le jeu à lequel vous souhaitez jouer</string>
     <string name="morpion_name">Morpion</string>
     <string name="mixWord_name">MixWord</string>
+    <string name="shake_name">ShakeGame</string>
     <string name="player1">Joueur 1</string>
     <string name="player2">Joueur 2</string>
     <string name="messageBottomWait">Attendez ....</string>
@@ -24,14 +25,17 @@
     <string name="envoyer">Envoyer votre réponse avant votre adversaire !</string>
     <string name="loseBack">L\'autre joueur à été la plus rapide... \n Retour au menu</string>
     <string name="lose">Vous avez perdu</string>
-    <string name="equality">Egalité !</string>
+    <string name="equality">Egalité</string>
+    <string name="win">Vous avez gagné</string>
 
     <string name="waitBeforeStart">Attendez avant de commencer</string>
     <string name="shake">Secouez !!!</string>
     <string name="timeBeforeStart">Temps avant de commencer : </string>
     <string name="yourScore">Votre score :</string>
+    <string name="scoreAdversary">Score Adversaire :</string>
     <string name="great">Pas mal</string>
     <string name="cantPlay">CrazyGame nécessite une connexion internet pour jouer</string>
     <string name="airPlaneMode">Vous ne pouvez pas jouer à CrazyGame en mode avion</string>
+    <string name="retry">Réessayez</string>
 
 </resources>

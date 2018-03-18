@@ -7,14 +7,14 @@ import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
 import fr.upem.crazygame.bytebuffer_manager.ByteBufferManager;
 import fr.upem.crazygame.charset.CharsetServer;
+import fr.upem.crazygame.game.checkGame.ShakeGameActivity;
 import fr.upem.crazygame.game.mixwords.MixWordActivity;
 import fr.upem.crazygame.game.morpion.MorpionActivity;
 
-/**
- * Created by myfou on 31/01/2018.
- */
+
 
 public class SearchGameManager {
+
     private final SocketChannel socketChannel;
     private ByteBuffer in = ByteBuffer.allocate(4096);
     private ByteBuffer out = ByteBuffer.allocate(4096);
@@ -72,6 +72,9 @@ public class SearchGameManager {
                                 case "MixWord":
                                     launchMixWord();
                                     break;
+                                case "ShakeGame":
+                                    launchShakeGame();
+                                    break;
                                 default:
                                     break;
                             }
@@ -96,7 +99,6 @@ public class SearchGameManager {
             //Launch Activity
             Intent intent = new Intent(SearchGameManager.this.searchGameActivity, MorpionActivity.class);
             intent.putExtra("begin", whoBegin);
-            SocketHandler.setSocket(socketChannel);
             SearchGameManager.this.searchGameActivity.launchGameActivity(intent);
         }
     }
@@ -126,10 +128,25 @@ public class SearchGameManager {
                     //Launch Activity
                     Intent intent = new Intent(SearchGameManager.this.searchGameActivity, MixWordActivity.class);
                     intent.putExtra("wordSearch", word);
-                    SocketHandler.setSocket(socketChannel);
                     SearchGameManager.this.searchGameActivity.launchGameActivity(intent);
                 }
             }
+        }
+    }
+
+    private void launchShakeGame () throws IOException {
+        SearchGameManager.this.out.compact();
+        //SearchGameManager.this.out.limit(Integer.BYTES);
+        SearchGameManager.this.out.limit(4);
+        if (ByteBufferManager.readFully(SearchGameManager.this.socketChannel, SearchGameManager.this.out)) {
+            SearchGameManager.this.out.flip();
+            final int whoBegin = SearchGameManager.this.out.getInt(); //pas d'importance pour ce jeux
+            SearchGameManager.this.out.compact();
+            Log.d("Partie trouvé ShakeGame", "Partie trouvé");
+            //Launch Activity
+            Intent intent = new Intent(SearchGameManager.this.searchGameActivity, ShakeGameActivity.class);
+            intent.putExtra("begin", whoBegin);
+            SearchGameManager.this.searchGameActivity.launchGameActivity(intent);
         }
     }
 }

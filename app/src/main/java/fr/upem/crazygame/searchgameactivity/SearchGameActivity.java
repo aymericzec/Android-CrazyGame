@@ -20,27 +20,29 @@ import fr.upem.crazygame.score.ScoreActivity;
 import fr.upem.crazygame.service.statistical.ServiceStatistical;
 
 
-/**
- * Created by myfou on 15/01/2018.
- */
-
 public class SearchGameActivity extends ListActivity {
+
     private SearchGameSocketManager searchGameSocketManager;
     private ListView listView;
-    private final int nbGames = 2;
+    private final int nbGames = 3;
     private String[] games = new String[nbGames];
     private Integer[] img = new Integer[nbGames];
     private float initialX;
-    private ConnectivityReceiver connectivityReceiver = new ConnectivityReceiver();
+    private ConnectivityReceiver connectivityReceiver;
+
+    private static final int DIALOG_INTERNET_CONNECTION_FAIL = 10;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_games);
+
         startService();
         initGraphic();
         initListView();
 
+        connectivityReceiver = new ConnectivityReceiver();
         registerReceiver(connectivityReceiver, connectivityReceiver.getIntentFilter());
 
         try {
@@ -62,10 +64,12 @@ public class SearchGameActivity extends ListActivity {
         // init Game List
         games[0] = getResources().getString(R.string.morpion_name);
         games[1] = getResources().getString(R.string.mixWord_name);
+        games[2] = getResources().getString(R.string.shake_name);
 
         // init Image List
-        img[0] = R.drawable.sad1;
-        img[1] = R.drawable.sad1;
+        img[0] = R.drawable.morpion;
+        img[1] = R.drawable.word;
+        img[2] = R.drawable.shake;
 
         listView = (ListView) findViewById(android.R.id.list);
 

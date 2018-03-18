@@ -10,14 +10,12 @@ import java.nio.channels.SocketChannel;
 import java.util.Locale;
 import fr.upem.crazygame.charset.CharsetServer;
 
-/**
- * Created by myfou on 31/01/2018.
- */
 
 /**
  * This class connect a socket to server
  */
 public class SearchGameSocketManager implements Serializable {
+
     private final SocketChannel sc;
     private final SearchGameActivity searchGameActivity;
     private boolean isConnected = false;
@@ -50,6 +48,7 @@ public class SearchGameSocketManager implements Serializable {
 
     public static SearchGameSocketManager createSearchGameSocketManager (SearchGameActivity searchGameActivity) throws IOException {
         SocketChannel sc = SocketChannel.open();
+        SocketHandler.setSocket(sc);
         return new SearchGameSocketManager(sc, searchGameActivity);
     }
 

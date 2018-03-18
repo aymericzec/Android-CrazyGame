@@ -14,9 +14,7 @@ import fr.upem.crazygame.R;
 import fr.upem.crazygame.provider.GameCrazyGameColumns;
 import fr.upem.crazygame.provider.ProviderDataGame;
 
-/**
- * Created by myfou on 04/03/2018.
- */
+
 
 public class ScoreActivity extends Activity {
     private float initialX;

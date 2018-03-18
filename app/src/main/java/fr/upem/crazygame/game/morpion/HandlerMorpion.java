@@ -10,7 +10,6 @@ import fr.upem.crazygame.game.Players;
 
 
 /**
- * Created by myfou on 15/01/2018.
  * This class use to represent the connexion with the server and share information with the other player for morpion
  */
 
@@ -47,6 +46,8 @@ public class HandlerMorpion extends Handler {
     public void playOtherPlayer (int x, int y) {
         morpion.playAround(((this.morpionActivity.getCurrentPlayer() == Players.PLAYER1) ? Players.PLAYER2 : Players.PLAYER1),x, y);
     }
+
+    public String getColorBoard(int i, int j) { return morpion.getColor(i, j); }
 
     public boolean isWinner () {
         return morpion.winner() != null;

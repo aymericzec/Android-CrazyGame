@@ -1,7 +1,9 @@
 package fr.upem.crazygame.game.morpion;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -24,6 +26,7 @@ import fr.upem.crazygame.searchgameactivity.SearchGameActivity;
 import fr.upem.crazygame.searchgameactivity.SocketHandler;
 
 public class MorpionActivity extends Activity {
+
     private final static int NUMBER_CELL = 3;
     private HandlerMorpion handlerMorpion;
     private SocketChannel sc;
@@ -49,8 +52,6 @@ public class MorpionActivity extends Activity {
         getInformation();
 
     }
-
-
 
     @Override
     protected void onResume() {
@@ -80,6 +81,18 @@ public class MorpionActivity extends Activity {
             playerRight.setText(R.string.player1);
             playerLeft.setText(R.string.player2);
         }
+    }
+
+    public TextView getMessageBottom() {
+        return messageBottom;
+    }
+
+    public Button getCases(int i, int j) {
+        return cases[i][j];
+    }
+
+    public static int getNumberCell() {
+        return NUMBER_CELL;
     }
 
     /**
@@ -143,24 +156,27 @@ public class MorpionActivity extends Activity {
                                     b.setText("O");
                                 }
 
+                                notMyTurnGraphic();
                                 //turn become true when receive data
 
                                 //if the player win with this game
                                 if (handlerMorpion.isWinner()) {
-                                    Context context = getApplicationContext();
-                                    CharSequence text = "Vous avez gagné";
+
+                                    for (int l = 0; l < MorpionActivity.NUMBER_CELL; l++) {
+                                        for (int m = 0; m < MorpionActivity.NUMBER_CELL; m++) {
+                                            Button button = cases[l][m];
+
+                                            if(handlerMorpion.getColorBoard(l, m) == "red") {
+                                                button.setTextColor(Color.RED);
+                                            }
+                                        }
+                                    }
+
                                     ProviderDataGame.addWinGame(GameCrazyGameColumns.NAME_MORPION, this);
-                                    int duration = Toast.LENGTH_LONG;
+                                    messageBottom.setText(R.string.win);
 
-                                    Toast toast = Toast.makeText(context, text, duration);
-                                    toast.show();
                                 } else if (handlerMorpion.isEgality()) {
-                                    Context context = getApplicationContext();
-                                    CharSequence text = "Egalité";
-                                    int duration = Toast.LENGTH_LONG;
-
-                                    Toast toast = Toast.makeText(context, text, duration);
-                                    toast.show();
+                                    messageBottom.setText(R.string.equality);
                                 } else {
                                     this.handlerMorpion.waitOther();
                                 }
@@ -176,7 +192,8 @@ public class MorpionActivity extends Activity {
                     }
                 }
             }
-            notMyTurnGraphic();
+
+
         }
     }
 

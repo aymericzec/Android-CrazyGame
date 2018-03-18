@@ -1,8 +1,5 @@
 package fr.upem.crazygame.score;
 
-/**
- * Created by myfou on 04/03/2018.
- */
 
 public class Score {
 
