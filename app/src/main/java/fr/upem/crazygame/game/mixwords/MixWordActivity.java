@@ -2,9 +2,11 @@ package fr.upem.crazygame.game.mixwords;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Point;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Display;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -31,14 +33,14 @@ public class MixWordActivity extends Activity {
         setContentView(R.layout.activity_mix_word);
 
         ProviderDataGame.addGame(GameCrazyGameColumns.NAME_MIXWORD, this);
-        String word = getIntent().getStringExtra("wordSearch");
+        String word = "tes";//getIntent().getStringExtra("wordSearch");
 
         initGraphic();
         initKeypadTop(word.length());
         initKeypadBottom(word);
 
         MixWords mixWords = new MixWords(word);
-        this.handlerMixWords = new HandlerMixWords(SocketHandler.getSocket(), mixWords, this);
+        //this.handlerMixWords = new HandlerMixWords(SocketHandler.getSocket(), mixWords, this);
     }
 
     private void initGraphic (){
@@ -52,7 +54,6 @@ public class MixWordActivity extends Activity {
         actionMixWord.setTypeface(comic_book);
     }
 
-
     /**
      * Initialize the top button
      * @param letters number caracter of word
@@ -60,27 +61,34 @@ public class MixWordActivity extends Activity {
     public void initKeypadTop(int letters) {
         LinearLayout linearKeyPadTop = (LinearLayout) findViewById(R.id.wordOrder);
         keypadTop = new Button[letters];
+
+        LinearLayout row = new LinearLayout(this);
+
         for (int i = 0; i < letters; i++) {
             Button button = new Button(this);
+            button.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT, 1.0f));
+
             keypadTop[i] = button;
             keypadTop[i].setClickable(false);
             keypadTop[i].setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     Button b = (Button) view;
-                    int i = 0;
-                    for (;i < keypadTop.length; i++) {
-                        if (b.equals(keypadTop[i])) {
-                            break;
+                    if (!b.getText().equals("")) {
+                        int i = 0;
+                        for (; i < keypadTop.length; i++) {
+                            if (b.equals(keypadTop[i])) {
+                                break;
+                            }
                         }
-                    }
-                    int j = 0;
-                    for (;j < keypadBottom.length; j++) {
-                        if (keypadBottom[j].getText().toString().equals("")) {
-                            break;
+                        int j = 0;
+                        for (; j < keypadBottom.length; j++) {
+                            if (keypadBottom[j].getText().toString().equals("")) {
+                                break;
+                            }
                         }
+                        MixWordActivity.this.handlerMixWords.removeLetter(b, keypadBottom, i);
                     }
-                    MixWordActivity.this.handlerMixWords.removeLetter(b, keypadBottom, i);
                 }
             });
             linearKeyPadTop.addView(button);
@@ -96,6 +104,8 @@ public class MixWordActivity extends Activity {
         keypadBottom = new Button[word.length()];
         for (int i = 0; i < word.length(); i++) {
             Button button = new Button(this);
+            button.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT, 1.0f));
+
             button.setText(word.charAt(i) + "");
             Log.d("lettre", word.charAt(i) + "");
             keypadBottom[i] = button;
@@ -113,7 +123,6 @@ public class MixWordActivity extends Activity {
                     MixWordActivity.this.handlerMixWords.addLetter(b, keypadTop);
                 }
             });
-
             linearKeyPad.addView(button);
         }
     }

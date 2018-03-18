@@ -10,7 +10,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
-        <activity android:name=".searchgameactivity.SearchGameActivity">
+        <activity android:name=".game.mixwords.MixWordActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,7 +22,7 @@
             android:authorities="fr.upem.crazygame.provider.crazygameprovider" />
 
         <activity android:name=".game.morpion.MorpionActivity"></activity>
-        <activity android:name=".game.mixwords.MixWordActivity"></activity>
+       <!-- <activity android:name=".game.mixwords.MixWordActivity"></activity>-->
         <activity android:name=".score.ScoreActivity"></activity>
         <activity android:name=".game.checkGame.ShakeGameActivity"></activity>
         <activity android:name=".classement.ClassementActivity"></activity>
