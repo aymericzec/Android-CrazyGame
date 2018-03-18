@@ -8,6 +8,7 @@ public class GameCrazyGameColumns implements BaseColumns {
 
     public static final String NAME_MORPION = "MORPION";
     public static final String NAME_MIXWORD = "MIXWORD";
+    public static final String NAME_SHAKEGAME = "SHAKEGAME";
 
     public static final String NAME_GAME = "NAME";
     public static final String GAME = "PLAY";

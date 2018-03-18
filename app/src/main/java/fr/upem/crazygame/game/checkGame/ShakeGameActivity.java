@@ -19,6 +19,8 @@ import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
 
 import fr.upem.crazygame.R;
+import fr.upem.crazygame.provider.GameCrazyGameColumns;
+import fr.upem.crazygame.provider.ProviderDataGame;
 import fr.upem.crazygame.searchgameactivity.SocketHandler;
 
 
@@ -48,9 +50,9 @@ public class ShakeGameActivity extends Activity implements SensorEventListener {
 
             try {
                 socketChannel.write(sendScore);
-                chrono.setText(getString(R.string.yourScore) + "" +  score);
+                //chrono.setText(getString(R.string.yourScore) + "" +  score);
                 Log.d("score", String.valueOf(score));
-                messageBottom.setText(getString(R.string.great));
+                //messageBottom.setText(getString(R.string.great));
                 chrono.setOnClickListener(new View.OnClickListener() {
 
                     @Override
@@ -91,6 +93,7 @@ public class ShakeGameActivity extends Activity implements SensorEventListener {
         senSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         senAccelerometer = senSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         senSensorManager.registerListener(this, senAccelerometer , SensorManager.SENSOR_DELAY_NORMAL);
+        ProviderDataGame.addGame(GameCrazyGameColumns.NAME_MIXWORD, this);
     }
 
     protected void onPause() {
@@ -150,11 +153,19 @@ public class ShakeGameActivity extends Activity implements SensorEventListener {
     }
 
     public void endGame(int result, int score, int scoreAdversary) {
+
         messageBottom.setText(result);
 
+        String me = getResources().getString(R.string.yourScore);
+        String adversary = getResources().getString(R.string.scoreAdversary);
+
+        StringBuilder sb = new StringBuilder();
+        sb.append(me + " " + score);
+        sb.append("\n");
+        sb.append(adversary + " " + scoreAdversary);
+
+        chrono.setTextSize(25);
         chrono.setSingleLine(false);
-        chrono.setText(R.string.yourScore + " " + score);
-        chrono.setText("\n");
-        chrono.setText(R.string.scoreAdversary + " " + scoreAdversary);
+        chrono.setText(sb.toString());
     }
 }

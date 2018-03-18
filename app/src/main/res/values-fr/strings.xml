@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">CrazyGame</string>
-    <string name="description">Selectionner le jeu à lequel vous souhaitez jouer</string>
+    <string name="description">Sélectionnez le jeu auquel vous souhaitez jouer</string>
     <string name="morpion_name">Morpion</string>
     <string name="mixWord_name">MixWord</string>
     <string name="shake_name">ShakeGame</string>
@@ -9,17 +9,17 @@
     <string name="player2">Joueur 2</string>
     <string name="messageBottomWait">Attendez ....</string>
     <string name="messageBottomPlay">A vous de jouer !</string>
-    <string name="playedGame">parties joués</string>
+    <string name="playedGame">parties jouées</string>
     <string name="winGame">parties gagnées</string>
 
-    <string name="descriptionClassement">Voici le classement des jeux le plus jouer sur CrazyGame</string>
+    <string name="descriptionClassement">Voici le classement des jeux les plus joués sur CrazyGame</string>
     <string name="descriptionScore">Voici vos statistiques sur CrazyGame</string>
     <string name="back">Retour</string>
 
-    <string name="right_arrow">flêche droite</string>
-    <string name="left_arrow">flêche gauche</string>
+    <string name="right_arrow">flèche droite</string>
+    <string name="left_arrow">flèche gauche</string>
     <string name="score">Mes scores</string>
-    <string name="classement">Classement générale</string>
+    <string name="classement">Classement général</string>
 
 
     <string name="envoyer">Envoyer votre réponse avant votre adversaire !</string>
