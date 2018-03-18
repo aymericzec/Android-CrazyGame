@@ -32,8 +32,6 @@ public class MorpionActivity extends Activity {
     private SocketChannel sc;
     private Button[][] cases = new Button[NUMBER_CELL][NUMBER_CELL];
 
-    private TextView playerLeft;
-    private TextView playerRight;
     private TextView messageBottom;
 
     private Players currentPlayer;
@@ -65,22 +63,8 @@ public class MorpionActivity extends Activity {
         TextView nameGame = (TextView) findViewById(R.id.nameGame);
         nameGame.setTypeface(nightFont);
 
-        playerLeft = (TextView) findViewById(R.id.playerLeft);
-        playerLeft.setTypeface(comicFont);
-
-        playerRight = (TextView) findViewById(R.id.playerRight);
-        playerRight.setTypeface(comicFont);
-
         messageBottom = (TextView) findViewById(R.id.messageBottom);
         messageBottom.setTypeface(comicFont);
-
-        if (currentPlayer == Players.PLAYER1) {
-            playerLeft.setText(R.string.player1);
-            playerRight.setText(R.string.player2);
-        } else {
-            playerRight.setText(R.string.player1);
-            playerLeft.setText(R.string.player2);
-        }
     }
 
     public TextView getMessageBottom() {
@@ -210,14 +194,10 @@ public class MorpionActivity extends Activity {
     }
 
     public void myTurnGraphic() {
-        playerLeft.setTextColor(Color.parseColor("#0489B1"));
-        playerRight.setTextColor(getResources().getColor(R.color.material_blue_grey_900));
         messageBottom.setText(R.string.messageBottomPlay);
     }
 
     public void notMyTurnGraphic() {
-        playerRight.setTextColor(Color.parseColor("#0489B1"));
-        playerLeft.setTextColor(getResources().getColor(R.color.material_blue_grey_900));
         messageBottom.setText(R.string.messageBottomWait);
     }
 
