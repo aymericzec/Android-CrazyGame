@@ -150,7 +150,7 @@ public class MorpionActivity extends Activity {
                                         for (int m = 0; m < MorpionActivity.NUMBER_CELL; m++) {
                                             Button button = cases[l][m];
 
-                                            if(handlerMorpion.getColorBoard(l, m).equals("red")) {
+                                            if(handlerMorpion.getColorBoard(l, m) == "red") {
                                                 button.setTextColor(Color.RED);
                                             }
                                         }
