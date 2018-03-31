@@ -1,6 +1,8 @@
 package fr.upem.crazygame.searchgameactivity;
 
+import android.app.ActivityManager;
 import android.app.ListActivity;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -170,5 +172,16 @@ public class SearchGameActivity extends ListActivity {
         }
         return SearchGameActivity.super.onTouchEvent(event);
     }
-}
 
+    private boolean isServiceStart (Class<?> service) {
+        ActivityManager activityManager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
+
+        for (ActivityManager.RunningServiceInfo serviceInfo: activityManager.getRunningServices(Integer.MAX_VALUE)) {
+            if (serviceInfo.service.getClassName().equals(service.getName())) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+}

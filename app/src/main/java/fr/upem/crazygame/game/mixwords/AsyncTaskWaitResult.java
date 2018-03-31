@@ -92,6 +92,6 @@ public class AsyncTaskWaitResult extends AsyncTask<Void,Void, Players>{
     protected void onPostExecute(Players players) {
         super.onPostExecute(players);
 
-        mixWordActivity.endGame(players.equals(Players.PLAYER1));
+        mixWordActivity.endGame(players.equals(Players.PLAYER1), this.word);
     }
 }

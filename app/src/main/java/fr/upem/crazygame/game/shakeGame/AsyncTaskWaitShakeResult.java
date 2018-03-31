@@ -1,8 +1,6 @@
-package fr.upem.crazygame.game.checkGame;
+package fr.upem.crazygame.game.shakeGame;
 
 import android.os.AsyncTask;
-import android.util.Log;
-import android.widget.TextView;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;

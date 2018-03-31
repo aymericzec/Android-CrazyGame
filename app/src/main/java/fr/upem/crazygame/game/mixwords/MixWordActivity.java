@@ -142,7 +142,7 @@ public class MixWordActivity extends Activity {
         }
     }
 
-    public void endGame(Boolean win) {
+    public void endGame(Boolean win, String word) {
         for (int i = 0; i < keypadTop.length; i++) {
             keypadTop[i].setClickable(false);
             keypadBottom[i].setClickable(false);
@@ -154,6 +154,11 @@ public class MixWordActivity extends Activity {
             action.setText(getText(R.string.winBack));
         } else {
             action.setText(getText(R.string.loseBack));
+
+            for (int i = 0; i < word.length(); i++) {
+                keypadTop[i].setText(String.valueOf(word.charAt(i)));
+                keypadBottom[i].setText("");
+            }
         }
 
         action.setOnClickListener(new View.OnClickListener() {

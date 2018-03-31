@@ -1,4 +1,4 @@
-package fr.upem.crazygame.game.checkGame;
+package fr.upem.crazygame.game.shakeGame;
 
 import android.app.Activity;
 import android.content.Context;
@@ -32,11 +32,12 @@ public class ShakeGameActivity extends Activity implements SensorEventListener {
     private TextView messageBottom;
     private long lastUpdate = 0;
     private float last_x, last_y, last_z;
-    private float maxSpeed = 0;
+    private float speed = 0;
+    private int val = 0;
     private AsyncTaskWaitShakeResult waitResult;
 
 
-    private CountDownTimer countDown = new CountDownTimer(15 * 1000, 1000) {
+    private CountDownTimer countDown = new CountDownTimer(10 * 1000, 1000) {
         public void onTick(long millisUntilFinished) {
             chrono.setText("" + millisUntilFinished / 1000);
         }
@@ -44,7 +45,7 @@ public class ShakeGameActivity extends Activity implements SensorEventListener {
         public void onFinish() {
             SocketChannel socketChannel = SocketHandler.getSocket();
             ByteBuffer sendScore = ByteBuffer.allocate(4);
-            int score = Math.round(maxSpeed);
+            int score = Math.round(speed/val);
             sendScore.putInt(score);
             sendScore.flip();
 
@@ -93,7 +94,7 @@ public class ShakeGameActivity extends Activity implements SensorEventListener {
         senSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         senAccelerometer = senSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         senSensorManager.registerListener(this, senAccelerometer , SensorManager.SENSOR_DELAY_NORMAL);
-        ProviderDataGame.addGame(GameCrazyGameColumns.NAME_MIXWORD, this);
+        ProviderDataGame.addGame(GameCrazyGameColumns.NAME_SHAKEGAME, this);
     }
 
     protected void onPause() {
@@ -138,9 +139,9 @@ public class ShakeGameActivity extends Activity implements SensorEventListener {
 
                 float speed = Math.abs(x + y + z - last_x - last_y - last_z)/ diffTime * 10000;
 
-                if (speed > this.maxSpeed){
-                    this.maxSpeed = speed;
-                }
+                this.speed += speed;
+                this.val++;
+
                 last_x = x;
                 last_y = y;
                 last_z = z;
