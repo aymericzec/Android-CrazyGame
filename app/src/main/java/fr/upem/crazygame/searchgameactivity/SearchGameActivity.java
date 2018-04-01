@@ -23,7 +23,6 @@ import fr.upem.crazygame.service.statistical.ServiceStatistical;
 
 
 public class SearchGameActivity extends ListActivity {
-
     private SearchGameSocketManager searchGameSocketManager;
     private ListView listView;
     private final int nbGames = 3;
@@ -34,7 +33,6 @@ public class SearchGameActivity extends ListActivity {
     private static View lastClickSearch = null;
 
     private static final int DIALOG_INTERNET_CONNECTION_FAIL = 10;
-
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
