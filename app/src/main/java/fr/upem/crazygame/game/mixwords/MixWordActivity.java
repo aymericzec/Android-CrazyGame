@@ -2,6 +2,7 @@ package fr.upem.crazygame.game.mixwords;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.Point;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -68,6 +69,8 @@ public class MixWordActivity extends Activity {
             Button button = new Button(this);
             button.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT, 1.0f));
 
+            button.setBackgroundResource(R.drawable.my_buttons);
+            button.setTextColor(Color.parseColor("#D8D8D8"));
             keypadTop[i] = button;
             keypadTop[i].setClickable(false);
             keypadTop[i].setOnClickListener(new View.OnClickListener() {
@@ -105,7 +108,10 @@ public class MixWordActivity extends Activity {
         for (int i = 0; i < word.length(); i++) {
             Button button = new Button(this);
             button.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT, 1.0f));
+            button.setBackgroundColor(Color.parseColor("#D8D8D8"));
+            button.setBackgroundResource(R.drawable.my_buttons_2);
 
+            button.setTextColor(Color.parseColor("#00AD97"));
             button.setText(word.charAt(i) + "");
             Log.d("lettre", word.charAt(i) + "");
             keypadBottom[i] = button;
