@@ -1,4 +1,5 @@
-﻿# CrazyGame: Documentation utilisateur
+﻿
+# CrazyGame: Documentation utilisateur
 
 CrazyGame est une application androïd qui propose un ensemble de mini jeux multijoueur en ligne.
 
@@ -30,3 +31,9 @@ Vos scores sont constitué du total de vos parties pour chaque jeux et du total 
 
 ## Classement générale
 Le classement général liste l'ensemble des jeux en les triant en fonction du nombre de parties jouées par l’ensemble des joueur de CrazyGame.
+
+
+## Attention
+
+Pour éxécuter le serveur, il est important de configurer l'ip et le port. Pour le client Android il suffit de modifier dans SearchGame et le Service. Pour le serveur il faut modifier dans le json config.
+

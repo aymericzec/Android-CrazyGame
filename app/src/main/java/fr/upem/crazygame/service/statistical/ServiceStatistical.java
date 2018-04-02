@@ -47,8 +47,8 @@ public class ServiceStatistical extends Service {
     public SocketChannel initSocketChanel() throws IOException {
 
         final SocketChannel sc = SocketChannel.open();
-        //InetSocketAddress serverAddress =  new InetSocketAddress("90.3.251.211", 1002);
-        InetSocketAddress serverAddress =  new InetSocketAddress("localhost", 8086);
+        InetSocketAddress serverAddress =  new InetSocketAddress("90.3.251.211", 1002);
+        //InetSocketAddress serverAddress =  new InetSocketAddress("192.168.1.13", 8086);
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
         final InetSocketAddress serverAddressTmp = serverAddress;
