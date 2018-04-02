@@ -9,6 +9,7 @@ import android.graphics.Color;
 import android.graphics.Point;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.util.Log;
 import android.view.Display;
 import android.view.View;
@@ -31,6 +32,9 @@ public class MixWordActivity extends Activity {
     private Button[] keypadTop;
     private HandlerMixWords handlerMixWords;
 
+    private Boolean volum;
+    private Boolean vibrate;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +42,10 @@ public class MixWordActivity extends Activity {
 
         ProviderDataGame.addGame(GameCrazyGameColumns.NAME_MIXWORD, this);
         String word = getIntent().getStringExtra("wordSearch");
+
+        this.volum = getIntent().getBooleanExtra("volum", true);
+        this.vibrate = getIntent().getBooleanExtra("vibrate", true);
+
 
         initGraphic();
         initKeypadTop(word.length());
@@ -170,6 +178,10 @@ public class MixWordActivity extends Activity {
         } else {
             action.setText(getText(R.string.loseBack));
 
+            if (this.vibrate) {
+                Vibrator vib = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+                vib.vibrate(1000);
+            }
             for (int i = 0; i < word.length(); i++) {
                 keypadTop[i].setText(String.valueOf(word.charAt(i)));
                 keypadBottom[i].setText("");

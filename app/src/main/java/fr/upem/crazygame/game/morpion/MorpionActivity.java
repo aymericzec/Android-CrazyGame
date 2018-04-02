@@ -40,6 +40,9 @@ public class MorpionActivity extends Activity {
     private boolean isTurn = false; //It's the turn of current player
     private boolean isBegin;
 
+    private boolean volum;
+    private boolean vibrate;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +53,6 @@ public class MorpionActivity extends Activity {
         initGraphic();
         initButton();
         getInformation();
-
     }
 
     @Override
@@ -108,6 +110,10 @@ public class MorpionActivity extends Activity {
             handlerMorpion = new HandlerMorpion(sc, this, new Morpion(Players.PLAYER2, currentPlayer));
             handlerMorpion.waitOther();
         }
+
+        this.volum = i.getBooleanExtra("volum", true);
+        this.volum = i.getBooleanExtra("vibrate", true);
+
     }
 
 

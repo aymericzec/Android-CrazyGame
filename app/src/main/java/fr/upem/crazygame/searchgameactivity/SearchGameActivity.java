@@ -4,6 +4,7 @@ import android.app.ActivityManager;
 import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -11,11 +12,14 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 import java.io.IOException;
 
 import fr.upem.crazygame.classement.ClassementActivity;
+import fr.upem.crazygame.config.Config;
 import fr.upem.crazygame.connectivityReceiver.ConnectivityReceiver;
 import fr.upem.crazygame.R;
 import fr.upem.crazygame.score.ScoreActivity;
@@ -31,8 +35,10 @@ public class SearchGameActivity extends ListActivity {
     private float initialX;
     private ConnectivityReceiver connectivityReceiver;
     private static View lastClickSearch = null;
-
     private static final int DIALOG_INTERNET_CONNECTION_FAIL = 10;
+    private Config config = new Config();
+    private Button vibrate;
+    private Button volum;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -103,7 +109,45 @@ public class SearchGameActivity extends ListActivity {
 
         TextView classement = (TextView) findViewById(R.id.classement);
         classement.setTypeface(comic_book);
+
+        this.volum = (Button) findViewById(R.id.volum);
+        this.vibrate = (Button) findViewById(R.id.vibrate);
+
+
+
+        setConfiGraphic();
     }
+
+
+    public void setConfiGraphic(){
+        if (this.config.getVibrate()){
+            this.vibrate.setBackground(getDrawable(R.drawable.smartphone_1));
+
+        }else{
+            this.vibrate.setBackground(getDrawable(R.drawable.smartphone));
+        }
+
+        if (this.config.getVolum()){
+            this.volum.setBackground(getDrawable(R.drawable.speaker));
+        }else {
+            this.volum.setBackground(getDrawable(R.drawable.speaker_1));
+        }
+    }
+
+    public void clickConfigVolum(View view){
+        this.config.setVolum(!this.config.getVolum());
+        setConfiGraphic();
+    }
+
+    public void clickConfigVibrate(View view){
+        this.config.setVibrate(!this.config.getVibrate());
+        setConfiGraphic();
+    }
+
+    public Config getConfig(){
+        return this.config;
+    }
+
 
     /**
      * Init and send the bytebuffer for found a game
@@ -179,7 +223,6 @@ public class SearchGameActivity extends ListActivity {
                 return true;
             }
         }
-
         return false;
     }
 }
