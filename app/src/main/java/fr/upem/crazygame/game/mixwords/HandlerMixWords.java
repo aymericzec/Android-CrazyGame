@@ -9,6 +9,9 @@ import java.nio.channels.SocketChannel;
 
 import fr.upem.crazygame.charset.CharsetServer;
 
+/**
+ * Classe contrôleur de MixWord
+ */
 
 public class HandlerMixWords {
 
@@ -35,7 +38,6 @@ public class HandlerMixWords {
             out.putInt(byteBuffer.limit());
             out.put(byteBuffer);
             out.flip();
-            Log.d("Envoie d'un mot", mixWords.getWord());
             sc.write(out);
             waitResult = true;
         }

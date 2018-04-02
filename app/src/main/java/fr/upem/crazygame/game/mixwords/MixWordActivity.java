@@ -27,6 +27,10 @@ import fr.upem.crazygame.provider.ProviderDataGame;
 import fr.upem.crazygame.searchgameactivity.SearchGameActivity;
 import fr.upem.crazygame.searchgameactivity.SocketHandler;
 
+/**
+ * Vue de MixWord
+ */
+
 public class MixWordActivity extends Activity {
 
     private Button[] keypadBottom;
@@ -133,7 +137,7 @@ public class MixWordActivity extends Activity {
 
             button.setTextColor(Color.parseColor("#00AD97"));
             button.setText(word.charAt(i) + "");
-            Log.d("lettre", word.charAt(i) + "");
+
             keypadBottom[i] = button;
 
             keypadBottom[i].setOnClickListener(new View.OnClickListener() {

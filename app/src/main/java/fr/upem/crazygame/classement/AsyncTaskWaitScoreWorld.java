@@ -15,7 +15,7 @@ import fr.upem.crazygame.searchgameactivity.SocketHandler;
 
 
 /**
- * Wait the result of adversary if he win before us the the game finish
+ * Cette classe de demander les scores mondiaux
  */
 public class AsyncTaskWaitScoreWorld extends AsyncTask<Void, Void, List<Classement>> {
     private final ClassementActivity classementActivity;
@@ -31,22 +31,15 @@ public class AsyncTaskWaitScoreWorld extends AsyncTask<Void, Void, List<Classeme
         ByteBuffer buffer = ByteBuffer.allocate(1024);
         ArrayList<Classement> classements = new ArrayList<>();
 
-        Log.d("Size", "Protocole");
         boolean sendSucces = sendProtocol(sc, buffer);
-        Log.d("Size","OK");
         if (sendSucces) {
             try {
-                Log.d("Size", "LALALALs");
                 int size = size(sc, buffer);
-                Log.d("Size", "LALALALs " + size);
                 int cpt = 0;
-                Log.d("Size", String.valueOf(size));
                 //On lit tous les mots
                 while (cpt != size) {
                     int sizeWord = size(sc, buffer);
-                    Log.d("Size", String.valueOf(sizeWord));
                     String nameGame = word(sc, buffer, sizeWord);
-                    Log.d("Size", nameGame);
                     int score = size(sc, buffer);
                     classements.add(new Classement(nameGame, score));
                     cpt++;
@@ -78,7 +71,6 @@ public class AsyncTaskWaitScoreWorld extends AsyncTask<Void, Void, List<Classeme
         buffer.putInt(4300);
         buffer.flip();
         try {
-            Log.d("socket", sc + "");
             sc.write(buffer);
             return true;
         } catch (IOException e) {

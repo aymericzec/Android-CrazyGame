@@ -3,6 +3,10 @@ package fr.upem.crazygame.classement;
 import android.support.annotation.NonNull;
 
 
+/**
+ * Représente un classement pour un jeu
+ */
+
 public class Classement implements Comparable {
 
     private final String name;

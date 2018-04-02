@@ -10,7 +10,9 @@ import android.support.annotation.Nullable;
 import fr.upem.crazygame.R;
 import fr.upem.crazygame.searchgameactivity.SearchGameActivity;
 
-
+/**
+ * Représente la vue de perte de connexion Internet
+ */
 public class AlertDialogInternet extends Activity {
 
     @Override

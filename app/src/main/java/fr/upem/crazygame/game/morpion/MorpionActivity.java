@@ -124,8 +124,6 @@ public class MorpionActivity extends Activity {
      * When the player click on a cell of gameboard
      */
     public void clickCell(View view) {
-        Log.d("Click boutton", "ok");
-
         if (handlerMorpion.isWinner() || handlerMorpion.isEgality()) {
             Intent activity = new Intent(new Intent(this, SearchGameActivity.class));
             setResult(RESULT_OK, activity);
@@ -134,16 +132,10 @@ public class MorpionActivity extends Activity {
 
         if (isTurn) {
             Button b = (Button) view;
-
-            Log.d("Click boutton ok", "ok");
             //Check the button click
             for (int i = 0; i < MorpionActivity.NUMBER_CELL; i++) {
                 for (int j = 0; j < MorpionActivity.NUMBER_CELL; j++) {
-                    Log.d("Click boutton ok", b + " " + cases[i][j] + "");
                     if (b.equals(cases[i][j])) {
-
-                        Log.d("Click boutton", "i + j" + " " + i + " " + j);
-
                         //check if the button is empty
                         if (this.handlerMorpion.playAround(i, j)) {
                             try {
@@ -189,7 +181,6 @@ public class MorpionActivity extends Activity {
                                 break;
                             } catch (IOException e) {
                                 e.printStackTrace();
-                                Log.d("Echec d'écriture", "Retour à l'écran d'accueil");
                                 Intent activity = new Intent(new Intent(this, SearchGameActivity.class));
                                 setResult(RESULT_CANCELED, activity);
                                 finish();

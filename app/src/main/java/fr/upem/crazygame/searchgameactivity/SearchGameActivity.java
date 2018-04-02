@@ -36,7 +36,6 @@ public class SearchGameActivity extends ListActivity {
     private float initialX;
     private ConnectivityReceiver connectivityReceiver;
     private static View lastClickSearch = null;
-    private static final int DIALOG_INTERNET_CONNECTION_FAIL = 10;
     private Config config;
     private Button vibrate;
     private Button volum;
@@ -56,8 +55,8 @@ public class SearchGameActivity extends ListActivity {
 
         try {
             searchGameSocketManager = SearchGameSocketManager.createSearchGameSocketManager(this);
-            searchGameSocketManager.connectSocket("90.3.251.211", 1002);
-            //searchGameSocketManager.connectSocket("192.168.1.13", 8086);
+            //searchGameSocketManager.connectSocket("90.3.251.211", 1002);
+            searchGameSocketManager.connectSocket("localhost", 8086);
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -136,7 +135,6 @@ public class SearchGameActivity extends ListActivity {
     }
 
     public void clickConfigVolum(View view){
-        Log.d("TOTO", !this.config.getVolum() + "");
         this.config.setVolum(!this.config.getVolum());
         setConfiGraphic();
     }
@@ -166,12 +164,10 @@ public class SearchGameActivity extends ListActivity {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            Log.d("Connecté", nameGame + " est lancé");
         }
     }
 
     public void launchGameActivity(Intent intent) {
-        Log.d("Socket envoye ", SocketHandler.getSocket() + "");
         startActivityForResult(intent, 1);
     }
 
@@ -215,16 +211,5 @@ public class SearchGameActivity extends ListActivity {
                 }
         }
         return SearchGameActivity.super.onTouchEvent(event);
-    }
-
-    private boolean isServiceStart (Class<?> service) {
-        ActivityManager activityManager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
-
-        for (ActivityManager.RunningServiceInfo serviceInfo: activityManager.getRunningServices(Integer.MAX_VALUE)) {
-            if (serviceInfo.service.getClassName().equals(service.getName())) {
-                return true;
-            }
-        }
-        return false;
     }
 }

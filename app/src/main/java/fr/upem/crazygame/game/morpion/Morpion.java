@@ -60,7 +60,6 @@ public class Morpion {
         for (int i = 0; i < gameBoard.length; i++) {
             if (gameBoard[i][0] != null && gameBoard[i][1] != null && gameBoard[i][2] != null) {
                 if (gameBoard[i][0].getPlayer().equals(gameBoard[i][1].getPlayer()) && gameBoard[i][0].getPlayer().equals(gameBoard[i][2].getPlayer())) {
-                    Log.d("Perdu 1", i + "");
                     colorBoard[i][0] = "red";
                     colorBoard[i][1] = "red";
                     colorBoard[i][2] = "red";
@@ -85,9 +84,7 @@ public class Morpion {
         //Check diagonal
         for (int i = 0; i < gameBoard.length; i++) {
             if (gameBoard[0][0] != null && gameBoard[1][1] != null && gameBoard[2][2] != null) {
-                Log.d("Test diagonale", gameBoard[0][0].getPlayer() + " " + gameBoard[1][1].getPlayer() + " " + gameBoard[2][2].getPlayer());
                 if (gameBoard[0][0].getPlayer().equals(gameBoard[1][1].getPlayer()) && gameBoard[0][0].getPlayer().equals(gameBoard[2][2].getPlayer())) {
-                    Log.d("Perdu 3", i + "");
                     colorBoard[0][0] = "red";
                     colorBoard[1][1] = "red";
                     colorBoard[2][2] = "red";
@@ -99,7 +96,6 @@ public class Morpion {
         for (int i = 0; i < gameBoard.length; i++) {
             if (gameBoard[0][2] != null && gameBoard[1][1] != null && gameBoard[2][0] != null) {
                 if (gameBoard[0][2].getPlayer().equals(gameBoard[1][1].getPlayer()) && gameBoard[0][2].getPlayer().equals(gameBoard[2][0].getPlayer())) {
-                    Log.d("Perdu 4", i + "");
                     colorBoard[0][2] = "red";
                     colorBoard[1][1] = "red";
                     colorBoard[2][0] = "red";
@@ -108,7 +104,6 @@ public class Morpion {
             }
         }
 
-        Log.d("Null", "Pas perdu");
         return null;
     }
 

@@ -8,6 +8,9 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 
+/**
+ * Permet de se déclencher lorsqu'il n'y a plus de wifi ou de donnée d'itinérance
+ */
 
 public class ConnectivityReceiver extends BroadcastReceiver{
 

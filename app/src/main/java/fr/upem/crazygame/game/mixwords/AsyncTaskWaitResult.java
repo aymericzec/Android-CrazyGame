@@ -45,11 +45,9 @@ public class AsyncTaskWaitResult extends AsyncTask<Void,Void, Players>{
             //bb.limit(Integer.BYTES * 3);
             while (true) {
                 bb.limit(4);
-                Log.d("ReadFully", "tranquille");
                 if (ByteBufferManager.readFully(sc, bb)) {
                     bb.flip();
                     idRequest = bb.getInt();
-                    Log.d("Idrequest", idRequest + "");
                     //1 = You Win, 2 = Adversay found Word, 3 Bad Word
                     if (idRequest == 1) {
                         ProviderDataGame.addWinGame(GameCrazyGameColumns.NAME_MIXWORD, mixWordActivity);
@@ -66,7 +64,6 @@ public class AsyncTaskWaitResult extends AsyncTask<Void,Void, Players>{
                             if (ByteBufferManager.readFully(sc, bb)) {
                                 bb.flip();
                                 this.word = CharsetServer.CHARSET_UTF_8.decode(bb).toString();
-                                Log.d("Perdu", "Perdu");
                                 return Players.PLAYER2;
                             }
                         }

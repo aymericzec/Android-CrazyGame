@@ -28,7 +28,6 @@ public class SearchGameManager {
         this.in.clear();
         this.in.putInt(1);
         ByteBuffer tmp = CharsetServer.CHARSET_UTF_8.encode(nameGame);
-        Log.d("Longuer de " + nameGame, tmp.position() + " " + tmp.limit());
         this.in.putInt(tmp.limit()); //lenght name game
         this.in.put(tmp); //name game
         this.in.flip();
@@ -53,8 +52,6 @@ public class SearchGameManager {
                         SearchGameManager.this.out.flip();
                         int action = SearchGameManager.this.out.getInt(); //must be 1 to say, game found
                         int lengthNameGame = SearchGameManager.this.out.getInt();
-
-                        Log.d("toto", action + " " + lengthNameGame);
 
                         SearchGameManager.this.out.compact();
                         SearchGameManager.this.out.limit(lengthNameGame);

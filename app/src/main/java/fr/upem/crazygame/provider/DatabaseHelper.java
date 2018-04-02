@@ -20,7 +20,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         @Override
         public void onCreate(SQLiteDatabase db) {
-            Log.d("test", "PROVIDERRRRRRRRRRR");
             db.execSQL("CREATE TABLE " + ProviderDataGame.CONTENT_PROVIDER_TABLE_NAME
                     + " (" + GameCrazyGameColumns.NAME_GAME + ","
                     + GameCrazyGameColumns.GAME + " INTEGER,"

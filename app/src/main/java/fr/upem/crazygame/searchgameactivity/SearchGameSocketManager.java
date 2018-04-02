@@ -66,14 +66,9 @@ public class SearchGameSocketManager implements Serializable {
      */
     private void sendLanguage () throws IOException {
         ByteBuffer in = ByteBuffer.allocate(16);
-
-
         ByteBuffer buffer = CharsetServer.CHARSET_UTF_8.encode(Locale.getDefault().getLanguage());
-        Log.d("Envoie Name Language de ", buffer.limit() + "");
         in.putInt(buffer.limit());
-
         in.put(buffer);//fr en...
-
         Log.d("Envoie Name Language de ", Locale.getDefault().getLanguage());
         in.flip();
         sc.write(in);

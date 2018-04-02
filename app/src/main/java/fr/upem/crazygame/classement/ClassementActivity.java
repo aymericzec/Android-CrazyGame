@@ -15,6 +15,10 @@ import java.util.List;
 import fr.upem.crazygame.R;
 
 
+/**
+ * Représente la vue des classements Mondiaux
+ */
+
 public class ClassementActivity extends Activity {
     private float initialX;
 
@@ -22,9 +26,6 @@ public class ClassementActivity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_classement);
-
-        Log.d("----------", "Creation Classement");
-
         initGraphic();
         new AsyncTaskWaitScoreWorld(this).execute();
     }

@@ -29,7 +29,6 @@ public class Config {
     }
 
     public Boolean getVolum(){
-        Log.d("TESTTT", sharedPreferences.getBoolean(VOLUM, true) + "");
         return sharedPreferences.getBoolean(VOLUM, true);
     }
 

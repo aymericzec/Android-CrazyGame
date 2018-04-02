@@ -1,6 +1,9 @@
 package fr.upem.crazygame.game.mixwords;
 
 
+/**
+ * Modèle de MixWords
+ */
 
 public class MixWords {
 

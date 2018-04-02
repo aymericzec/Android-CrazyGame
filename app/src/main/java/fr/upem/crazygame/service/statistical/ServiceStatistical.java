@@ -23,8 +23,6 @@ import fr.upem.crazygame.provider.ProviderDataGame;
 
 
 public class ServiceStatistical extends Service {
-    private static int test = 0;
-
     @Nullable
     @Override
     public IBinder onBind(Intent intent) {
@@ -33,7 +31,6 @@ public class ServiceStatistical extends Service {
 
     @Override
     public void onCreate() {
-            Toast.makeText(this, "Service started " + test++, Toast.LENGTH_LONG).show();
             thread.start();
             super.onCreate();
     }
@@ -50,7 +47,8 @@ public class ServiceStatistical extends Service {
     public SocketChannel initSocketChanel() throws IOException {
 
         final SocketChannel sc = SocketChannel.open();
-        InetSocketAddress serverAddress =  new InetSocketAddress("90.3.251.211", 1002);
+        //InetSocketAddress serverAddress =  new InetSocketAddress("90.3.251.211", 1002);
+        InetSocketAddress serverAddress =  new InetSocketAddress("localhost", 8086);
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
         final InetSocketAddress serverAddressTmp = serverAddress;
@@ -89,7 +87,6 @@ public class ServiceStatistical extends Service {
                                 ByteBuffer b = CharsetServer.CHARSET_UTF_8.encode(nameGame);
                                 byteBuffer.putInt(b.limit());
                                 byteBuffer.put(b);
-                                Log.d("test", game + " " + nameGame);
                                 byteBuffer.putInt(game);
                             } while (cursor.moveToNext());
 

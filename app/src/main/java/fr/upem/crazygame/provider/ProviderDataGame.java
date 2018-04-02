@@ -81,7 +81,6 @@ public class ProviderDataGame extends ContentProvider {
             try {
                 return Long.parseLong(lastPathSegment);
             } catch (NumberFormatException e) {
-                Log.e("TutosAndroidProvider", "Number Format Exception : " + e);
             }
         }
         return -1;

@@ -70,7 +70,6 @@ public class AsyncTaskWaitOtherPlayer extends AsyncTask<Void,Void, Cell>{
     protected void onPostExecute(Cell cell) {
         super.onPostExecute(cell);
 
-        Log.d("Fin de la tâche", cell.getX() + " " + cell.getY());
         if (cell != null) {
             int x = cell.getX();
             int y = cell.getY();
