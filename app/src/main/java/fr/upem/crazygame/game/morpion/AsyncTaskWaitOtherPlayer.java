@@ -87,12 +87,7 @@ public class AsyncTaskWaitOtherPlayer extends AsyncTask<Void,Void, Cell>{
                 if (handlerMorpion.isWinner()) {
                    ProviderDataGame.addWinGame(GameCrazyGameColumns.NAME_MORPION, morpionActivity);
                    text = context.getString(R.string.lose);
-
-                    if (this.morpionActivity.getVibrate()) {
-                        Vibrator vib = (Vibrator) morpionActivity.getSystemService(Context.VIBRATOR_SERVICE);
-                        vib.vibrate(1000);
-                    }
-
+                   this.morpionActivity.vibrate();
 
                     for (int l = 0; l < MorpionActivity.getNumberCell(); l++) {
                         for (int m = 0; m < MorpionActivity.getNumberCell(); m++) {
@@ -103,14 +98,12 @@ public class AsyncTaskWaitOtherPlayer extends AsyncTask<Void,Void, Cell>{
                             }
                         }
                     }
-
                 } else {
                     text = context.getString(R.string.equality);
                 }
                 TextView messageBottom = morpionActivity.getMessageBottom();
                 messageBottom.setText(text);
             }
-
         } else {
             handlerMorpion.looseConnexion();
         }

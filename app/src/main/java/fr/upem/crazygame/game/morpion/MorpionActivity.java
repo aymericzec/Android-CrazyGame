@@ -11,6 +11,7 @@ import android.graphics.Color;
 import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -44,7 +45,6 @@ public class MorpionActivity extends Activity {
     private boolean volum;
     private boolean vibrate;
     private MediaPlayer applause;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -116,10 +116,6 @@ public class MorpionActivity extends Activity {
         this.volum = i.getBooleanExtra("volum", true);
         this.volum = i.getBooleanExtra("vibrate", true);
         this.applause = MediaPlayer.create(this, R.raw.applause);
-    }
-
-    public boolean getVibrate(){
-        return this.vibrate;
     }
 
 
@@ -244,5 +240,12 @@ public class MorpionActivity extends Activity {
 
     public Players getCurrentPlayer() {
         return currentPlayer;
+    }
+
+    public void vibrate () {
+        if (this.vibrate) {
+            Vibrator vib = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+            vib.vibrate(1000);
+        }
     }
 }
