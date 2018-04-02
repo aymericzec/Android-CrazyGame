@@ -8,6 +8,7 @@ import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.Point;
 import android.graphics.Typeface;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Vibrator;
 import android.util.Log;
@@ -31,6 +32,7 @@ public class MixWordActivity extends Activity {
     private Button[] keypadBottom;
     private Button[] keypadTop;
     private HandlerMixWords handlerMixWords;
+    private MediaPlayer applause= new MediaPlayer();
 
     private Boolean volum;
     private Boolean vibrate;
@@ -46,6 +48,15 @@ public class MixWordActivity extends Activity {
         this.volum = getIntent().getBooleanExtra("volum", true);
         this.vibrate = getIntent().getBooleanExtra("vibrate", true);
 
+        applause.create(this,R.raw.applause);
+        applause.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            @Override
+            public void onPrepared(MediaPlayer mp) {
+                mp.start();
+            }
+        });
+
+        Log.d("DURATION" , applause.getDuration()+"");
 
         initGraphic();
         initKeypadTop(word.length());
@@ -175,6 +186,13 @@ public class MixWordActivity extends Activity {
 
         if (win) {
             action.setText(getText(R.string.winBack));
+            applause.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+                @Override
+                public void onPrepared(MediaPlayer mp) {
+                    Log.d("'''''''''''", "START");
+                    mp.start();
+                }
+            });
         } else {
             action.setText(getText(R.string.loseBack));
 

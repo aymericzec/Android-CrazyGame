@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
@@ -39,6 +40,7 @@ public class SearchGameActivity extends ListActivity {
     private Config config = new Config();
     private Button vibrate;
     private Button volum;
+    private MediaPlayer applause;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -48,6 +50,13 @@ public class SearchGameActivity extends ListActivity {
         startService();
         initGraphic();
         initListView();
+
+        applause = MediaPlayer.create(this, R.raw.applause);
+        Log.d("test TEST", R.raw.applause + "");
+
+        applause.start();
+
+        Log.d("DURATION" , applause.getDuration()+"");
 
         connectivityReceiver = new ConnectivityReceiver();
         registerReceiver(connectivityReceiver, connectivityReceiver.getIntentFilter());
@@ -60,6 +69,8 @@ public class SearchGameActivity extends ListActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        //applause.start();
     }
 
     private void startService() {
