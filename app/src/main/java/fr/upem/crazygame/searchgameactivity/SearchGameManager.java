@@ -14,7 +14,6 @@ import fr.upem.crazygame.game.morpion.MorpionActivity;
 
 
 public class SearchGameManager {
-
     private final SocketChannel socketChannel;
     private ByteBuffer in = ByteBuffer.allocate(4096);
     private ByteBuffer out = ByteBuffer.allocate(4096);
@@ -99,6 +98,9 @@ public class SearchGameManager {
             //Launch Activity
             Intent intent = new Intent(SearchGameManager.this.searchGameActivity, MorpionActivity.class);
             intent.putExtra("begin", whoBegin);
+            intent.putExtra("vibrate", this.searchGameActivity.getConfig().getVibrate());
+            intent.putExtra("volum", this.searchGameActivity.getConfig().getVolum());
+
             SearchGameManager.this.searchGameActivity.launchGameActivity(intent);
         }
     }
@@ -128,6 +130,9 @@ public class SearchGameManager {
                     //Launch Activity
                     Intent intent = new Intent(SearchGameManager.this.searchGameActivity, MixWordActivity.class);
                     intent.putExtra("wordSearch", word);
+                    intent.putExtra("vibrate", this.searchGameActivity.getConfig().getVibrate());
+                    intent.putExtra("volum", this.searchGameActivity.getConfig().getVolum());
+
                     SearchGameManager.this.searchGameActivity.launchGameActivity(intent);
                 }
             }
@@ -146,6 +151,9 @@ public class SearchGameManager {
             //Launch Activity
             Intent intent = new Intent(SearchGameManager.this.searchGameActivity, ShakeGameActivity.class);
             intent.putExtra("begin", whoBegin);
+            intent.putExtra("vibrate", this.searchGameActivity.getConfig().getVibrate());
+            intent.putExtra("volum", this.searchGameActivity.getConfig().getVolum());
+
             SearchGameManager.this.searchGameActivity.launchGameActivity(intent);
         }
     }

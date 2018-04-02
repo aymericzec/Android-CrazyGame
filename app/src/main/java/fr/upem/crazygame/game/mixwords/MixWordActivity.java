@@ -1,10 +1,16 @@
 package fr.upem.crazygame.game.mixwords;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
+import android.content.res.Configuration;
+import android.graphics.Color;
 import android.graphics.Point;
 import android.graphics.Typeface;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.util.Log;
 import android.view.Display;
 import android.view.View;
@@ -26,6 +32,10 @@ public class MixWordActivity extends Activity {
     private Button[] keypadBottom;
     private Button[] keypadTop;
     private HandlerMixWords handlerMixWords;
+    private MediaPlayer applause= new MediaPlayer();
+
+    private Boolean volum;
+    private Boolean vibrate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +44,19 @@ public class MixWordActivity extends Activity {
 
         ProviderDataGame.addGame(GameCrazyGameColumns.NAME_MIXWORD, this);
         String word = getIntent().getStringExtra("wordSearch");
+
+        this.volum = getIntent().getBooleanExtra("volum", true);
+        this.vibrate = getIntent().getBooleanExtra("vibrate", true);
+
+        applause.create(this,R.raw.applause);
+        applause.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            @Override
+            public void onPrepared(MediaPlayer mp) {
+                mp.start();
+            }
+        });
+
+        Log.d("DURATION" , applause.getDuration()+"");
 
         initGraphic();
         initKeypadTop(word.length());
@@ -44,6 +67,12 @@ public class MixWordActivity extends Activity {
     }
 
     private void initGraphic (){
+        if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        } else {
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        }
+
         Typeface comic_book = Typeface.createFromAsset(getAssets(),"font/comic_book.otf");
         Typeface heros = Typeface.createFromAsset(getAssets(),"font/nightmachine.otf");
 
@@ -68,6 +97,8 @@ public class MixWordActivity extends Activity {
             Button button = new Button(this);
             button.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT, 1.0f));
 
+            button.setBackgroundResource(R.drawable.my_buttons);
+            button.setTextColor(Color.parseColor("#D8D8D8"));
             keypadTop[i] = button;
             keypadTop[i].setClickable(false);
             keypadTop[i].setOnClickListener(new View.OnClickListener() {
@@ -105,7 +136,10 @@ public class MixWordActivity extends Activity {
         for (int i = 0; i < word.length(); i++) {
             Button button = new Button(this);
             button.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT, 1.0f));
+            button.setBackgroundColor(Color.parseColor("#D8D8D8"));
+            button.setBackgroundResource(R.drawable.my_buttons_2);
 
+            button.setTextColor(Color.parseColor("#00AD97"));
             button.setText(word.charAt(i) + "");
             Log.d("lettre", word.charAt(i) + "");
             keypadBottom[i] = button;
@@ -152,9 +186,20 @@ public class MixWordActivity extends Activity {
 
         if (win) {
             action.setText(getText(R.string.winBack));
+            applause.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+                @Override
+                public void onPrepared(MediaPlayer mp) {
+                    Log.d("'''''''''''", "START");
+                    mp.start();
+                }
+            });
         } else {
             action.setText(getText(R.string.loseBack));
 
+            if (this.vibrate) {
+                Vibrator vib = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+                vib.vibrate(1000);
+            }
             for (int i = 0; i < word.length(); i++) {
                 keypadTop[i].setText(String.valueOf(word.charAt(i)));
                 keypadBottom[i].setText("");

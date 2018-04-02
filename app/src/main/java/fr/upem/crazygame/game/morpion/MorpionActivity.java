@@ -5,6 +5,8 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
+import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -38,6 +40,9 @@ public class MorpionActivity extends Activity {
     private boolean isTurn = false; //It's the turn of current player
     private boolean isBegin;
 
+    private boolean volum;
+    private boolean vibrate;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +53,6 @@ public class MorpionActivity extends Activity {
         initGraphic();
         initButton();
         getInformation();
-
     }
 
     @Override
@@ -57,6 +61,12 @@ public class MorpionActivity extends Activity {
     }
 
     private void initGraphic() {
+        if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        } else {
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        }
+
         Typeface nightFont = Typeface.createFromAsset(getAssets(), "font/nightmachine.otf");
         Typeface comicFont = Typeface.createFromAsset(getAssets(), "font/comic_book.otf");
 
@@ -100,6 +110,10 @@ public class MorpionActivity extends Activity {
             handlerMorpion = new HandlerMorpion(sc, this, new Morpion(Players.PLAYER2, currentPlayer));
             handlerMorpion.waitOther();
         }
+
+        this.volum = i.getBooleanExtra("volum", true);
+        this.volum = i.getBooleanExtra("vibrate", true);
+
     }
 
 

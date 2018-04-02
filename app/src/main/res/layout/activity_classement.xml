@@ -13,7 +13,7 @@
         android:background="#00AD97"
         android:fontFamily="@font/nightmachine"
         android:gravity="center"
-        android:text="@string/app_name"
+        android:text="@string/classement"
         android:textColor="@android:color/black"
         android:textSize="40sp" />
 
