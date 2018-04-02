@@ -1,0 +1,14 @@
+Fri Feb 02 23:06:48 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /192.168.1.11
+/192.168.1.11 Integer receptionné
+/192.168.1.11 Action demandée: 1
+/192.168.1.11 Longueur du nom: 7
+/192.168.1.11 Nom: Morpion
+/192.168.1.11 Recherche une partie pour Morpion
+Un client s'est connecté à l'addresse: /192.168.1.13
+/192.168.1.13 Integer receptionné
+/192.168.1.13 Action demandée: 1
+/192.168.1.13 Longueur du nom: 7
+/192.168.1.13 Nom: Morpion
+/192.168.1.13 Recherche une partie pour Morpion
+Une partie à été crée

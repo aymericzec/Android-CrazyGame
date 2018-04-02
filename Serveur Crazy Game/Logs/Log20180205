@@ -1,0 +1,237 @@
+Un client s'est connecté à l'addresse: /192.168.1.11
+Un client s'est connecté à l'addresse: /192.168.1.11
+/192.168.1.11 Integer receptionné
+/192.168.1.11 Action demandée: 1
+/192.168.1.11 Longueur du nom: 7
+/192.168.1.11 Nom: Morpion
+/192.168.1.11 Recherche une partie pour Morpion
+Un client s'est connecté à l'addresse: /192.168.1.13
+/192.168.1.13 Integer receptionné
+/192.168.1.13 Action demandée: 1
+/192.168.1.13 Longueur du nom: 7
+/192.168.1.13 Nom: Morpion
+/192.168.1.13 Recherche une partie pour Morpion
+Une partie à été crée
+/192.168.1.13 attends son tour au morpion
+/192.168.1.11 a joué un coup au morpion
+/192.168.1.13 a joué un coup au morpion
+/192.168.1.11 a joué un coup au morpion
+/192.168.1.13 a joué un coup au morpion
+/192.168.1.11 a joué un coup au morpion
+/192.168.1.13 a joué un coup au morpion
+/192.168.1.11 a joué un coup au morpion
+/192.168.1.13 a joué un coup au morpion
+/192.168.1.11 a joué un coup au morpion
+/192.168.1.11 a mis fin à la partie de Morpion/192.168.1.11 Integer receptionné
+/192.168.1.11 Action demandée: 1
+/192.168.1.11 Longueur du nom: 7
+/192.168.1.11 Nom: Morpion
+/192.168.1.11 Recherche une partie pour Morpion
+/192.168.1.13 Integer receptionné
+/192.168.1.13 Action demandée: 1
+/192.168.1.13 Longueur du nom: 7
+/192.168.1.13 Nom: Morpion
+/192.168.1.13 Recherche une partie pour Morpion
+Une partie à été crée
+/192.168.1.13 attends son tour au morpion
+/192.168.1.11 a joué un coup au morpion
+/192.168.1.13 a joué un coup au morpion
+/192.168.1.11 a joué un coup au morpion
+/192.168.1.13 a joué un coup au morpion
+/192.168.1.11 a joué un coup au morpion
+/192.168.1.13 a joué un coup au morpion
+/192.168.1.11 a joué un coup au morpion
+/192.168.1.13 a joué un coup au morpion
+/192.168.1.11 a joué un coup au morpion
+/192.168.1.11 a mis fin à la partie de Morpion/192.168.1.11 Integer receptionné
+/192.168.1.11 Action demandée: 1
+/192.168.1.11 Longueur du nom: 7
+/192.168.1.11 Nom: Morpion
+/192.168.1.11 Recherche une partie pour Morpion
+/192.168.1.13 Integer receptionné
+/192.168.1.13 Action demandée: 1
+/192.168.1.13 Longueur du nom: 7
+/192.168.1.13 Nom: Morpion
+/192.168.1.13 Recherche une partie pour Morpion
+Une partie à été crée
+/192.168.1.13 attends son tour au morpion
+/192.168.1.11 a joué un coup au morpion
+/192.168.1.13 a joué un coup au morpion
+/192.168.1.11 a joué un coup au morpion
+/192.168.1.13 a joué un coup au morpion
+/192.168.1.11 a joué un coup au morpion
+/192.168.1.13 a joué un coup au morpion
+/192.168.1.11 a joué un coup au morpion
+/192.168.1.13 a joué un coup au morpion
+/192.168.1.13 a mis fin à la partie de MorpionUn client s'est connecté à l'addresse: /192.168.1.12
+/192.168.1.12 Integer receptionné
+/192.168.1.12 Action demandée: 1
+/192.168.1.12 Longueur du nom: 7
+/192.168.1.12 Nom: Morpion
+/192.168.1.12 Recherche une partie pour Morpion
+/192.168.1.11 Integer receptionné
+/192.168.1.11 Action demandée: 1
+/192.168.1.11 Longueur du nom: 7
+/192.168.1.11 Nom: Morpion
+/192.168.1.11 Recherche une partie pour Morpion
+Une partie à été crée
+/192.168.1.11 attends son tour au morpion
+/192.168.1.12 a joué un coup au morpion
+/192.168.1.11 a joué un coup au morpion
+/192.168.1.12 a joué un coup au morpion
+/192.168.1.11 a joué un coup au morpion
+/192.168.1.12 a joué un coup au morpion
+/192.168.1.12 a mis fin à la partie de Morpion/192.168.1.11 Integer receptionné
+/192.168.1.11 Action demandée: 1
+/192.168.1.11 Longueur du nom: 7
+/192.168.1.11 Nom: Morpion
+/192.168.1.11 Recherche une partie pour Morpion
+/192.168.1.12 Integer receptionné
+/192.168.1.12 Action demandée: 1
+/192.168.1.12 Longueur du nom: 7
+/192.168.1.12 Nom: Morpion
+/192.168.1.12 Recherche une partie pour Morpion
+Une partie à été crée
+/192.168.1.12 attends son tour au morpion
+/192.168.1.11 a joué un coup au morpion
+/192.168.1.12 a joué un coup au morpion
+/192.168.1.11 a joué un coup au morpion
+/192.168.1.12 a joué un coup au morpion
+/192.168.1.11 a joué un coup au morpion
+/192.168.1.12 a joué un coup au morpion
+/192.168.1.11 a joué un coup au morpion
+/192.168.1.12 a joué un coup au morpion
+/192.168.1.11 a joué un coup au morpion
+/192.168.1.11 a mis fin à la partie de Morpion/192.168.1.11 Integer receptionné
+/192.168.1.11 Action demandée: 1
+/192.168.1.11 Longueur du nom: 7
+/192.168.1.11 Nom: Morpion
+/192.168.1.11 Recherche une partie pour Morpion
+/192.168.1.12 Integer receptionné
+/192.168.1.12 Action demandée: 1
+/192.168.1.12 Longueur du nom: 7
+/192.168.1.12 Nom: Morpion
+/192.168.1.12 Recherche une partie pour Morpion
+Une partie à été crée
+/192.168.1.12 attends son tour au morpion
+/192.168.1.11 a joué un coup au morpion
+/192.168.1.12 a joué un coup au morpion
+/192.168.1.11 a joué un coup au morpion
+/192.168.1.12 a joué un coup au morpion
+/192.168.1.11 a joué un coup au morpion
+/192.168.1.12 a joué un coup au morpion
+/192.168.1.11 a joué un coup au morpion
+/192.168.1.12 a joué un coup au morpion
+/192.168.1.11 a joué un coup au morpion
+/192.168.1.11 a mis fin à la partie de Morpion/192.168.1.11 Integer receptionné
+/192.168.1.11 Action demandée: 1
+/192.168.1.11 Longueur du nom: 7
+/192.168.1.11 Nom: Morpion
+/192.168.1.11 Recherche une partie pour Morpion
+/192.168.1.12 Integer receptionné
+/192.168.1.12 Action demandée: 1
+/192.168.1.12 Longueur du nom: 7
+/192.168.1.12 Nom: Morpion
+/192.168.1.12 Recherche une partie pour Morpion
+Une partie à été crée
+/192.168.1.12 attends son tour au morpion
+/192.168.1.11 a joué un coup au morpion
+/192.168.1.12 a joué un coup au morpion
+/192.168.1.11 a joué un coup au morpion
+/192.168.1.12 a joué un coup au morpion
+/192.168.1.11 a joué un coup au morpion
+/192.168.1.12 a joué un coup au morpion
+/192.168.1.11 a joué un coup au morpion
+/192.168.1.11 a mis fin à la partie de MorpionUn client s'est connecté à l'addresse: /90.3.251.211
+Un client s'est connecté à l'addresse: /90.3.251.211
+/90.3.251.211 Integer receptionné
+/90.3.251.211 Action demandée: 1
+/90.3.251.211 Longueur du nom: 7
+/90.3.251.211 Nom: Morpion
+/90.3.251.211 Recherche une partie pour Morpion
+/90.3.251.211 Integer receptionné
+/90.3.251.211 Action demandée: 1
+/90.3.251.211 Longueur du nom: 7
+/90.3.251.211 Nom: Morpion
+/90.3.251.211 Recherche une partie pour Morpion
+Une partie à été crée
+/90.3.251.211 attends son tour au morpion
+/90.3.251.211 a joué un coup au morpion
+/90.3.251.211 a joué un coup au morpion
+/90.3.251.211 a joué un coup au morpion
+/90.3.251.211 a joué un coup au morpion
+/90.3.251.211 a joué un coup au morpion
+/90.3.251.211 a mis fin à la partie de MorpionUn client s'est connecté à l'addresse: /80.215.203.203
+Un client s'est connecté à l'addresse: /80.215.102.55
+/80.215.102.55 Integer receptionné
+/80.215.102.55 Action demandée: 1
+/80.215.102.55 Longueur du nom: 7
+/80.215.102.55 Nom: Morpion
+/80.215.102.55 Recherche une partie pour Morpion
+/80.215.203.203 Integer receptionné
+/80.215.203.203 Action demandée: 1
+/80.215.203.203 Longueur du nom: 7
+/80.215.203.203 Nom: Morpion
+/80.215.203.203 Recherche une partie pour Morpion
+Une partie à été crée
+/80.215.203.203 attends son tour au morpion
+/80.215.102.55 a joué un coup au morpion
+/80.215.203.203 a joué un coup au morpion
+/80.215.102.55 a joué un coup au morpion
+/80.215.203.203 a joué un coup au morpion
+/80.215.102.55 a joué un coup au morpion
+/80.215.102.55 a mis fin à la partie de MorpionUn client s'est connecté à l'addresse: /90.3.251.211
+Un client s'est connecté à l'addresse: /90.3.251.211
+Un client s'est connecté à l'addresse: /90.3.251.211
+Mon Feb 05 18:55:38 CET 2018: Lancement du serveur
+Mon Feb 05 18:55:45 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /192.168.1.12
+Un client s'est connecté à l'addresse: /80.214.77.195
+/80.214.77.195 Integer receptionné
+/80.214.77.195 Action demandée: 1
+/80.214.77.195 Longueur du nom: 7
+/80.214.77.195 Nom: Morpion
+/80.214.77.195 Recherche une partie pour Morpion
+/80.214.77.195 est en attente d'une partie pour Morpion
+Un client s'est connecté à l'addresse: /90.3.251.211
+Un client s'est connecté à l'addresse: /80.214.77.195
+/80.214.77.195 Integer receptionné
+/80.214.77.195 Action demandée: 1
+/80.214.77.195 Longueur du nom: 7
+/80.214.77.195 Nom: Morpion
+/80.214.77.195 Recherche une partie pour Morpion
+Mon Feb 05 18:57:46 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+Un client s'est connecté à l'addresse: /80.214.77.195
+/90.3.251.211 Integer receptionné
+/90.3.251.211 Action demandée: 1
+/90.3.251.211 Longueur du nom: 7
+/90.3.251.211 Nom: Morpion
+/90.3.251.211 Recherche une partie pour Morpion
+/80.214.77.195 Integer receptionné
+/80.214.77.195 Action demandée: 1
+/80.214.77.195 Longueur du nom: 7
+/80.214.77.195 Nom: Morpion
+/80.214.77.195 Recherche une partie pour Morpion
+Une partie à été crée
+/80.214.77.195 attends son tour au morpion
+/90.3.251.211 a joué un coup au morpion
+/80.214.77.195 a joué un coup au morpion
+/90.3.251.211 a joué un coup au morpion
+/80.214.77.195 a joué un coup au morpion
+/90.3.251.211 a joué un coup au morpion
+/80.214.77.195 a joué un coup au morpion
+/90.3.251.211 a joué un coup au morpion
+/80.214.77.195 a joué un coup au morpion
+/80.214.77.195 a mis fin à la partie de Morpion/80.214.77.195 Integer receptionné
+/80.214.77.195 Action demandée: 1
+/80.214.77.195 Longueur du nom: 7
+/80.214.77.195 Nom: Morpion
+/80.214.77.195 Recherche une partie pour Morpion
+/90.3.251.211 Integer receptionné
+/90.3.251.211 Action demandée: 1
+/90.3.251.211 Longueur du nom: 7
+/90.3.251.211 Nom: Morpion
+/90.3.251.211 Recherche une partie pour Morpion
+Une partie à été crée
+/90.3.251.211 attends son tour au morpion

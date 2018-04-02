@@ -1,0 +1,116 @@
+Thu Feb 08 19:36:45 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+/90.3.251.211 a envoyé une longueur de taille de laguage 2
+/90.3.251.211 a envoyé le langage en
+Un client s'est connecté à l'addresse: /90.3.251.211
+/90.3.251.211 a envoyé une longueur de taille de laguage 2
+/90.3.251.211 a envoyé le langage fr
+/90.3.251.211 Integer receptionné
+/90.3.251.211 Action demandée: 1
+/90.3.251.211 Longueur du nom: 7
+/90.3.251.211 Nom: Morpion
+/90.3.251.211 Recherche une partie pour Morpion
+/90.3.251.211 Integer receptionné
+/90.3.251.211 Action demandée: 1
+/90.3.251.211 Longueur du nom: 7
+/90.3.251.211 Nom: Morpion
+/90.3.251.211 Recherche une partie pour Morpion
+Une partie à été crée
+/90.3.251.211 attends son tour au morpion
+/90.3.251.211 a joué un coup au morpion
+/90.3.251.211 a joué un coup au morpion
+/90.3.251.211 a joué un coup au morpion
+/90.3.251.211 a joué un coup au morpion
+/90.3.251.211 a joué un coup au morpion
+/90.3.251.211 a mis fin à la partie de MorpionUn client s'est connecté à l'addresse: /90.3.251.211
+/90.3.251.211 a envoyé une longueur de taille de laguage 2
+/90.3.251.211 a envoyé le langage fr
+/90.3.251.211 Integer receptionné
+/90.3.251.211 Action demandée: 1
+/90.3.251.211 Longueur du nom: 7
+/90.3.251.211 Nom: Morpion
+/90.3.251.211 Recherche une partie pour Morpion
+Un client s'est connecté à l'addresse: /89.2.101.108
+/89.2.101.108 a envoyé une longueur de taille de laguage 2
+/89.2.101.108 a envoyé le langage fr
+Un client s'est connecté à l'addresse: /90.3.251.211
+/90.3.251.211 a envoyé une longueur de taille de laguage 2
+/90.3.251.211 a envoyé le langage fr
+/89.2.101.108 Integer receptionné
+/89.2.101.108 Action demandée: 1
+/89.2.101.108 Longueur du nom: 7
+/89.2.101.108 Nom: Morpion
+/89.2.101.108 Recherche une partie pour Morpion
+Thu Feb 08 21:15:16 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+/90.3.251.211 a envoyé une longueur de taille de laguage 2
+/90.3.251.211 a envoyé le langage fr
+Un client s'est connecté à l'addresse: /89.2.101.108
+/89.2.101.108 a envoyé une longueur de taille de laguage 2
+/89.2.101.108 a envoyé le langage fr
+/90.3.251.211 Integer receptionné
+/90.3.251.211 Action demandée: 1
+/90.3.251.211 Longueur du nom: 7
+/90.3.251.211 Nom: Morpion
+/90.3.251.211 Recherche une partie pour Morpion
+/89.2.101.108 Integer receptionné
+/89.2.101.108 Action demandée: 1
+/89.2.101.108 Longueur du nom: 7
+/89.2.101.108 Nom: Morpion
+/89.2.101.108 Recherche une partie pour Morpion
+Une partie à été crée
+/89.2.101.108 attends son tour au morpion
+/90.3.251.211 a joué un coup au morpion
+/89.2.101.108 a joué un coup au morpion
+/90.3.251.211 a joué un coup au morpion
+/89.2.101.108 a joué un coup au morpion
+/90.3.251.211 a joué un coup au morpion
+/89.2.101.108 a joué un coup au morpion
+/90.3.251.211 a joué un coup au morpion
+/89.2.101.108 a joué un coup au morpion
+/90.3.251.211 a joué un coup au morpion
+/90.3.251.211 a mis fin à la partie de Morpion/90.3.251.211 Integer receptionné
+/90.3.251.211 Action demandée: 1
+/90.3.251.211 Longueur du nom: 7
+/90.3.251.211 Nom: Morpion
+/90.3.251.211 Recherche une partie pour Morpion
+/89.2.101.108 Integer receptionné
+/89.2.101.108 Action demandée: 1
+/89.2.101.108 Longueur du nom: 7
+/89.2.101.108 Nom: Morpion
+/89.2.101.108 Recherche une partie pour Morpion
+Une partie à été crée
+/89.2.101.108 attends son tour au morpion
+/90.3.251.211 a joué un coup au morpion
+/89.2.101.108 a joué un coup au morpion
+/90.3.251.211 a joué un coup au morpion
+/89.2.101.108 a joué un coup au morpion
+/90.3.251.211 a joué un coup au morpion
+/89.2.101.108 a joué un coup au morpion
+/89.2.101.108 a mis fin à la partie de Morpion/89.2.101.108 Integer receptionné
+/89.2.101.108 Action demandée: 1
+/89.2.101.108 Longueur du nom: 8
+/89.2.101.108 Nom: LuckyEgg
+/89.2.101.108 est en attente d'une partie pour LuckyEgg
+/90.3.251.211 Integer receptionné
+/90.3.251.211 Action demandée: 1
+/90.3.251.211 Longueur du nom: 7
+/90.3.251.211 Nom: Morpion
+/90.3.251.211 Recherche une partie pour Morpion
+/89.2.101.108 est en attente d'une partie pour LuckyEgg
+/89.2.101.108 est en attente d'une partie pour LuckyEgg
+/89.2.101.108 est en attente d'une partie pour LuckyEgg
+/89.2.101.108 est en attente d'une partie pour LuckyEgg
+/89.2.101.108 est en attente d'une partie pour LuckyEgg
+/89.2.101.108 est en attente d'une partie pour LuckyEgg
+/89.2.101.108 est en attente d'une partie pour LuckyEgg
+/89.2.101.108 est en attente d'une partie pour LuckyEgg
+/89.2.101.108 est en attente d'une partie pour LuckyEgg
+/89.2.101.108 est en attente d'une partie pour LuckyEgg
+Un client s'est connecté à l'addresse: /89.2.101.108
+/89.2.101.108 a envoyé une longueur de taille de laguage 2
+/89.2.101.108 a envoyé le langage fr
+/89.2.101.108 Integer receptionné
+/89.2.101.108 Action demandée: 1
+/89.2.101.108 Longueur du nom: 7
+/89.2.101.108 Nom: MixWord

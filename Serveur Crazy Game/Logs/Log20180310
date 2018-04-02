@@ -1,0 +1,1489 @@
+Sat Mar 10 07:06:20 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:08:31 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:08:31 CET 2018 /90.3.251.211 a envoyé le langage en
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:08:32 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:08:32 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 07:08:32 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:08:32 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 07:08:32 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:08:42 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:08:51 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:08:51 CET 2018 /90.3.251.211 a envoyé le langage fr
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:08:51 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:08:51 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 07:08:51 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:08:51 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 07:08:51 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:08:52 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:08:52 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:08:52 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 07:08:52 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 07:08:52 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 07:08:52 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 07:08:53 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:08:53 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 07:08:53 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 07:08:53 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 07:08:53 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 07:08:53 CET 2018 Une partie à été crée
+Sat Mar 10 07:08:54 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 0
+Sat Mar 10 07:08:54 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 0
+Sat Mar 10 07:09:01 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:09:02 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:09:11 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:09:12 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:09:14 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 0
+Sat Mar 10 07:09:14 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 0
+Sat Mar 10 07:09:21 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:09:22 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:09:31 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:09:32 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:09:41 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:09:42 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:09:51 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:09:52 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:10:01 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:10:02 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:10:11 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:10:12 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:10:21 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:10:22 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:10:31 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:10:32 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:10:41 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:10:42 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:10:51 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:10:52 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:11:01 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:11:02 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:11:11 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:11:12 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:11:22 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:11:22 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:11:32 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:11:32 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:11:42 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:11:43 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:11:52 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:11:53 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:12:02 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:12:03 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:12:12 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:12:13 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:12:22 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:12:23 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:12:32 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:12:33 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:12:42 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:12:43 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:12:52 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:12:53 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:13:02 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:13:03 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:13:12 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:13:13 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:13:22 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:13:23 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:13:39 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:13:45 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:13:45 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 07:13:45 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:13:45 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 07:13:45 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:13:51 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:13:51 CET 2018 /90.3.251.211 a envoyé le langage fr
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:13:52 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:13:52 CET 2018 /90.3.251.211 a envoyé le langage en
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:13:52 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:13:52 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 07:13:52 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:13:52 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 07:13:52 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:13:55 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:14:02 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:14:05 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:14:12 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:14:15 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:14:21 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:14:21 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 07:14:21 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 07:14:21 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 07:14:21 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 07:14:22 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:14:22 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 07:14:22 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 07:14:22 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 07:14:22 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 07:14:22 CET 2018 Une partie à été crée
+Sat Mar 10 07:14:22 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:14:25 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:14:32 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:14:35 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:14:43 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:14:45 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:14:53 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:14:55 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:15:03 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:15:06 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:15:13 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:15:16 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:15:23 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:15:26 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:15:33 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:15:36 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:15:43 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:15:46 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:15:53 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:15:56 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:16:03 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:16:06 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:16:13 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:16:16 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:16:20 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:16:31 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:16:31 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 07:16:31 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:16:31 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 07:16:31 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:16:31 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:16:31 CET 2018 /90.3.251.211 a envoyé le langage en
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:16:31 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:16:31 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 07:16:31 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:16:31 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 07:16:31 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:16:33 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:16:33 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 07:16:36 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:16:36 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 07:16:36 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 07:16:36 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 07:16:36 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 07:16:36 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:16:36 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 07:16:36 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 07:16:36 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 07:16:36 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 07:16:36 CET 2018 Une partie à été crée
+Sat Mar 10 07:16:41 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:16:41 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:16:51 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:16:51 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:16:56 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 6135
+Sat Mar 10 07:16:56 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 07:16:56 CET 2018 /90.3.251.211 nettoyage de la partie ShakeGame
+Sat Mar 10 07:16:57 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:19:40 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:19:56 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:19:56 CET 2018 /90.3.251.211 a envoyé le langage fr
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:19:56 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:19:56 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 07:19:56 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:19:56 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 07:19:56 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:20:06 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:20:16 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:20:40 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:20:40 CET 2018 /90.3.251.211 a envoyé le langage en
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:20:40 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:20:40 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 07:20:40 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:20:40 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 07:20:40 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:20:47 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:20:47 CET 2018 /90.3.251.211 a envoyé le langage fr
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:20:47 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:20:47 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 07:20:47 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:20:47 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 07:20:47 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:20:50 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:20:50 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 07:20:50 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 07:20:50 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 07:20:50 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 07:20:50 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:20:50 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:20:50 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 07:20:50 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 07:20:50 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 07:20:50 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 07:20:50 CET 2018 Une partie à été crée
+Sat Mar 10 07:20:57 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:21:00 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:21:07 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:21:10 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:21:10 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 4354
+Sat Mar 10 07:21:10 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 07:21:10 CET 2018 /90.3.251.211 nettoyage de la partie ShakeGame
+Sat Mar 10 07:21:11 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:21:53 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:21:55 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:21:55 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 07:21:55 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:21:55 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 07:21:55 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:21:57 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:21:57 CET 2018 /90.3.251.211 a envoyé le langage en
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:21:58 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:21:58 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 07:21:58 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:21:58 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 07:21:58 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:22:04 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:22:04 CET 2018 /90.3.251.211 a envoyé le langage en
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:22:04 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:22:04 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 07:22:04 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:22:04 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 07:22:04 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:22:05 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:22:07 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:22:07 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 07:22:09 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:22:09 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 07:22:09 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 07:22:09 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 07:22:09 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 07:22:09 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:22:09 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 07:22:09 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 07:22:09 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 07:22:09 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 07:22:09 CET 2018 Une partie à été crée
+Sat Mar 10 07:22:14 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:22:15 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:22:24 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:22:25 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:22:30 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 5960
+Sat Mar 10 07:22:30 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 07:22:30 CET 2018 /90.3.251.211 nettoyage de la partie ShakeGame
+Sat Mar 10 07:22:30 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:43:11 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:44:24 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:44:24 CET 2018 /90.3.251.211 a envoyé le langage fr
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:44:27 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:44:27 CET 2018 /90.3.251.211 a envoyé le langage en
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:44:27 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:44:27 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 07:44:27 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:44:27 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 07:44:27 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:44:37 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:44:46 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:44:46 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 07:44:46 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 07:44:46 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 07:44:46 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 07:44:47 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:44:48 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:44:48 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 07:44:48 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 07:44:48 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 07:44:48 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 07:44:48 CET 2018 Une partie à été crée
+Sat Mar 10 07:44:57 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:45:07 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:45:08 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 8308
+Sat Mar 10 07:45:08 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 07:45:08 CET 2018 /90.3.251.211 nettoyage de la partie ShakeGame
+Sat Mar 10 07:45:08 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:54:49 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:54:56 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:54:56 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 07:54:56 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:54:56 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 07:54:56 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:54:59 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:54:59 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 07:54:59 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:54:59 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 07:54:59 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:55:06 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:55:06 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:55:06 CET 2018 /90.3.251.211 a envoyé le langage en
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:55:09 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:55:09 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 07:55:09 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:55:10 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:55:10 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 07:55:10 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 07:55:10 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 07:55:10 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 07:55:11 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:55:11 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 07:55:11 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 07:55:11 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 07:55:11 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 07:55:11 CET 2018 Une partie à été crée
+Sat Mar 10 07:55:16 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:55:19 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:55:26 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:55:29 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:55:31 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 1557
+Sat Mar 10 07:55:31 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 07:55:31 CET 2018 /90.3.251.211 nettoyage de la partie ShakeGame
+Sat Mar 10 07:55:31 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 4057
+Sat Mar 10 07:55:31 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 07:55:31 CET 2018 /90.3.251.211 nettoyage de la partie ShakeGame
+Sat Mar 10 07:56:30 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:56:40 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:56:40 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 07:56:40 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:56:40 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 07:56:40 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:56:41 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:56:41 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 07:56:41 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:56:41 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 07:56:41 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:56:42 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:56:42 CET 2018 /90.3.251.211 a envoyé le langage fr
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:56:46 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:56:46 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 07:56:49 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:56:49 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 07:56:49 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 07:56:49 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 07:56:49 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 07:56:49 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:56:49 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 07:56:49 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 07:56:49 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 07:56:49 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 07:56:49 CET 2018 Une partie à été crée
+Sat Mar 10 07:56:50 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:56:51 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:57:00 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:57:01 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:57:09 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 4760
+Sat Mar 10 07:57:09 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 07:57:09 CET 2018 /90.3.251.211 nettoyage de la partie ShakeGame
+Sat Mar 10 07:57:09 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:57:10 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:57:11 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:57:21 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:57:31 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:57:35 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:57:35 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:57:40 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:57:41 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:57:50 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:57:51 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:58:00 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:58:01 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:58:11 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:58:11 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:58:21 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:58:21 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:58:31 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:58:32 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:58:41 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:58:42 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:58:51 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:58:52 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:59:01 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:59:02 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:59:11 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:59:12 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:59:21 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:59:37 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:59:37 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 07:59:37 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:59:37 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 07:59:37 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:59:42 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:59:42 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 07:59:42 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:59:42 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 07:59:42 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:59:44 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:59:44 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 07:59:47 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 07:59:49 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 07:59:49 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 07:59:52 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:59:52 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 07:59:52 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 07:59:52 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 07:59:52 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 07:59:52 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 07:59:52 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 07:59:52 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 07:59:52 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 07:59:52 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 07:59:52 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 07:59:52 CET 2018 Une partie à été crée
+Sat Mar 10 07:59:57 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:00:02 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:00:07 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:00:12 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:00:12 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 60
+Sat Mar 10 08:00:12 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 08:00:13 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 2206
+Sat Mar 10 08:00:13 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 08:00:13 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 60
+Sat Mar 10 08:00:13 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 08:00:17 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:00:22 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:00:28 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:00:32 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:00:38 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:00:42 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:00:48 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:00:52 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:00:58 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:01:03 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:01:08 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:01:13 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:01:18 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:01:23 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:01:28 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:01:33 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:01:38 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:01:43 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:01:48 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:01:53 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:04:07 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 08:04:15 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 08:04:15 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 08:04:15 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 08:04:15 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 08:04:15 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 08:04:21 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 08:04:21 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 08:04:21 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 08:04:21 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 08:04:21 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 08:04:24 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 08:04:24 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 08:04:25 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 08:04:30 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 08:04:30 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 08:04:31 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:04:35 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:04:37 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 08:04:37 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 08:04:37 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 08:04:37 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 08:04:37 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 08:04:38 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 08:04:38 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 08:04:38 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 08:04:38 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 08:04:38 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 08:04:38 CET 2018 Une partie à été crée
+Sat Mar 10 08:04:41 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:04:45 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:04:51 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:04:56 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:04:59 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 0
+Sat Mar 10 08:04:59 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 08:04:59 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 1241
+Sat Mar 10 08:04:59 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 08:04:59 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 0
+Sat Mar 10 08:04:59 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 08:05:01 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:05:06 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:05:11 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:05:16 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:05:21 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:05:26 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:08:55 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 08:09:02 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 08:09:02 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 08:09:02 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 08:09:02 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 08:09:02 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 08:09:07 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 08:09:07 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 08:09:07 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 08:09:07 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 08:09:07 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 08:09:07 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 08:09:07 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 08:09:08 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 08:09:08 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 08:09:10 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 08:09:10 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 08:09:10 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 08:09:10 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 08:09:10 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 08:09:11 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 08:09:11 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 08:09:11 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 08:09:11 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 08:09:11 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 08:09:11 CET 2018 Une partie à été crée
+Sat Mar 10 08:09:12 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:09:17 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:09:22 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:09:27 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:09:31 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 5422
+Sat Mar 10 08:09:31 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 08:09:31 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 0
+Sat Mar 10 08:09:31 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 08:09:31 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 0
+Sat Mar 10 08:09:31 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 08:09:32 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:42:14 CET 2018: Lancement du serveur
+Sat Mar 10 08:42:18 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 08:42:26 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 08:42:26 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 08:42:26 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 08:42:26 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 08:42:26 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 08:42:29 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 08:42:29 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 08:42:29 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 08:42:29 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 08:42:29 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 08:42:31 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 08:42:31 CET 2018 /90.3.251.211 a envoyé le langage fr
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 08:42:33 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 08:42:33 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 08:42:35 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 08:42:35 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 08:42:35 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 08:42:35 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 08:42:35 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 08:42:36 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:42:36 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 08:42:36 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 08:42:36 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 08:42:36 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 08:42:36 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 08:42:36 CET 2018 Une partie à été crée
+Sat Mar 10 08:42:39 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:42:46 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:42:49 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:42:56 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:42:56 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 4160
+Sat Mar 10 08:42:56 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 08:42:56 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 0
+Sat Mar 10 08:42:56 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 08:42:59 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:43:06 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:43:09 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:43:16 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:43:20 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:43:26 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:43:51 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 08:43:57 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 08:43:57 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 08:43:57 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 08:43:57 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 08:43:57 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 08:44:00 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 08:44:00 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 08:44:00 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 08:44:00 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 08:44:00 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 08:44:02 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 08:44:02 CET 2018 /90.3.251.211 a envoyé le langage fr
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 08:44:06 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 08:44:06 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 08:44:07 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:44:08 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 08:44:08 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 08:44:08 CET 2018 /90.3.251.211 Longueur du nom: 7
+Sat Mar 10 08:44:08 CET 2018 /90.3.251.211 Nom: Morpion
+Sat Mar 10 08:44:08 CET 2018 /90.3.251.211 Recherche une partie pour Morpion
+Sat Mar 10 08:44:09 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 08:44:09 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 08:44:09 CET 2018 /90.3.251.211 Longueur du nom: 7
+Sat Mar 10 08:44:09 CET 2018 /90.3.251.211 Nom: Morpion
+Sat Mar 10 08:44:09 CET 2018 /90.3.251.211 Recherche une partie pour Morpion
+Sat Mar 10 08:44:09 CET 2018 Une partie à été crée
+Sat Mar 10 08:44:10 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 08:44:15 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 08:44:15 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 08:44:15 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 08:44:15 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 08:44:15 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:44:20 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:44:59 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 08:45:02 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 08:45:02 CET 2018 /90.3.251.211 a envoyé le langage fr
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 08:45:02 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 08:45:02 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 08:45:02 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 08:45:02 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 08:45:02 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 08:45:10 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 08:45:10 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 08:45:10 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 08:45:10 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 08:45:10 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 08:45:14 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 08:45:14 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 08:45:14 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 08:45:14 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 08:45:14 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:45:20 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:45:24 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 08:45:28 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 08:45:28 CET 2018 /90.3.251.211 a envoyé le langage en
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 08:45:28 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 08:45:28 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 08:45:28 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 08:45:28 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 08:45:28 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 08:45:28 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 08:45:28 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 08:45:31 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:45:32 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 08:45:32 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 08:45:32 CET 2018 /90.3.251.211 Longueur du nom: 7
+Sat Mar 10 08:45:32 CET 2018 /90.3.251.211 Nom: Morpion
+Sat Mar 10 08:45:32 CET 2018 /90.3.251.211 Recherche une partie pour Morpion
+Sat Mar 10 08:45:34 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 08:45:34 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 08:45:34 CET 2018 /90.3.251.211 Longueur du nom: 7
+Sat Mar 10 08:45:34 CET 2018 /90.3.251.211 Nom: Morpion
+Sat Mar 10 08:45:34 CET 2018 /90.3.251.211 Recherche une partie pour Morpion
+Sat Mar 10 08:45:34 CET 2018 Une partie à été crée
+Sat Mar 10 08:45:38 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:45:41 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:45:51 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 08:45:53 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 08:45:53 CET 2018 /90.3.251.211 a envoyé le langage en
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 08:45:53 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 08:45:53 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 08:45:53 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 08:45:53 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 08:45:53 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 08:45:55 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 08:45:55 CET 2018 /90.3.251.211 a envoyé le langage fr
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 08:45:55 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 08:45:55 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 08:45:55 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 08:45:55 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 08:45:55 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:45:57 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 08:45:57 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 08:45:57 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 08:45:57 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 08:45:57 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 08:45:57 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 08:45:57 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 08:45:57 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 08:45:57 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 08:45:57 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 08:45:57 CET 2018 Une partie à été crée
+Sat Mar 10 08:46:03 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:46:05 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:46:13 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:46:15 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:46:18 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 4636
+Sat Mar 10 08:46:18 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 08:46:18 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 0
+Sat Mar 10 08:46:18 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 08:46:23 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 1
+Sat Mar 10 08:46:23 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 08:46:23 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 1
+Sat Mar 10 08:46:23 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 08:46:23 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:46:26 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:46:26 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 9
+Sat Mar 10 08:46:26 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 08:46:28 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 1399349611
+Sat Mar 10 08:46:28 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 08:46:29 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 9
+Sat Mar 10 08:46:29 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 08:46:33 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:46:36 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:46:44 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:46:46 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:46:49 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 1699176813
+Sat Mar 10 08:46:49 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 08:46:50 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 1399349611
+Sat Mar 10 08:46:50 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 08:46:50 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 1699176813
+Sat Mar 10 08:46:50 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 08:46:54 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:46:56 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:47:04 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:47:06 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:47:16 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:47:26 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:47:36 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:48:18 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 08:48:24 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 08:48:24 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 08:48:24 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 08:48:24 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 08:48:24 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 08:48:28 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 08:48:28 CET 2018 /90.3.251.211 a envoyé le langage en
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 08:48:28 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 08:48:28 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 08:48:28 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 08:48:28 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 08:48:28 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 08:48:30 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 08:48:30 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 08:48:31 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 08:48:31 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 08:48:31 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 08:48:31 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 08:48:31 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 08:48:34 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 08:48:34 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 08:48:34 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 08:48:34 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 08:48:34 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 08:48:34 CET 2018 Une partie à été crée
+Sat Mar 10 08:48:34 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:48:38 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:48:44 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:48:48 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:48:54 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 3601
+Sat Mar 10 08:48:54 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 08:48:54 CET 2018 /90.3.251.211 nettoyage de la partie ShakeGame
+Sat Mar 10 08:48:54 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 0
+Sat Mar 10 08:48:54 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 08:48:54 CET 2018 /90.3.251.211 nettoyage de la partie ShakeGame
+Sat Mar 10 08:48:55 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:48:58 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:49:05 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:49:09 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:49:10 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 08:49:10 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 08:49:10 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 08:49:10 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 08:49:10 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 08:49:11 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 08:49:11 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 08:49:11 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 08:49:11 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 08:49:11 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 08:49:11 CET 2018 Une partie à été crée
+Sat Mar 10 08:49:15 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:49:19 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:49:25 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:49:29 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:49:31 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 62
+Sat Mar 10 08:49:31 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 08:49:31 CET 2018 /90.3.251.211 nettoyage de la partie ShakeGame
+Sat Mar 10 08:49:31 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 13
+Sat Mar 10 08:49:31 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 08:49:31 CET 2018 /90.3.251.211 nettoyage de la partie ShakeGame
+Sat Mar 10 08:49:35 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:49:39 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:49:45 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 08:49:49 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 10:24:16 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 10:25:17 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 10:25:17 CET 2018 /90.3.251.211 a envoyé le langage en
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 10:25:18 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 10:25:18 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 10:25:18 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 10:25:18 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 10:25:18 CET 2018 /90.3.251.211 à demandé les scores mondiaux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 10:26:42 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 10:26:42 CET 2018 /90.3.251.211 a envoyé le langage en
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 10:26:42 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 10:26:42 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 10:26:42 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 10:26:42 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 10:26:42 CET 2018 /90.3.251.211 à demandé les scores mondiaux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 10:28:13 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 10:28:13 CET 2018 /90.3.251.211 a envoyé le langage en
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 10:28:13 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 10:28:13 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 10:28:13 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 10:28:13 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 10:28:13 CET 2018 /90.3.251.211 à demandé les scores mondiaux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 10:32:44 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 10:32:44 CET 2018 /90.3.251.211 a envoyé le langage en
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 10:32:44 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 10:32:44 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 10:32:44 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 10:32:44 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 10:32:44 CET 2018 /90.3.251.211 à demandé les scores mondiaux
+Sat Mar 10 10:32:47 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 10:32:47 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 10:32:47 CET 2018 /90.3.251.211 Longueur du nom: 7
+Sat Mar 10 10:32:47 CET 2018 /90.3.251.211 Nom: Morpion
+Sat Mar 10 10:32:47 CET 2018 /90.3.251.211 Recherche une partie pour Morpion
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 10:32:53 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 10:32:53 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 10:32:54 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 10:32:54 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 10:32:54 CET 2018 /90.3.251.211 Longueur du nom: 7
+Sat Mar 10 10:32:54 CET 2018 /90.3.251.211 Nom: Morpion
+Sat Mar 10 10:32:54 CET 2018 /90.3.251.211 Recherche une partie pour Morpion
+Sat Mar 10 10:32:54 CET 2018 Une partie à été crée
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 10:33:01 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 10:33:01 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 10:33:01 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 10:33:01 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 10:33:01 CET 2018 /90.3.251.211 à demandé les scores mondiaux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 10:33:09 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 10:33:09 CET 2018 /90.3.251.211 a envoyé le langage en
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 10:33:09 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 10:33:09 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 10:33:09 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 10:33:09 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 10:33:09 CET 2018 /90.3.251.211 à demandé les scores mondiaux
+Sat Mar 10 10:33:23 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 10:33:23 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 10:33:23 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 10:33:23 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 10:33:23 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 10:36:40 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 10:36:42 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 10:36:42 CET 2018 /90.3.251.211 a envoyé le langage en
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 10:36:42 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 10:36:42 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 10:36:42 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 10:36:42 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 10:36:42 CET 2018 /90.3.251.211 à demandé les scores mondiaux
+Sat Mar 10 10:36:50 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 10:38:11 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+Un client s'est connecté à l'addresse: /90.3.251.211
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 10:38:13 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 10:38:13 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 10:38:13 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 10:38:13 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 10:38:13 CET 2018 /90.3.251.211 à demandé les scores mondiaux
+Sat Mar 10 10:38:21 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 10:38:46 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 10:38:46 CET 2018 /90.3.251.211 a envoyé le langage en
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 10:38:46 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 10:38:46 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 10:38:46 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 10:38:46 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 10:38:46 CET 2018 /90.3.251.211 à demandé les scores mondiaux
+Sat Mar 10 10:38:51 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 10:40:37 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 10:40:49 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 10:40:49 CET 2018 /90.3.251.211 a envoyé le langage en
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 10:40:49 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 10:40:49 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 10:40:49 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 10:40:49 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 10:40:49 CET 2018 /90.3.251.211 à demandé les scores mondiaux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 10:42:21 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 10:42:21 CET 2018 /90.3.251.211 a envoyé le langage en
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 10:42:21 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 10:42:21 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 10:42:21 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 10:42:21 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 10:42:21 CET 2018 /90.3.251.211 à demandé les scores mondiaux
+Sat Mar 10 10:42:29 CET 2018 /90.3.251.211 Integer receptionné
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 10:43:58 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 10:43:58 CET 2018 /90.3.251.211 a envoyé le langage en
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 10:43:58 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 10:43:58 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 10:43:58 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 10:43:58 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 10:43:58 CET 2018 /90.3.251.211 à demandé les scores mondiaux
+Sat Mar 10 10:44:00 CET 2018 /90.3.251.211 Integer receptionné
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 10:44:28 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 10:44:28 CET 2018 /90.3.251.211 a envoyé le langage en
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 10:44:28 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 10:44:28 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 10:44:28 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 10:44:28 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 10:44:28 CET 2018 /90.3.251.211 à demandé les scores mondiaux
+Sat Mar 10 10:44:31 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 11:33:38 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 11:34:16 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 11:34:16 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 11:34:28 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 11:39:58 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 11:40:05 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 11:40:05 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 11:40:05 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 11:40:05 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 11:40:05 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 11:40:05 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 11:40:05 CET 2018 /90.3.251.211 à demandé les scores mondiaux
+Sat Mar 10 11:40:09 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 11:41:01 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 11:41:11 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 11:41:11 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 11:41:20 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 11:42:11 CET 2018: Lancement du serveur
+Sat Mar 10 11:44:08 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /77.136.15.197
+Sat Mar 10 11:44:57 CET 2018 /77.136.15.197 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 11:44:57 CET 2018 /77.136.15.197 a envoyé le langage fr
+Sat Mar 10 11:44:57 CET 2018 /77.136.15.197 Integer receptionné
+Sat Mar 10 11:44:57 CET 2018 /77.136.15.197 est prêt à envoyé des scores de jeux
+Sat Mar 10 11:44:57 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /77.136.15.197
+Sat Mar 10 11:44:59 CET 2018 /77.136.15.197 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 11:44:59 CET 2018 /77.136.15.197 a envoyé le langage fr
+Sat Mar 10 11:45:01 CET 2018 /77.136.15.197 Integer receptionné
+Sat Mar 10 11:45:07 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:45:17 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:45:27 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:45:37 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:45:41 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /77.136.15.197
+Un client s'est connecté à l'addresse: /77.136.15.197
+Sat Mar 10 11:45:46 CET 2018 /77.136.15.197 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 11:45:46 CET 2018 /77.136.15.197 a envoyé le langage fr
+Sat Mar 10 11:45:46 CET 2018 /77.136.15.197 Integer receptionné
+Sat Mar 10 11:45:46 CET 2018 /77.136.15.197 est prêt à envoyé des scores de jeux
+Sat Mar 10 11:45:46 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:45:46 CET 2018 /77.136.15.197 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 11:45:46 CET 2018 /77.136.15.197 a envoyé le langage fr
+Sat Mar 10 11:45:49 CET 2018 /77.136.15.197 Integer receptionné
+Sat Mar 10 11:45:56 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:46:06 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:46:09 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /77.136.15.197
+Sat Mar 10 11:46:15 CET 2018 /77.136.15.197 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 11:46:15 CET 2018 /77.136.15.197 a envoyé le langage fr
+Un client s'est connecté à l'addresse: /77.136.15.197
+Sat Mar 10 11:46:15 CET 2018 /77.136.15.197 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 11:46:15 CET 2018 /77.136.15.197 a envoyé le langage fr
+Sat Mar 10 11:46:15 CET 2018 /77.136.15.197 Integer receptionné
+Sat Mar 10 11:46:15 CET 2018 /77.136.15.197 est prêt à envoyé des scores de jeux
+Sat Mar 10 11:46:15 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:46:17 CET 2018 /77.136.15.197 Integer receptionné
+Sat Mar 10 11:46:17 CET 2018 /77.136.15.197 à demandé les scores mondiaux
+Sat Mar 10 11:46:26 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:46:36 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:46:46 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:48:13 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /77.136.15.197
+Sat Mar 10 11:48:13 CET 2018 /77.136.15.197 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 11:48:13 CET 2018 /77.136.15.197 a envoyé le langage fr
+Sat Mar 10 11:48:13 CET 2018 /77.136.15.197 Integer receptionné
+Sat Mar 10 11:48:13 CET 2018 /77.136.15.197 est prêt à envoyé des scores de jeux
+Sat Mar 10 11:48:13 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /77.136.15.197
+Un client s'est connecté à l'addresse: /77.136.15.197
+Sat Mar 10 11:48:20 CET 2018 /77.136.15.197 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 11:48:20 CET 2018 /77.136.15.197 a envoyé le langage fr
+Sat Mar 10 11:48:20 CET 2018 /77.136.15.197 Integer receptionné
+Sat Mar 10 11:48:20 CET 2018 /77.136.15.197 est prêt à envoyé des scores de jeux
+Sat Mar 10 11:48:20 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:48:20 CET 2018 /77.136.15.197 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 11:48:20 CET 2018 /77.136.15.197 a envoyé le langage fr
+Sat Mar 10 11:48:30 CET 2018 /77.136.15.197 Integer receptionné
+Sat Mar 10 11:48:30 CET 2018 /77.136.15.197 à demandé les scores mondiaux
+Sat Mar 10 11:48:30 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:48:40 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:48:50 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:49:01 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:49:10 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:49:21 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:49:31 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:49:41 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:49:51 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:50:01 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:50:11 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:50:21 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:50:31 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:50:41 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:50:51 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:51:01 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:51:11 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:51:21 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:51:31 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:51:41 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:51:51 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:52:01 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:52:12 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:52:22 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:52:32 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:52:42 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:52:52 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:53:02 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:53:12 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:53:22 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:53:32 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:53:42 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:53:52 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:54:02 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:54:12 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:54:55 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /77.136.15.197
+Sat Mar 10 11:56:06 CET 2018 /77.136.15.197 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 11:56:06 CET 2018 /77.136.15.197 a envoyé le langage fr
+Un client s'est connecté à l'addresse: /77.136.15.197
+Sat Mar 10 11:56:06 CET 2018 /77.136.15.197 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 11:56:06 CET 2018 /77.136.15.197 a envoyé le langage fr
+Sat Mar 10 11:56:06 CET 2018 /77.136.15.197 Integer receptionné
+Sat Mar 10 11:56:06 CET 2018 /77.136.15.197 est prêt à envoyé des scores de jeux
+Sat Mar 10 11:56:06 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:56:16 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:56:20 CET 2018 /77.136.15.197 Integer receptionné
+Sat Mar 10 11:56:20 CET 2018 /77.136.15.197 à demandé les scores mondiaux
+Sat Mar 10 11:56:26 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:56:36 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:56:46 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:56:56 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:57:06 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:57:16 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 11:58:43 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /77.136.15.197
+Sat Mar 10 11:58:53 CET 2018 /77.136.15.197 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 11:58:53 CET 2018 /77.136.15.197 a envoyé le langage fr
+Sat Mar 10 11:58:53 CET 2018 /77.136.15.197 Integer receptionné
+Sat Mar 10 11:58:53 CET 2018 /77.136.15.197 est prêt à envoyé des scores de jeux
+Sat Mar 10 11:58:53 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /77.136.15.197
+Sat Mar 10 11:58:56 CET 2018 /77.136.15.197 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 11:58:56 CET 2018 /77.136.15.197 a envoyé le langage fr
+Sat Mar 10 11:58:58 CET 2018 /77.136.15.197 Integer receptionné
+Sat Mar 10 11:58:58 CET 2018 /77.136.15.197 à demandé les scores mondiaux
+Sat Mar 10 12:01:07 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /77.136.15.197
+Sat Mar 10 12:01:13 CET 2018 /77.136.15.197 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 12:01:13 CET 2018 /77.136.15.197 a envoyé le langage fr
+Un client s'est connecté à l'addresse: /77.136.15.197
+Sat Mar 10 12:01:41 CET 2018 /77.136.15.197 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 12:01:41 CET 2018 /77.136.15.197 a envoyé le langage fr
+Sat Mar 10 12:01:41 CET 2018 /77.136.15.197 Integer receptionné
+Sat Mar 10 12:01:41 CET 2018 /77.136.15.197 est prêt à envoyé des scores de jeux
+Sat Mar 10 12:01:41 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 12:01:51 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /77.136.15.197
+Sat Mar 10 12:01:56 CET 2018 /77.136.15.197 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 12:01:56 CET 2018 /77.136.15.197 a envoyé le langage fr
+Sat Mar 10 12:01:58 CET 2018 /77.136.15.197 Integer receptionné
+Sat Mar 10 12:01:58 CET 2018 /77.136.15.197 à demandé les scores mondiaux
+Sat Mar 10 12:02:01 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 13:09:52 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /77.136.15.197
+Sat Mar 10 13:10:14 CET 2018 /77.136.15.197 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 13:10:14 CET 2018 /77.136.15.197 a envoyé le langage fr
+Un client s'est connecté à l'addresse: /77.136.15.197
+Sat Mar 10 13:10:14 CET 2018 /77.136.15.197 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 13:10:14 CET 2018 /77.136.15.197 a envoyé le langage fr
+Sat Mar 10 13:10:14 CET 2018 /77.136.15.197 Integer receptionné
+Sat Mar 10 13:10:14 CET 2018 /77.136.15.197 est prêt à envoyé des scores de jeux
+Sat Mar 10 13:10:14 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 13:10:17 CET 2018 /77.136.15.197 Integer receptionné
+Sat Mar 10 13:10:17 CET 2018 /77.136.15.197 à demandé les scores mondiaux
+Sat Mar 10 13:14:26 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /77.136.15.197
+Un client s'est connecté à l'addresse: /77.136.15.197
+Sat Mar 10 13:14:42 CET 2018 /77.136.15.197 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 13:14:42 CET 2018 /77.136.15.197 a envoyé le langage fr
+Sat Mar 10 13:14:42 CET 2018 /77.136.15.197 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 13:14:42 CET 2018 /77.136.15.197 a envoyé le langage fr
+Sat Mar 10 13:14:42 CET 2018 /77.136.15.197 Integer receptionné
+Sat Mar 10 13:14:42 CET 2018 /77.136.15.197 est prêt à envoyé des scores de jeux
+Sat Mar 10 13:14:42 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 13:14:53 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 13:14:54 CET 2018 /77.136.15.197 Integer receptionné
+Sat Mar 10 13:14:54 CET 2018 /77.136.15.197 à demandé les scores mondiaux
+Sat Mar 10 13:15:03 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 13:15:13 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 13:15:23 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 13:19:14 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /77.136.15.197
+Un client s'est connecté à l'addresse: /77.136.15.197
+Sat Mar 10 13:19:23 CET 2018 /77.136.15.197 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 13:19:23 CET 2018 /77.136.15.197 a envoyé le langage fr
+Sat Mar 10 13:19:23 CET 2018 /77.136.15.197 Integer receptionné
+Sat Mar 10 13:19:23 CET 2018 /77.136.15.197 est prêt à envoyé des scores de jeux
+Sat Mar 10 13:19:23 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 13:19:23 CET 2018 /77.136.15.197 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 13:19:23 CET 2018 /77.136.15.197 a envoyé le langage fr
+Sat Mar 10 13:19:24 CET 2018 /77.136.15.197 Integer receptionné
+Sat Mar 10 13:19:24 CET 2018 /77.136.15.197 à demandé les scores mondiaux
+Sat Mar 10 13:19:33 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 13:19:43 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 13:19:53 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 13:20:03 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 13:21:51 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /77.136.15.197
+Un client s'est connecté à l'addresse: /77.136.15.197
+Sat Mar 10 13:22:08 CET 2018 /77.136.15.197 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 13:22:08 CET 2018 /77.136.15.197 a envoyé le langage fr
+Sat Mar 10 13:22:08 CET 2018 /77.136.15.197 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 13:22:08 CET 2018 /77.136.15.197 a envoyé le langage fr
+Sat Mar 10 13:22:08 CET 2018 /77.136.15.197 Integer receptionné
+Sat Mar 10 13:22:08 CET 2018 /77.136.15.197 est prêt à envoyé des scores de jeux
+Sat Mar 10 13:22:08 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 13:22:13 CET 2018 /77.136.15.197 Integer receptionné
+Sat Mar 10 13:22:13 CET 2018 /77.136.15.197 à demandé les scores mondiaux
+Sat Mar 10 13:22:18 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 13:22:29 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 13:22:39 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 13:22:49 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 13:22:59 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 13:23:09 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 13:23:19 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 13:23:29 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 13:23:49 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /77.136.15.197
+Sat Mar 10 13:23:58 CET 2018 /77.136.15.197 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 13:23:58 CET 2018 /77.136.15.197 a envoyé le langage fr
+Un client s'est connecté à l'addresse: /77.136.15.197
+Sat Mar 10 13:23:58 CET 2018 /77.136.15.197 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 13:23:58 CET 2018 /77.136.15.197 a envoyé le langage fr
+Sat Mar 10 13:23:58 CET 2018 /77.136.15.197 Integer receptionné
+Sat Mar 10 13:23:58 CET 2018 /77.136.15.197 est prêt à envoyé des scores de jeux
+Sat Mar 10 13:23:58 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 13:24:00 CET 2018 /77.136.15.197 Integer receptionné
+Sat Mar 10 13:24:00 CET 2018 /77.136.15.197 à demandé les scores mondiaux
+Un client s'est connecté à l'addresse: /77.136.15.197
+Sat Mar 10 13:24:05 CET 2018 /77.136.15.197 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 13:24:05 CET 2018 /77.136.15.197 a envoyé le langage fr
+Sat Mar 10 13:24:05 CET 2018 /77.136.15.197 Integer receptionné
+Sat Mar 10 13:24:05 CET 2018 /77.136.15.197 est prêt à envoyé des scores de jeux
+Sat Mar 10 13:24:05 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 13:24:15 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 13:24:25 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 13:24:35 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 13:24:45 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 13:24:55 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 13:25:05 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 13:25:15 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 13:25:25 CET 2018 /77.136.15.197 a envoyé des données de jeux
+Sat Mar 10 14:28:26 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 14:28:46 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 14:28:46 CET 2018 /90.3.251.211 a envoyé le langage fr
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 14:28:46 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 14:28:46 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 14:28:46 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 14:28:46 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 14:28:46 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 14:28:57 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 14:29:34 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 14:29:34 CET 2018 /90.3.251.211 a envoyé le langage fr
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 14:29:34 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 14:29:34 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 14:29:34 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 14:29:34 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 14:29:34 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 14:29:40 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 14:29:40 CET 2018 /90.3.251.211 à demandé les scores mondiaux
+Sat Mar 10 14:29:44 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 14:29:54 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 14:30:05 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 14:30:07 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 14:30:07 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 14:30:12 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 14:30:12 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 14:30:12 CET 2018 /90.3.251.211 Longueur du nom: 7
+Sat Mar 10 14:30:12 CET 2018 /90.3.251.211 Nom: MixWord
+Sat Mar 10 14:30:12 CET 2018 /90.3.251.211 Recherche une partie pour MixWord
+Sat Mar 10 14:30:15 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:09:48 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 15:09:56 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 15:09:56 CET 2018 /90.3.251.211 a envoyé le langage fr
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 15:09:56 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 15:09:56 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 15:09:56 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 15:09:56 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 15:09:56 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 15:09:57 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 15:09:57 CET 2018 /90.3.251.211 a envoyé le langage en
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 15:09:57 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 15:09:57 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 15:09:57 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 15:09:57 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 15:09:57 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:09:59 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 15:09:59 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 15:09:59 CET 2018 /90.3.251.211 Longueur du nom: 7
+Sat Mar 10 15:09:59 CET 2018 /90.3.251.211 Nom: Morpion
+Sat Mar 10 15:09:59 CET 2018 /90.3.251.211 Recherche une partie pour Morpion
+Sat Mar 10 15:10:00 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 15:10:00 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 15:10:00 CET 2018 /90.3.251.211 Longueur du nom: 7
+Sat Mar 10 15:10:00 CET 2018 /90.3.251.211 Nom: Morpion
+Sat Mar 10 15:10:00 CET 2018 /90.3.251.211 Recherche une partie pour Morpion
+Sat Mar 10 15:10:00 CET 2018 Une partie à été crée
+Sat Mar 10 15:10:05 CET 2018 /90.3.251.211 a joué un coup au morpion
+Sat Mar 10 15:10:06 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:10:07 CET 2018 /90.3.251.211 a joué un coup au morpion
+Sat Mar 10 15:10:07 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:10:08 CET 2018 /90.3.251.211 a joué un coup au morpion
+Sat Mar 10 15:10:08 CET 2018 /90.3.251.211 a joué un coup au morpion
+Sat Mar 10 15:10:09 CET 2018 /90.3.251.211 a joué un coup au morpion
+Sat Mar 10 15:10:09 CET 2018 /90.3.251.211 a mis fin à la partie de MorpionSat Mar 10 15:10:13 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 15:10:13 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 15:10:13 CET 2018 /90.3.251.211 Longueur du nom: 7
+Sat Mar 10 15:10:13 CET 2018 /90.3.251.211 Nom: Morpion
+Sat Mar 10 15:10:13 CET 2018 /90.3.251.211 Recherche une partie pour Morpion
+Sat Mar 10 15:10:14 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 15:10:14 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 15:10:14 CET 2018 /90.3.251.211 Longueur du nom: 7
+Sat Mar 10 15:10:14 CET 2018 /90.3.251.211 Nom: Morpion
+Sat Mar 10 15:10:14 CET 2018 /90.3.251.211 Recherche une partie pour Morpion
+Sat Mar 10 15:10:14 CET 2018 Une partie à été crée
+Sat Mar 10 15:10:16 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:10:16 CET 2018 /90.3.251.211 a joué un coup au morpion
+Sat Mar 10 15:10:17 CET 2018 /90.3.251.211 a joué un coup au morpion
+Sat Mar 10 15:10:17 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:10:18 CET 2018 /90.3.251.211 a joué un coup au morpion
+Sat Mar 10 15:10:18 CET 2018 /90.3.251.211 a joué un coup au morpion
+Sat Mar 10 15:10:19 CET 2018 /90.3.251.211 a joué un coup au morpion
+Sat Mar 10 15:10:19 CET 2018 /90.3.251.211 a mis fin à la partie de MorpionSat Mar 10 15:10:25 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 15:10:25 CET 2018 /90.3.251.211 à demandé les scores mondiaux
+Sat Mar 10 15:10:26 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:10:27 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:10:34 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 15:10:34 CET 2018 /90.3.251.211 à demandé les scores mondiaux
+Sat Mar 10 15:10:36 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:10:37 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:10:46 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:10:47 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:10:56 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:10:57 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:11:06 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:11:08 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:11:16 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:12:26 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 15:12:27 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 15:12:27 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 15:12:27 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 15:12:27 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 15:12:27 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 15:12:28 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 15:12:28 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 15:12:28 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 15:12:28 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 15:12:28 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 15:12:34 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 15:12:34 CET 2018 /90.3.251.211 a envoyé le langage en
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 15:12:35 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 15:12:35 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 15:12:37 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 15:12:37 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 15:12:37 CET 2018 /90.3.251.211 Longueur du nom: 7
+Sat Mar 10 15:12:37 CET 2018 /90.3.251.211 Nom: MixWord
+Sat Mar 10 15:12:37 CET 2018 /90.3.251.211 Recherche une partie pour MixWord
+Sat Mar 10 15:12:37 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:12:37 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 15:12:37 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 15:12:37 CET 2018 /90.3.251.211 Longueur du nom: 7
+Sat Mar 10 15:12:37 CET 2018 /90.3.251.211 Nom: MixWord
+Sat Mar 10 15:12:37 CET 2018 /90.3.251.211 Recherche une partie pour MixWord
+Sat Mar 10 15:12:37 CET 2018 Une partie à été crée
+Sat Mar 10 15:12:38 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:12:46 CET 2018 /90.3.251.211 doit trouvé le mot bleu
+Sat Mar 10 15:12:47 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:12:48 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:12:49 CET 2018 /90.3.251.211 doit trouvé le mot bleu
+Sat Mar 10 15:12:51 CET 2018 /90.3.251.211 doit trouvé le mot bleu
+Sat Mar 10 15:12:53 CET 2018 /90.3.251.211 doit trouvé le mot bleu
+Sat Mar 10 15:12:57 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:12:57 CET 2018 /90.3.251.211 doit trouvé le mot bleu
+Sat Mar 10 15:12:58 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:12:58 CET 2018 /90.3.251.211 doit trouvé le mot bleu
+Sat Mar 10 15:12:59 CET 2018 /90.3.251.211 doit trouvé le mot bleu
+Sat Mar 10 15:13:00 CET 2018 /90.3.251.211 doit trouvé le mot bleu
+Sat Mar 10 15:13:00 CET 2018 /90.3.251.211 doit trouvé le mot bleu
+Sat Mar 10 15:13:00 CET 2018 /90.3.251.211 doit trouvé le mot bleu
+Sat Mar 10 15:13:01 CET 2018 /90.3.251.211 doit trouvé le mot bleu
+Sat Mar 10 15:13:01 CET 2018 /90.3.251.211 doit trouvé le mot bleu
+Sat Mar 10 15:13:01 CET 2018 /90.3.251.211 doit trouvé le mot bleu
+Sat Mar 10 15:13:01 CET 2018 /90.3.251.211 doit trouvé le mot bleu
+Sat Mar 10 15:13:01 CET 2018 /90.3.251.211 doit trouvé le mot bleu
+Sat Mar 10 15:13:07 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:13:08 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:13:17 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:13:18 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:13:27 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:13:28 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:13:40 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 15:13:42 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 15:13:42 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 15:13:42 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 15:13:42 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 15:13:42 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 15:13:48 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 15:13:48 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 15:13:48 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 15:13:48 CET 2018 /90.3.251.211 est prêt à envoyé des scores de jeux
+Sat Mar 10 15:13:48 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 15:13:51 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 15:13:51 CET 2018 /90.3.251.211 a envoyé le langage fr
+Sat Mar 10 15:13:52 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Un client s'est connecté à l'addresse: /90.3.251.211
+Sat Mar 10 15:13:54 CET 2018 /90.3.251.211 a envoyé une longueur de taille de laguage 2
+Sat Mar 10 15:13:54 CET 2018 /90.3.251.211 a envoyé le langage en
+Sat Mar 10 15:13:58 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 15:13:58 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 15:13:58 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 15:13:58 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 15:13:58 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 15:13:58 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:13:59 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 15:13:59 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 15:13:59 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 15:13:59 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 15:13:59 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 15:13:59 CET 2018 Une partie à été crée
+Sat Mar 10 15:14:02 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:14:09 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:14:13 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:14:19 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:14:19 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 0
+Sat Mar 10 15:14:19 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 15:14:19 CET 2018 /90.3.251.211 nettoyage de la partie ShakeGame
+Sat Mar 10 15:14:19 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 3751
+Sat Mar 10 15:14:19 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 15:14:19 CET 2018 /90.3.251.211 nettoyage de la partie ShakeGame
+Sat Mar 10 15:14:23 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:14:29 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:14:30 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 15:14:30 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 15:14:30 CET 2018 /90.3.251.211 Longueur du nom: 7
+Sat Mar 10 15:14:30 CET 2018 /90.3.251.211 Nom: Morpion
+Sat Mar 10 15:14:30 CET 2018 /90.3.251.211 Recherche une partie pour Morpion
+Sat Mar 10 15:14:30 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 15:14:30 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 15:14:30 CET 2018 /90.3.251.211 Longueur du nom: 7
+Sat Mar 10 15:14:30 CET 2018 /90.3.251.211 Nom: Morpion
+Sat Mar 10 15:14:30 CET 2018 /90.3.251.211 Recherche une partie pour Morpion
+Sat Mar 10 15:14:30 CET 2018 Une partie à été crée
+Sat Mar 10 15:14:33 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:14:34 CET 2018 /90.3.251.211 a joué un coup au morpion
+Sat Mar 10 15:14:35 CET 2018 /90.3.251.211 a joué un coup au morpion
+Sat Mar 10 15:14:35 CET 2018 /90.3.251.211 a joué un coup au morpion
+Sat Mar 10 15:14:36 CET 2018 /90.3.251.211 a joué un coup au morpion
+Sat Mar 10 15:14:37 CET 2018 /90.3.251.211 a joué un coup au morpion
+Sat Mar 10 15:14:37 CET 2018 /90.3.251.211 a mis fin à la partie de MorpionSat Mar 10 15:14:39 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:14:40 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 15:14:40 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 15:14:40 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 15:14:40 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 15:14:40 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 15:14:41 CET 2018 /90.3.251.211 Integer receptionné
+Sat Mar 10 15:14:41 CET 2018 /90.3.251.211 Action demandée: 1
+Sat Mar 10 15:14:41 CET 2018 /90.3.251.211 Longueur du nom: 9
+Sat Mar 10 15:14:41 CET 2018 /90.3.251.211 Nom: ShakeGame
+Sat Mar 10 15:14:41 CET 2018 /90.3.251.211 Recherche une partie pour ShakeGame
+Sat Mar 10 15:14:41 CET 2018 Une partie à été crée
+Sat Mar 10 15:14:43 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:14:49 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:14:53 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:14:59 CET 2018 /90.3.251.211 a envoyé des données de jeux
+Sat Mar 10 15:15:01 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 14853
+Sat Mar 10 15:15:01 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 15:15:01 CET 2018 /90.3.251.211 nettoyage de la partie ShakeGame
+Sat Mar 10 15:15:01 CET 2018 /90.3.251.211 a reçu un score de ShakeGame 0
+Sat Mar 10 15:15:01 CET 2018 /90.3.251.211 à finie la partie ShakeGame
+Sat Mar 10 15:15:01 CET 2018 /90.3.251.211 nettoyage de la partie ShakeGame
+Sat Mar 10 15:15:03 CET 2018 /90.3.251.211 a envoyé des données de jeux

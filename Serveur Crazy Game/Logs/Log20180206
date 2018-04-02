@@ -1,0 +1,255 @@
+Tue Feb 06 11:07:54 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /80.215.80.198
+Un client s'est connecté à l'addresse: /80.215.229.53
+Un client s'est connecté à l'addresse: /80.215.229.53
+Un client s'est connecté à l'addresse: /80.215.229.53
+Un client s'est connecté à l'addresse: /80.215.229.53
+Un client s'est connecté à l'addresse: /80.215.229.53
+Un client s'est connecté à l'addresse: /80.215.80.198
+Un client s'est connecté à l'addresse: /80.215.80.198
+Un client s'est connecté à l'addresse: /80.215.229.53
+Un client s'est connecté à l'addresse: /80.215.229.53
+Tue Feb 06 12:36:59 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+Un client s'est connecté à l'addresse: /90.3.251.211
+Un client s'est connecté à l'addresse: /192.168.1.13
+Un client s'est connecté à l'addresse: /90.3.251.211
+Un client s'est connecté à l'addresse: /90.3.251.211
+Un client s'est connecté à l'addresse: /90.3.251.211
+Un client s'est connecté à l'addresse: /90.3.251.211
+Un client s'est connecté à l'addresse: /90.3.251.211
+Un client s'est connecté à l'addresse: /90.3.251.211
+Un client s'est connecté à l'addresse: /90.3.251.211
+Un client s'est connecté à l'addresse: /90.3.251.211
+Un client s'est connecté à l'addresse: /90.3.251.211
+Un client s'est connecté à l'addresse: /90.3.251.211
+Un client s'est connecté à l'addresse: /90.3.251.211
+Un client s'est connecté à l'addresse: /90.3.251.211
+Un client s'est connecté à l'addresse: /90.3.251.211
+Tue Feb 06 12:44:00 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+Un client s'est connecté à l'addresse: /90.3.251.211
+Un client s'est connecté à l'addresse: /90.3.251.211
+Un client s'est connecté à l'addresse: /90.3.251.211
+Un client s'est connecté à l'addresse: /90.3.251.211
+Un client s'est connecté à l'addresse: /90.3.251.211
+Un client s'est connecté à l'addresse: /90.3.251.211
+Un client s'est connecté à l'addresse: /90.3.251.211
+Un client s'est connecté à l'addresse: /90.3.251.211
+Un client s'est connecté à l'addresse: /90.3.251.211
+/90.3.251.211 Integer receptionné
+/90.3.251.211 Action demandée: 1
+/90.3.251.211 Longueur du nom: 7
+/90.3.251.211 Nom: Morpion
+/90.3.251.211 Recherche une partie pour Morpion
+/90.3.251.211 Integer receptionné
+/90.3.251.211 Action demandée: 1
+/90.3.251.211 Longueur du nom: 7
+/90.3.251.211 Nom: Morpion
+/90.3.251.211 Recherche une partie pour Morpion
+Une partie à été crée
+/90.3.251.211 attends son tour au morpion
+/90.3.251.211 a joué un coup au morpion
+/90.3.251.211 a joué un coup au morpion
+/90.3.251.211 a joué un coup au morpion
+/90.3.251.211 a joué un coup au morpion
+/90.3.251.211 a joué un coup au morpion
+/90.3.251.211 a mis fin à la partie de Morpion/90.3.251.211 Integer receptionné
+/90.3.251.211 Action demandée: 1
+/90.3.251.211 Longueur du nom: 7
+/90.3.251.211 Nom: Morpion
+/90.3.251.211 Recherche une partie pour Morpion
+/90.3.251.211 Integer receptionné
+/90.3.251.211 Action demandée: 1
+/90.3.251.211 Longueur du nom: 7
+/90.3.251.211 Nom: Morpion
+/90.3.251.211 Recherche une partie pour Morpion
+Une partie à été crée
+/90.3.251.211 attends son tour au morpion
+/90.3.251.211 a joué un coup au morpion
+/90.3.251.211 a joué un coup au morpion
+/90.3.251.211 a joué un coup au morpion
+/90.3.251.211 a joué un coup au morpion
+/90.3.251.211 a joué un coup au morpion
+/90.3.251.211 a mis fin à la partie de MorpionUn client s'est connecté à l'addresse: /90.3.251.211
+Un client s'est connecté à l'addresse: /90.3.251.211
+/90.3.251.211 Integer receptionné
+/90.3.251.211 Action demandée: 1
+/90.3.251.211 Longueur du nom: 7
+/90.3.251.211 Nom: Morpion
+/90.3.251.211 Recherche une partie pour Morpion
+/90.3.251.211 est en attente d'une partie pour Morpion
+Un client s'est connecté à l'addresse: /92.90.17.10
+/92.90.17.10 Integer receptionné
+/92.90.17.10 Action demandée: 1
+/92.90.17.10 Longueur du nom: 7
+/92.90.17.10 Nom: Morpion
+/92.90.17.10 Recherche une partie pour Morpion
+Une partie à été crée
+/90.3.251.211 a joué un coup au morpion
+Tue Feb 06 12:57:01 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /92.90.17.10
+/92.90.17.10 Integer receptionné
+/92.90.17.10 Action demandée: 1
+/92.90.17.10 Longueur du nom: 7
+/92.90.17.10 Nom: Morpion
+/92.90.17.10 Recherche une partie pour Morpion
+Un client s'est connecté à l'addresse: /90.3.251.211
+/90.3.251.211 Integer receptionné
+/90.3.251.211 Action demandée: 1
+/90.3.251.211 Longueur du nom: 7
+/90.3.251.211 Nom: Morpion
+/90.3.251.211 Recherche une partie pour Morpion
+Une partie à été crée
+/90.3.251.211 attends son tour au morpion
+/92.90.17.10 a joué un coup au morpion
+/90.3.251.211 a joué un coup au morpion
+/92.90.17.10 a joué un coup au morpion
+/90.3.251.211 a joué un coup au morpion
+/92.90.17.10 a joué un coup au morpion
+/90.3.251.211 a joué un coup au morpion
+/92.90.17.10 a joué un coup au morpion
+/90.3.251.211 a joué un coup au morpion
+/90.3.251.211 a mis fin à la partie de MorpionTue Feb 06 14:34:07 CET 2018: Lancement du serveur
+Tue Feb 06 15:04:03 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+/90.3.251.211 Integer receptionné
+Tue Feb 06 15:08:14 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+/90.3.251.211 a envoyé une longueur de taille de laguage 0/90.3.251.211 a envoyé le langage /90.3.251.211 Integer receptionné
+Tue Feb 06 15:10:18 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+/90.3.251.211 a envoyé une longueur de taille de laguage 0
+/90.3.251.211 a envoyé le langage 
+/90.3.251.211 Integer receptionné
+Un client s'est connecté à l'addresse: /90.3.251.211
+/90.3.251.211 a envoyé une longueur de taille de laguage 0
+/90.3.251.211 a envoyé le langage 
+/90.3.251.211 Integer receptionné
+Un client s'est connecté à l'addresse: /90.3.251.211
+/90.3.251.211 a envoyé une longueur de taille de laguage 0
+/90.3.251.211 a envoyé le langage 
+/90.3.251.211 Integer receptionné
+Un client s'est connecté à l'addresse: /90.3.251.211
+/90.3.251.211 a envoyé une longueur de taille de laguage 0
+/90.3.251.211 a envoyé le langage 
+/90.3.251.211 Integer receptionné
+Un client s'est connecté à l'addresse: /90.3.251.211
+/90.3.251.211 a envoyé une longueur de taille de laguage 0
+/90.3.251.211 a envoyé le langage 
+/90.3.251.211 Integer receptionné
+Un client s'est connecté à l'addresse: /90.3.251.211
+/90.3.251.211 a envoyé une longueur de taille de laguage 0
+/90.3.251.211 a envoyé le langage 
+/90.3.251.211 Integer receptionné
+Tue Feb 06 15:22:21 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+/90.3.251.211 a envoyé une longueur de taille de laguage 0
+/90.3.251.211 a envoyé le langage 
+/90.3.251.211 Integer receptionné
+Tue Feb 06 15:23:02 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+/90.3.251.211 a envoyé une longueur de taille de laguage 0
+/90.3.251.211 a envoyé le langage 
+/90.3.251.211 Integer receptionné
+Tue Feb 06 22:52:12 CET 2018: Lancement du serveur
+Un client s'est connecté à l'addresse: /90.3.251.211
+/90.3.251.211 a envoyé une longueur de taille de laguage 0
+/90.3.251.211 a envoyé le langage 
+/90.3.251.211 Integer receptionné
+Un client s'est connecté à l'addresse: /90.3.251.211
+/90.3.251.211 a envoyé une longueur de taille de laguage 0
+/90.3.251.211 a envoyé le langage 
+/90.3.251.211 Integer receptionné
+/90.3.251.211 Integer receptionné
+/90.3.251.211 Longueur du nom: 0
+/90.3.251.211 Nom: 
+/90.3.251.211 est en attente d'une partie pour 
+/90.3.251.211 Integer receptionné
+/90.3.251.211 Longueur du nom: 0
+/90.3.251.211 Nom: 
+/90.3.251.211 est en attente d'une partie pour 
+Un client s'est connecté à l'addresse: /90.3.251.211
+/90.3.251.211 a envoyé une longueur de taille de laguage 2
+/90.3.251.211 a envoyé le langage fr
+Un client s'est connecté à l'addresse: /90.3.251.211
+/90.3.251.211 a envoyé une longueur de taille de laguage 2
+/90.3.251.211 a envoyé le langage en
+Un client s'est connecté à l'addresse: /90.3.251.211
+/90.3.251.211 a envoyé une longueur de taille de laguage 2
+/90.3.251.211 a envoyé le langage fr
+/90.3.251.211 Integer receptionné
+/90.3.251.211 Action demandée: 1
+/90.3.251.211 Longueur du nom: 7
+/90.3.251.211 Nom: Morpion
+/90.3.251.211 Recherche une partie pour Morpion
+/90.3.251.211 Integer receptionné
+/90.3.251.211 Action demandée: 1
+/90.3.251.211 Longueur du nom: 7
+/90.3.251.211 Nom: Morpion
+/90.3.251.211 Recherche une partie pour Morpion
+Une partie à été crée
+/90.3.251.211 attends son tour au morpion
+Un client s'est connecté à l'addresse: /90.3.251.211
+/90.3.251.211 a envoyé une longueur de taille de laguage 2
+/90.3.251.211 a envoyé le langage fr
+Un client s'est connecté à l'addresse: /90.3.251.211
+/90.3.251.211 a envoyé une longueur de taille de laguage 2
+/90.3.251.211 a envoyé le langage en
+/90.3.251.211 Integer receptionné
+/90.3.251.211 Action demandée: 1
+/90.3.251.211 Longueur du nom: 7
+/90.3.251.211 Nom: Morpion
+/90.3.251.211 Recherche une partie pour Morpion
+/90.3.251.211 Integer receptionné
+/90.3.251.211 Action demandée: 1
+/90.3.251.211 Longueur du nom: 7
+/90.3.251.211 Nom: Morpion
+/90.3.251.211 Recherche une partie pour Morpion
+Une partie à été crée
+/90.3.251.211 attends son tour au morpion
+Un client s'est connecté à l'addresse: /90.3.251.211
+/90.3.251.211 a envoyé une longueur de taille de laguage 2
+/90.3.251.211 a envoyé le langage fr
+Un client s'est connecté à l'addresse: /90.3.251.211
+/90.3.251.211 a envoyé une longueur de taille de laguage 2
+/90.3.251.211 a envoyé le langage en
+/90.3.251.211 Integer receptionné
+/90.3.251.211 Action demandée: 1
+/90.3.251.211 Longueur du nom: 7
+/90.3.251.211 Nom: Morpion
+/90.3.251.211 Recherche une partie pour Morpion
+/90.3.251.211 Integer receptionné
+/90.3.251.211 Action demandée: 1
+/90.3.251.211 Longueur du nom: 7
+/90.3.251.211 Nom: Morpion
+/90.3.251.211 Recherche une partie pour Morpion
+Une partie à été crée
+/90.3.251.211 attends son tour au morpion
+Un client s'est connecté à l'addresse: /90.3.251.211
+/90.3.251.211 a envoyé une longueur de taille de laguage 2
+/90.3.251.211 a envoyé le langage fr
+Un client s'est connecté à l'addresse: /90.3.251.211
+/90.3.251.211 a envoyé une longueur de taille de laguage 2
+/90.3.251.211 a envoyé le langage fr
+Un client s'est connecté à l'addresse: /90.3.251.211
+/90.3.251.211 a envoyé une longueur de taille de laguage 2
+/90.3.251.211 a envoyé le langage en
+/90.3.251.211 Integer receptionné
+/90.3.251.211 Action demandée: 1
+/90.3.251.211 Longueur du nom: 7
+/90.3.251.211 Nom: Morpion
+/90.3.251.211 Recherche une partie pour Morpion
+/90.3.251.211 Integer receptionné
+/90.3.251.211 Action demandée: 1
+/90.3.251.211 Longueur du nom: 7
+/90.3.251.211 Nom: Morpion
+/90.3.251.211 Recherche une partie pour Morpion
+Une partie à été crée
+/90.3.251.211 attends son tour au morpion
+/90.3.251.211 a joué un coup au morpion
+/90.3.251.211 a joué un coup au morpion
+/90.3.251.211 a joué un coup au morpion
+/90.3.251.211 a joué un coup au morpion
+/90.3.251.211 a joué un coup au morpion
+/90.3.251.211 a mis fin à la partie de Morpion
