@@ -37,7 +37,7 @@ public class SearchGameActivity extends ListActivity {
     private ConnectivityReceiver connectivityReceiver;
     private static View lastClickSearch = null;
     private static final int DIALOG_INTERNET_CONNECTION_FAIL = 10;
-    private Config config = new Config();
+    private Config config;
     private Button vibrate;
     private Button volum;
     private MediaPlayer applause;
@@ -47,6 +47,7 @@ public class SearchGameActivity extends ListActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_games);
 
+        config = Config.createConfig(this);
         startService();
         initGraphic();
         initListView();
@@ -146,6 +147,7 @@ public class SearchGameActivity extends ListActivity {
     }
 
     public void clickConfigVolum(View view){
+        Log.d("TOTO", !this.config.getVolum() + "");
         this.config.setVolum(!this.config.getVolum());
         setConfiGraphic();
     }
