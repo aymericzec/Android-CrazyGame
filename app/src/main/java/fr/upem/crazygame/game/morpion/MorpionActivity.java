@@ -5,6 +5,8 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
+import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -57,6 +59,12 @@ public class MorpionActivity extends Activity {
     }
 
     private void initGraphic() {
+        if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        } else {
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        }
+
         Typeface nightFont = Typeface.createFromAsset(getAssets(), "font/nightmachine.otf");
         Typeface comicFont = Typeface.createFromAsset(getAssets(), "font/comic_book.otf");
 

@@ -1,7 +1,10 @@
 package fr.upem.crazygame.game.mixwords;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
+import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.Point;
 import android.graphics.Typeface;
@@ -45,6 +48,12 @@ public class MixWordActivity extends Activity {
     }
 
     private void initGraphic (){
+        if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        } else {
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        }
+
         Typeface comic_book = Typeface.createFromAsset(getAssets(),"font/comic_book.otf");
         Typeface heros = Typeface.createFromAsset(getAssets(),"font/nightmachine.otf");
 
