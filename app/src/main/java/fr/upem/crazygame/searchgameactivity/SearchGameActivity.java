@@ -40,7 +40,6 @@ public class SearchGameActivity extends ListActivity {
     private Config config = new Config();
     private Button vibrate;
     private Button volum;
-    private MediaPlayer applause;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -50,13 +49,6 @@ public class SearchGameActivity extends ListActivity {
         startService();
         initGraphic();
         initListView();
-
-        applause = MediaPlayer.create(this, R.raw.applause);
-        Log.d("test TEST", R.raw.applause + "");
-
-        applause.start();
-
-        Log.d("DURATION" , applause.getDuration()+"");
 
         connectivityReceiver = new ConnectivityReceiver();
         registerReceiver(connectivityReceiver, connectivityReceiver.getIntentFilter());
@@ -124,8 +116,6 @@ public class SearchGameActivity extends ListActivity {
         this.volum = (Button) findViewById(R.id.volum);
         this.vibrate = (Button) findViewById(R.id.vibrate);
 
-
-
         setConfiGraphic();
     }
 
@@ -133,7 +123,6 @@ public class SearchGameActivity extends ListActivity {
     public void setConfiGraphic(){
         if (this.config.getVibrate()){
             this.vibrate.setBackground(getDrawable(R.drawable.smartphone_1));
-
         }else{
             this.vibrate.setBackground(getDrawable(R.drawable.smartphone));
         }

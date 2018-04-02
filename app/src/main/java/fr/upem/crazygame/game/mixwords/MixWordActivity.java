@@ -32,10 +32,11 @@ public class MixWordActivity extends Activity {
     private Button[] keypadBottom;
     private Button[] keypadTop;
     private HandlerMixWords handlerMixWords;
-    private MediaPlayer applause= new MediaPlayer();
 
     private Boolean volum;
     private Boolean vibrate;
+    private MediaPlayer applause;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,16 +48,7 @@ public class MixWordActivity extends Activity {
 
         this.volum = getIntent().getBooleanExtra("volum", true);
         this.vibrate = getIntent().getBooleanExtra("vibrate", true);
-
-        applause.create(this,R.raw.applause);
-        applause.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
-            @Override
-            public void onPrepared(MediaPlayer mp) {
-                mp.start();
-            }
-        });
-
-        Log.d("DURATION" , applause.getDuration()+"");
+        this.applause = MediaPlayer.create(this, R.raw.applause);
 
         initGraphic();
         initKeypadTop(word.length());
@@ -186,13 +178,9 @@ public class MixWordActivity extends Activity {
 
         if (win) {
             action.setText(getText(R.string.winBack));
-            applause.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
-                @Override
-                public void onPrepared(MediaPlayer mp) {
-                    Log.d("'''''''''''", "START");
-                    mp.start();
-                }
-            });
+            if (this.volum){
+                applause.start();
+            }
         } else {
             action.setText(getText(R.string.loseBack));
 

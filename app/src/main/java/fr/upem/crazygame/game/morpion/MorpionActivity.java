@@ -9,6 +9,7 @@ import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -42,6 +43,7 @@ public class MorpionActivity extends Activity {
 
     private boolean volum;
     private boolean vibrate;
+    private MediaPlayer applause;
 
 
     @Override
@@ -113,7 +115,11 @@ public class MorpionActivity extends Activity {
 
         this.volum = i.getBooleanExtra("volum", true);
         this.volum = i.getBooleanExtra("vibrate", true);
+        this.applause = MediaPlayer.create(this, R.raw.applause);
+    }
 
+    public boolean getVibrate(){
+        return this.vibrate;
     }
 
 
@@ -172,9 +178,15 @@ public class MorpionActivity extends Activity {
 
                                     ProviderDataGame.addWinGame(GameCrazyGameColumns.NAME_MORPION, this);
                                     messageBottom.setText(R.string.win);
+                                    if (this.volum){
+                                        applause.start();
+                                    }
 
                                 } else if (handlerMorpion.isEgality()) {
                                     messageBottom.setText(R.string.equality);
+                                    if (this.volum){
+                                        applause.start();
+                                    }
                                 } else {
                                     this.handlerMorpion.waitOther();
                                 }
@@ -190,8 +202,6 @@ public class MorpionActivity extends Activity {
                     }
                 }
             }
-
-
         }
     }
 

@@ -1,32 +1,23 @@
 package fr.upem.crazygame.game.morpion;
 
-import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.AsyncTask;
+import android.os.Vibrator;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import org.w3c.dom.Text;
-
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
-
 import fr.upem.crazygame.R;
 import fr.upem.crazygame.bytebuffer_manager.ByteBufferManager;
 import fr.upem.crazygame.game.Players;
 import fr.upem.crazygame.provider.GameCrazyGameColumns;
 import fr.upem.crazygame.provider.ProviderDataGame;
-import fr.upem.crazygame.searchgameactivity.SearchGameActivity;
 
 
 public class AsyncTaskWaitOtherPlayer extends AsyncTask<Void,Void, Cell>{
-
     private final SocketChannel sc;
     private final HandlerMorpion handlerMorpion;
     private final MorpionActivity morpionActivity;
@@ -97,6 +88,12 @@ public class AsyncTaskWaitOtherPlayer extends AsyncTask<Void,Void, Cell>{
                    ProviderDataGame.addWinGame(GameCrazyGameColumns.NAME_MORPION, morpionActivity);
                    text = context.getString(R.string.lose);
 
+                    if (this.morpionActivity.getVibrate()) {
+                        Vibrator vib = (Vibrator) morpionActivity.getSystemService(Context.VIBRATOR_SERVICE);
+                        vib.vibrate(1000);
+                    }
+
+
                     for (int l = 0; l < MorpionActivity.getNumberCell(); l++) {
                         for (int m = 0; m < MorpionActivity.getNumberCell(); m++) {
                             Button button = morpionActivity.getCases(l, m);
@@ -110,14 +107,8 @@ public class AsyncTaskWaitOtherPlayer extends AsyncTask<Void,Void, Cell>{
                 } else {
                     text = context.getString(R.string.equality);
                 }
-
-                /*int duration = Toast.LENGTH_LONG;
-
-                Toast toast = Toast.makeText(context, text, duration);
-                toast.show();*/
                 TextView messageBottom = morpionActivity.getMessageBottom();
                 messageBottom.setText(text);
-
             }
 
         } else {

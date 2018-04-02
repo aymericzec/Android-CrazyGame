@@ -9,8 +9,10 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.Vibrator;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -37,6 +39,9 @@ public class ShakeGameActivity extends Activity implements SensorEventListener {
     private int val = 0;
     private AsyncTaskWaitShakeResult waitResult;
 
+    private boolean volum;
+    private boolean vibrate;
+    private MediaPlayer applause;
 
     private CountDownTimer countDown = new CountDownTimer(10 * 1000, 1000) {
         public void onTick(long millisUntilFinished) {
@@ -90,6 +95,9 @@ public class ShakeGameActivity extends Activity implements SensorEventListener {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         initGraphic();
 
+        this.volum = getIntent().getBooleanExtra("volum", true);
+        this.vibrate = getIntent().getBooleanExtra("vibrate", true);
+        this.applause = MediaPlayer.create(this, R.raw.applause);
         countDownBeforeStart.start();
 
         senSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
@@ -175,5 +183,12 @@ public class ShakeGameActivity extends Activity implements SensorEventListener {
         chrono.setTextSize(25);
         chrono.setSingleLine(false);
         chrono.setText(sb.toString());
+
+        if (score > scoreAdversary && this.volum){
+            applause.start();
+        }else if (score < scoreAdversary && this.vibrate){
+            Vibrator vib = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+            vib.vibrate(1000);
+        }
     }
 }
